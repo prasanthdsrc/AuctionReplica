@@ -167,12 +167,6 @@ export default function ProductDetail() {
                   <img src={img} alt="" className="w-full h-full object-contain p-1" />
                 </button>
               ))}
-              {product.images.length === 1 && (
-                <>
-                  <div className="w-20 h-20 rounded-md border-2 border-dashed border-border flex-shrink-0 bg-muted" />
-                  <div className="w-20 h-20 rounded-md border-2 border-dashed border-border flex-shrink-0 bg-muted" />
-                </>
-              )}
             </div>
           </div>
 

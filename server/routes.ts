@@ -82,7 +82,12 @@ const products = [
     auctionId: 'auction-1',
     title: 'Rolex Yacht Master Mens Watch 116622',
     description: 'Stunning Rolex Yacht-Master with platinum bezel. This timepiece features the iconic Rolesium combination.',
-    images: ['https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80'],
+    images: [
+      'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80',
+      'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=600&q=80',
+      'https://images.unsplash.com/photo-1526045431048-f857369baa09?w=600&q=80',
+      'https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=600&q=80'
+    ],
     lotNumber: 1,
     estimateLow: 17000,
     estimateHigh: 18000,
@@ -98,7 +103,12 @@ const products = [
     auctionId: 'auction-1',
     title: '4.57ct Diamond Bangle',
     description: 'Exquisite 18k white gold bangle set with 4.57 carats of brilliant cut diamonds.',
-    images: ['https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80'],
+    images: [
+      'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80',
+      'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&q=80',
+      'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=600&q=80',
+      'https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=600&q=80'
+    ],
     lotNumber: 2,
     estimateLow: 6800,
     estimateHigh: 9300,
@@ -113,7 +123,12 @@ const products = [
     auctionId: 'auction-1',
     title: 'Christian Dior Small 30 Montaigne Avenue Bag',
     description: 'The iconic 30 Montaigne bag in pristine condition. Features signature CD clasp.',
-    images: ['https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&q=80'],
+    images: [
+      'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&q=80',
+      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80',
+      'https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?w=600&q=80',
+      'https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=600&q=80'
+    ],
     lotNumber: 3,
     estimateLow: 2000,
     estimateHigh: 2500,
@@ -129,7 +144,12 @@ const products = [
     auctionId: 'auction-1',
     title: '1.36ct Sapphire & Diamond Earrings',
     description: 'Beautiful sapphire and diamond drop earrings in 18k white gold.',
-    images: ['https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80'],
+    images: [
+      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80',
+      'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=600&q=80',
+      'https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?w=600&q=80',
+      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=600&q=80'
+    ],
     lotNumber: 4,
     estimateLow: 2500,
     estimateHigh: 2700,
@@ -144,7 +164,12 @@ const products = [
     auctionId: 'auction-1',
     title: 'Van Cleef & Arpels 2014 Holiday Pendant',
     description: "Limited edition holiday pendant from Van Cleef & Arpels. Rare collector's item.",
-    images: ['https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80'],
+    images: [
+      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80',
+      'https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=600&q=80',
+      'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80',
+      'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=600&q=80'
+    ],
     lotNumber: 5,
     estimateLow: 6000,
     estimateHigh: 7000,
@@ -160,7 +185,12 @@ const products = [
     auctionId: 'auction-1',
     title: 'Cartier Love Bracelet 18k Rose Gold',
     description: 'The iconic Cartier Love bracelet in 18k rose gold. Complete with box and papers.',
-    images: ['https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&q=80'],
+    images: [
+      'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&q=80',
+      'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=600&q=80',
+      'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80',
+      'https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=600&q=80'
+    ],
     lotNumber: 6,
     estimateLow: 5500,
     estimateHigh: 6500,
@@ -176,7 +206,12 @@ const products = [
     auctionId: 'auction-1',
     title: '2.01ct Loose Diamond GIA F VS2',
     description: 'GIA certified 2.01 carat round brilliant diamond. F color, VS2 clarity.',
-    images: ['https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=600&q=80'],
+    images: [
+      'https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=600&q=80',
+      'https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=600&q=80',
+      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=600&q=80',
+      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80'
+    ],
     lotNumber: 7,
     estimateLow: 12000,
     estimateHigh: 15000,
@@ -191,7 +226,12 @@ const products = [
     auctionId: 'auction-1',
     title: 'Hermès Birkin 30 Togo Leather',
     description: 'Hermès Birkin 30 in Togo leather. Gold hardware. Excellent condition.',
-    images: ['https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80'],
+    images: [
+      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80',
+      'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&q=80',
+      'https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?w=600&q=80',
+      'https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=600&q=80'
+    ],
     lotNumber: 8,
     estimateLow: 15000,
     estimateHigh: 18000,
@@ -207,7 +247,12 @@ const products = [
     auctionId: 'auction-1',
     title: 'Patek Philippe Nautilus 5711',
     description: 'The legendary Patek Philippe Nautilus 5711/1A-010. Blue dial, stainless steel.',
-    images: ['https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=600&q=80'],
+    images: [
+      'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=600&q=80',
+      'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80',
+      'https://images.unsplash.com/photo-1526045431048-f857369baa09?w=600&q=80',
+      'https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=600&q=80'
+    ],
     lotNumber: 9,
     estimateLow: 85000,
     estimateHigh: 95000,
@@ -223,7 +268,12 @@ const products = [
     auctionId: 'auction-1',
     title: 'South Sea Pearl & Diamond Ring',
     description: '12.7mm South Sea pearl surrounded by brilliant diamonds in 18k white gold.',
-    images: ['https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80'],
+    images: [
+      'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80',
+      'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80',
+      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80',
+      'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=600&q=80'
+    ],
     lotNumber: 10,
     estimateLow: 3500,
     estimateHigh: 4500,
