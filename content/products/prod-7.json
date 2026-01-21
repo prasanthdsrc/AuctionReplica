@@ -1,0 +1,24 @@
+{
+  "title": "2.01ct Loose Diamond GIA F VS2",
+  "description": "GIA certified 2.01 carat round brilliant diamond. F color, VS2 clarity.",
+  "images": [
+    "https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=600&q=80",
+    "https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=600&q=80",
+    "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=600&q=80",
+    "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80"
+  ],
+  "auctionId": "auction-1",
+  "lotNumber": 7,
+  "estimateLow": 12000,
+  "estimateHigh": 15000,
+  "currentBid": 10500,
+  "bidsCount": 7,
+  "category": "loose-gemstones",
+  "featured": false,
+  "specifications": [
+    { "key": "Carat", "value": "2.01" },
+    { "key": "Color", "value": "F" },
+    { "key": "Clarity", "value": "VS2" },
+    { "key": "Certification", "value": "GIA" }
+  ]
+}

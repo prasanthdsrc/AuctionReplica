@@ -1,0 +1,11 @@
+{
+  "title": "Luxury Watch Collection Sale",
+  "description": "Featuring rare Rolex, Patek Philippe, Audemars Piguet, and more.",
+  "imageUrl": "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&q=80",
+  "startDate": "2026-02-15T10:00:00",
+  "endDate": "2026-02-22T20:00:00",
+  "isOnline": true,
+  "numberOfLots": 156,
+  "buyersPremium": 18,
+  "status": "upcoming"
+}

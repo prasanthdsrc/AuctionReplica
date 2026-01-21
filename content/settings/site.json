@@ -1,0 +1,36 @@
+{
+  "siteName": "First State Auctions",
+  "siteDescription": "Australia's premier online auction house for fine jewellery, Swiss watches, and designer bags.",
+  "contactEmail": "info@firststateauctions.com",
+  "contactPhone": "(02) 9093 9000",
+  "heroSlides": [
+    {
+      "title": "Authenticity Fully Guaranteed",
+      "subtitle": "First State Auctions guarantees authenticity of every item, ensuring you buy with confidence",
+      "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1920&q=80",
+      "linkUrl": "/auctions",
+      "linkText": "View Current Auctions"
+    },
+    {
+      "title": "Buy the Jewellery You Love For Less",
+      "subtitle": "Check out the current catalogue - Engagement rings, pearl necklaces, diamond studs at bargain prices",
+      "imageUrl": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1920&q=80",
+      "linkUrl": "/auctions",
+      "linkText": "Browse Catalogue"
+    },
+    {
+      "title": "Record Breaking Swiss Watches",
+      "subtitle": "Discover our extensive collection of luxury timepieces from the world's most prestigious brands",
+      "imageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1920&q=80",
+      "linkUrl": "/categories/swiss-watches",
+      "linkText": "View Watches"
+    },
+    {
+      "title": "Designer Bags Collection",
+      "subtitle": "Authenticated luxury bags from Hermès, Chanel, Louis Vuitton, and more",
+      "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=1920&q=80",
+      "linkUrl": "/categories/designer-bags",
+      "linkText": "Shop Designer Bags"
+    }
+  ]
+}

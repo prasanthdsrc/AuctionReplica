@@ -1,0 +1,24 @@
+{
+  "title": "Rolex Yacht Master Mens Watch 116622",
+  "description": "Stunning Rolex Yacht-Master with platinum bezel. This timepiece features the iconic Rolesium combination.",
+  "images": [
+    "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=600&q=80",
+    "https://images.unsplash.com/photo-1526045431048-f857369baa09?w=600&q=80",
+    "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=600&q=80"
+  ],
+  "auctionId": "auction-1",
+  "lotNumber": 1,
+  "estimateLow": 17000,
+  "estimateHigh": 18000,
+  "currentBid": 15500,
+  "bidsCount": 12,
+  "category": "swiss-watches",
+  "subcategory": "rolex",
+  "featured": true,
+  "specifications": [
+    { "key": "Brand", "value": "Rolex" },
+    { "key": "Model", "value": "Yacht Master" },
+    { "key": "Reference", "value": "116622" }
+  ]
+}
