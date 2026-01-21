@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { categories, getProductsByCategory, getCategory } from '@/lib/data';
+import { getCategories, getProductsByCategory, getCategory } from '@/lib/content';
 import { formatCurrency } from '@/lib/utils';
 import type { Metadata } from 'next';
 
@@ -12,6 +12,7 @@ interface CategoryPageProps {
 }
 
 export async function generateStaticParams() {
+  const categories = getCategories();
   return categories.map((category) => ({
     slug: category.slug,
   }));

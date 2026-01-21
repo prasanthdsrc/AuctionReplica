@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { products, getProduct, getAuction } from '@/lib/data';
+import { getProducts, getProduct, getAuction } from '@/lib/content';
 import { formatCurrency } from '@/lib/utils';
 import ProductImageGallery from '@/components/product/ProductImageGallery';
 import CountdownTimer from '@/components/common/CountdownTimer';
@@ -16,6 +16,7 @@ interface ProductPageProps {
 }
 
 export async function generateStaticParams() {
+  const products = getProducts();
   return products.map((product) => ({
     id: product.id,
   }));

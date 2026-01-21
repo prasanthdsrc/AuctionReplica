@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { products, categories } from '@/lib/data';
+import { getProducts, getCategories } from '@/lib/content';
 import { formatCurrency } from '@/lib/utils';
 import type { Metadata } from 'next';
 
@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 };
 
 export default function ProductsPage() {
+  const products = getProducts();
+  const categories = getCategories();
   return (
     <div className="py-8">
       <div className="container mx-auto px-4">

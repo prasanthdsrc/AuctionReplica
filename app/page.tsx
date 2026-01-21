@@ -4,12 +4,15 @@ import { ArrowRight, Clock, ShieldCheck, Truck, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { heroSlides, auctions, categories, getFeaturedProducts } from '@/lib/data';
+import { getHeroSlides, getAuctions, getCategories, getFeaturedProducts } from '@/lib/content';
 import { formatCurrency } from '@/lib/utils';
 import HeroCarousel from '@/components/common/HeroCarousel';
 import CountdownTimer from '@/components/common/CountdownTimer';
 
 export default function Home() {
+  const heroSlides = getHeroSlides();
+  const auctions = getAuctions();
+  const categories = getCategories();
   const featuredProducts = getFeaturedProducts();
   const openAuctions = auctions.filter(a => a.status === 'open');
 

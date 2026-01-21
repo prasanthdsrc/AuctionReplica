@@ -4,7 +4,7 @@ import { Clock, Calendar, ArrowLeft } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { auctions, getProductsByAuction } from '@/lib/data';
+import { getAuctions, getAuction, getProductsByAuction } from '@/lib/content';
 import { formatCurrency, formatDate } from '@/lib/utils';
 import CountdownTimer from '@/components/common/CountdownTimer';
 import type { Metadata } from 'next';
@@ -14,6 +14,7 @@ interface AuctionPageProps {
 }
 
 export async function generateStaticParams() {
+  const auctions = getAuctions();
   return auctions.map((auction) => ({
     id: auction.id,
   }));
@@ -21,7 +22,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: AuctionPageProps): Promise<Metadata> {
   const { id } = await params;
-  const auction = auctions.find((a) => a.id === id);
+  const auction = getAuction(id);
   
   if (!auction) {
     return { title: 'Auction Not Found' };
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: AuctionPageProps): Promise<Me
 
 export default async function AuctionPage({ params }: AuctionPageProps) {
   const { id } = await params;
-  const auction = auctions.find((a) => a.id === id);
+  const auction = getAuction(id);
 
   if (!auction) {
     notFound();

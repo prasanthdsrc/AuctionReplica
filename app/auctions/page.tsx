@@ -3,7 +3,7 @@ import { Clock, Calendar } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { auctions } from '@/lib/data';
+import { getAuctions } from '@/lib/content';
 import { formatDate } from '@/lib/utils';
 import CountdownTimer from '@/components/common/CountdownTimer';
 import type { Metadata } from 'next';
@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function AuctionsPage() {
+  const auctions = getAuctions();
   const openAuctions = auctions.filter(a => a.status === 'open');
   const upcomingAuctions = auctions.filter(a => a.status === 'upcoming');
   const closedAuctions = auctions.filter(a => a.status === 'closed');
