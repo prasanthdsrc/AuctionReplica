@@ -39,19 +39,20 @@ components/
 └── ui/                     # Shadcn UI components
 
 lib/
-├── data.ts                 # Static data for SSG
+├── content.ts              # Tina CMS content fetcher (reads JSON files at build time)
 ├── types.ts                # TypeScript interfaces
 └── utils.ts                # Utility functions
 
 tina/
 └── config.ts               # Tina CMS configuration
 
-content/                    # Tina CMS content directory
-├── auctions/
-├── products/
-├── categories/
+content/                    # Tina CMS content directory (ALL DATA COMES FROM HERE)
+├── auctions/               # 3 auction JSON files
+├── products/               # 10 product JSON files
+├── categories/             # 6 category JSON files
 ├── pages/
 └── settings/
+    └── site.json           # Site settings including hero slides
 ```
 
 ## Key Features
@@ -104,27 +105,37 @@ The site is configured for static export. After running `npx next build`, the st
 - AWS S3 + CloudFront
 - GitHub Pages
 
-## Tina CMS Integration
-Tina CMS is configured with schemas for:
-- **Auctions**: Title, description, dates, status, image
-- **Products**: Title, description, images, estimates, specifications
-- **Categories**: Name, slug, description, image
-- **Pages**: General page content
-- **Settings**: Site-wide settings
+## Tina CMS Integration (FULLY INTEGRATED)
+All content is managed through Tina CMS JSON files in the `/content` directory:
 
-To use Tina CMS:
+**Content Structure:**
+- **Auctions** (`/content/auctions/*.json`): Title, description, dates, status, image, lots, buyers premium
+- **Products** (`/content/products/*.json`): Title, description, images, estimates, specifications, category
+- **Categories** (`/content/categories/*.json`): Name, slug, description, image (productCount calculated dynamically)
+- **Settings** (`/content/settings/site.json`): Site name, contact info, hero slides
+
+**How Content is Loaded:**
+- `lib/content.ts` reads JSON files from `/content` directory at build time
+- All pages import from `lib/content.ts` instead of static data
+- Product counts per category are calculated dynamically from actual product data
+- Static pages are generated using `generateStaticParams()` from CMS content
+
+**To Edit Content:**
 1. Run `npx tinacms dev -c "next dev -p 5000"`
 2. Access admin panel at `/admin`
 3. Edit content visually
-4. Changes are saved to markdown/JSON in `content/` directory
+4. Changes are saved to JSON files in `content/` directory
+5. Rebuild to update static pages: `npx next build`
 
-## Future BidPath/SoldIT Integration
-The static data layer in `lib/data.ts` can be replaced with:
-1. Server-side data fetching from BidPath API
-2. Build-time data fetching for static generation
-3. Client-side updates for real-time bid information
+**Or edit JSON files directly** in `/content` directory.
 
 ## Recent Changes
+- January 21, 2026: Full Tina CMS Integration
+  - Created content files for all auctions, products, categories, and hero slides
+  - Built `lib/content.ts` to read CMS content at build time
+  - Updated all pages to fetch from Tina CMS instead of static data
+  - Static build generates 29 pages from CMS content
+  
 - January 21, 2026: Migrated to Next.js 14 with Static Site Generation
   - Converted all pages to Next.js App Router
   - Implemented static data layer for SSG

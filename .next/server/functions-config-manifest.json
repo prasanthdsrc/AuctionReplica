@@ -1,1 +1,1 @@
-{"version":1,"functions":{"/auctions/[id]":{},"/about":{},"/auctions":{},"/categories/[slug]":{},"/past-sales":{},"/products":{},"/products/[id]":{},"/selling":{}}}
+{"version":1,"functions":{"/about":{},"/auctions":{},"/products":{},"/categories/[slug]":{},"/past-sales":{},"/auctions/[id]":{},"/products/[id]":{},"/selling":{}}}
