@@ -1,0 +1,13 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/page": "app/page.js",
+  "/about/page": "app/about/page.js",
+  "/categories/[slug]/page": "app/categories/[slug]/page.js",
+  "/auctions/page": "app/auctions/page.js",
+  "/past-sales/page": "app/past-sales/page.js",
+  "/auctions/[id]/page": "app/auctions/[id]/page.js",
+  "/selling/page": "app/selling/page.js",
+  "/products/[id]/page": "app/products/[id]/page.js",
+  "/products/page": "app/products/page.js"
+}
