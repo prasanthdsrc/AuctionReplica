@@ -1,7 +1,6 @@
-import type { Express } from "express";
-import { createServer, type Server } from "http";
+import { Auction, Product, Category, HeroSlide, FAQItem } from './types';
 
-const heroSlides = [
+export const heroSlides: HeroSlide[] = [
   {
     id: '1',
     title: 'Authenticity Fully Guaranteed',
@@ -21,8 +20,8 @@ const heroSlides = [
   {
     id: '3',
     title: 'Record Breaking Swiss Watches',
-    subtitle: "Discover our extensive collection of luxury timepieces from the world's most prestigious brands",
-    imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1920&q=80',
+    subtitle: 'Discover our extensive collection of luxury timepieces from the world\'s most prestigious brands',
+    imageUrl: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=1920&q=80',
     linkUrl: '/categories/swiss-watches',
     linkText: 'View Watches'
   },
@@ -36,7 +35,7 @@ const heroSlides = [
   }
 ];
 
-const auctions = [
+export const auctions: Auction[] = [
   {
     id: 'auction-1',
     title: 'Australia Day LIQUIDATION Auction: Fine Jewellery, Swiss Watches & Designer Bags',
@@ -76,7 +75,7 @@ const auctions = [
   }
 ];
 
-const products = [
+export const products: Product[] = [
   {
     id: 'prod-1',
     auctionId: 'auction-1',
@@ -143,7 +142,7 @@ const products = [
     id: 'prod-5',
     auctionId: 'auction-1',
     title: 'Van Cleef & Arpels 2014 Holiday Pendant',
-    description: "Limited edition holiday pendant from Van Cleef & Arpels. Rare collector's item.",
+    description: 'Limited edition holiday pendant from Van Cleef & Arpels. Rare collector\'s item.',
     images: ['https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80'],
     lotNumber: 5,
     estimateLow: 6000,
@@ -236,13 +235,13 @@ const products = [
   }
 ];
 
-const categories = [
+export const categories: Category[] = [
   {
     id: 'cat-1',
     name: 'Swiss Watches',
     slug: 'swiss-watches',
     imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80',
-    description: "Luxury timepieces from the world's most prestigious brands",
+    description: 'Luxury timepieces from the world\'s most prestigious brands',
     productCount: 45
   },
   {
@@ -319,133 +318,30 @@ const categories = [
   }
 ];
 
-export async function registerRoutes(
-  httpServer: Server,
-  app: Express
-): Promise<Server> {
-  app.get('/api/hero-slides', (_req, res) => {
-    res.json(heroSlides);
-  });
-
-  app.get('/api/auctions', (req, res) => {
-    let result = [...auctions];
-    const status = req.query.status as string | string[] | undefined;
-    
-    if (status) {
-      const statuses = Array.isArray(status) ? status : [status];
-      result = result.filter((a) => statuses.includes(a.status));
-    }
-    
-    res.json(result);
-  });
-
-  app.get('/api/auctions/:id', (req, res) => {
-    const auction = auctions.find((a) => a.id === req.params.id);
-    if (!auction) {
-      return res.status(404).json({ error: 'Auction not found' });
-    }
-    res.json(auction);
-  });
-
-  app.get('/api/auctions/:id/products', (req, res) => {
-    const auctionProducts = products.filter((p) => p.auctionId === req.params.id);
-    res.json(auctionProducts);
-  });
-
-  app.get('/api/products', (req, res) => {
-    let result = [...products];
-    const { query, category, priceMin, priceMax, sortBy, featured } = req.query;
-
-    if (featured === 'true') {
-      result = result.filter((p) => p.featured);
-    }
-
-    if (query) {
-      const q = (query as string).toLowerCase();
-      result = result.filter(
-        (p) =>
-          p.title.toLowerCase().includes(q) ||
-          p.description.toLowerCase().includes(q) ||
-          p.category.toLowerCase().includes(q)
-      );
-    }
-
-    if (category) {
-      result = result.filter((p) => p.category === category);
-    }
-
-    if (priceMin) {
-      result = result.filter((p) => p.estimateLow >= parseInt(priceMin as string));
-    }
-
-    if (priceMax) {
-      result = result.filter((p) => p.estimateHigh <= parseInt(priceMax as string));
-    }
-
-    switch (sortBy) {
-      case 'price-low':
-        result.sort((a, b) => a.estimateLow - b.estimateLow);
-        break;
-      case 'price-high':
-        result.sort((a, b) => b.estimateHigh - a.estimateHigh);
-        break;
-      case 'newest':
-        result.sort((a, b) => b.lotNumber - a.lotNumber);
-        break;
-      case 'ending-soon':
-        result.sort((a, b) => a.lotNumber - b.lotNumber);
-        break;
-    }
-
-    res.json(result);
-  });
-
-  app.get('/api/products/search', (req, res) => {
-    const query = (req.query.q as string || '').toLowerCase();
-    const result = products.filter(
-      (p) =>
-        p.title.toLowerCase().includes(query) ||
-        p.description.toLowerCase().includes(query) ||
-        p.category.toLowerCase().includes(query)
-    );
-    res.json(result);
-  });
-
-  app.get('/api/products/:id', (req, res) => {
-    const product = products.find((p) => p.id === req.params.id);
-    if (!product) {
-      return res.status(404).json({ error: 'Product not found' });
-    }
-    res.json(product);
-  });
-
-  app.get('/api/categories', (req, res) => {
-    let result = [...categories];
-    const { limit, sort } = req.query;
-
-    if (sort === 'popular') {
-      result.sort((a, b) => b.productCount - a.productCount);
-    }
-
-    if (limit) {
-      result = result.slice(0, parseInt(limit as string));
-    }
-
-    res.json(result);
-  });
-
-  app.get('/api/categories/:slug', (req, res) => {
-    const category = categories.find((c) => c.slug === req.params.slug);
-    if (!category) {
-      return res.status(404).json({ error: 'Category not found' });
-    }
-    res.json(category);
-  });
-
-  app.get('/api/categories/:slug/products', (req, res) => {
-    const categoryProducts = products.filter((p) => p.category === req.params.slug);
-    res.json(categoryProducts);
-  });
-
-  return httpServer;
-}
+export const faqItems: FAQItem[] = [
+  {
+    id: 'faq-1',
+    question: 'How do I access online auctions?',
+    answer: 'Online catalogues are normally uploaded on our website up to 8 days prior to the auction end date. You can access them by clicking "View Catalogue" on the auction listing, or by visiting our online bidding platform directly.'
+  },
+  {
+    id: 'faq-2',
+    question: 'How do I register?',
+    answer: 'Before you can register for an auction you need to have an account. To create an account, you will need to enter your user information, delivery address and credit card details. A pre-authorisation of $1 is taken to verify the credit card. Once you have an account, you will need to register for each auction to accept the Terms and Conditions.'
+  },
+  {
+    id: 'faq-3',
+    question: 'How do I place a bid?',
+    answer: 'Enjoy the thrill of the auction by placing live bids on the lot you desire as the auction progresses. Simply click on the lot you are interested in, enter your maximum bid, and the system will automatically bid on your behalf up to that amount.'
+  },
+  {
+    id: 'faq-4',
+    question: 'What is the buyer\'s premium?',
+    answer: 'The buyer\'s premium is an additional charge added to the hammer price of each lot. Our standard buyer\'s premium is 20%. This means if you win a lot at $1,000, the total cost will be $1,200 plus any applicable taxes and shipping.'
+  },
+  {
+    id: 'faq-5',
+    question: 'How is authenticity guaranteed?',
+    answer: 'First State Auctions guarantees the authenticity of every item sold. All items are inspected and authenticated by our team of experts. Swiss watches come with authentication certificates, and designer bags are verified using industry-standard authentication processes.'
+  }
+];
