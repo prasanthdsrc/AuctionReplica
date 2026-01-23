@@ -146,9 +146,9 @@ export function Header() {
                     JEWELLERY <ChevronDown className="h-3.5 w-3.5 ml-0.5" />
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="start" className="w-56">
+                <DropdownMenuContent align="start" className="w-56 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-lg">
                   {jewelleryCollections.map((item) => (
-                    <DropdownMenuItem key={item.href} asChild className="cursor-pointer">
+                    <DropdownMenuItem key={item.href} asChild className="cursor-pointer hover:bg-primary/10 hover:text-primary focus:bg-primary/10 focus:text-primary">
                       <Link href={item.href} data-testid={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
                         {item.label}
                       </Link>
@@ -170,9 +170,9 @@ export function Header() {
                     WATCHES <ChevronDown className="h-3.5 w-3.5 ml-0.5" />
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="start">
+                <DropdownMenuContent align="start" className="w-56 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-lg">
                   {watchCategories.map((item) => (
-                    <DropdownMenuItem key={item.href} asChild className="cursor-pointer">
+                    <DropdownMenuItem key={item.href} asChild className="cursor-pointer hover:bg-primary/10 hover:text-primary focus:bg-primary/10 focus:text-primary">
                       <Link href={item.href} data-testid={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
                         {item.label}
                       </Link>
@@ -220,9 +220,9 @@ export function Header() {
                     INFORMATION <ChevronDown className="h-3.5 w-3.5 ml-0.5" />
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
+                <DropdownMenuContent align="end" className="w-48 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-lg">
                   {infoLinks.map((item) => (
-                    <DropdownMenuItem key={item.href} asChild className="cursor-pointer">
+                    <DropdownMenuItem key={item.href} asChild className="cursor-pointer hover:bg-primary/10 hover:text-primary focus:bg-primary/10 focus:text-primary">
                       <Link href={item.href} data-testid={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
                         {item.label}
                       </Link>
