@@ -202,9 +202,9 @@ export function Header() {
                 >
                   <div className="flex">
                     {/* Main menu items */}
-                    <div className="w-52 border-r border-gray-200 dark:border-gray-700 py-2">
+                    <div className="w-60 border-r border-gray-200 dark:border-gray-700 py-4">
                       <div
-                        className={`flex items-center justify-between px-5 py-4 cursor-pointer transition-colors ${
+                        className={`flex items-center justify-between px-6 py-5 cursor-pointer transition-colors ${
                           jewellerySubmenu === 'categories' 
                             ? 'bg-gray-100 dark:bg-gray-800 text-primary' 
                             : 'hover:bg-gray-50 dark:hover:bg-gray-800'
@@ -212,11 +212,11 @@ export function Header() {
                         onMouseEnter={() => setJewellerySubmenu('categories')}
                         data-testid="submenu-jewellery-categories"
                       >
-                        <span className="text-sm">Jewellery Categories</span>
-                        <ChevronRight className="h-4 w-4" />
+                        <span className="text-base">Jewellery Categories</span>
+                        <ChevronRight className="h-4 w-4 ml-4" />
                       </div>
                       <div
-                        className={`flex items-center justify-between px-5 py-4 cursor-pointer transition-colors ${
+                        className={`flex items-center justify-between px-6 py-5 cursor-pointer transition-colors ${
                           jewellerySubmenu === 'types' 
                             ? 'bg-gray-100 dark:bg-gray-800 text-primary' 
                             : 'hover:bg-gray-50 dark:hover:bg-gray-800'
@@ -224,11 +224,11 @@ export function Header() {
                         onMouseEnter={() => setJewellerySubmenu('types')}
                         data-testid="submenu-jewellery-types"
                       >
-                        <span className="text-sm">Jewellery Types</span>
-                        <ChevronRight className="h-4 w-4" />
+                        <span className="text-base">Jewellery Types</span>
+                        <ChevronRight className="h-4 w-4 ml-4" />
                       </div>
                       <div
-                        className={`flex items-center justify-between px-5 py-4 cursor-pointer transition-colors ${
+                        className={`flex items-center justify-between px-6 py-5 cursor-pointer transition-colors ${
                           jewellerySubmenu === 'collections' 
                             ? 'bg-gray-100 dark:bg-gray-800 text-primary' 
                             : 'hover:bg-gray-50 dark:hover:bg-gray-800'
@@ -236,8 +236,8 @@ export function Header() {
                         onMouseEnter={() => setJewellerySubmenu('collections')}
                         data-testid="submenu-jewellery-collections"
                       >
-                        <span className="text-sm">Jewellery Collections</span>
-                        <ChevronRight className="h-4 w-4" />
+                        <span className="text-base">Jewellery Collections</span>
+                        <ChevronRight className="h-4 w-4 ml-4" />
                       </div>
                     </div>
                     
