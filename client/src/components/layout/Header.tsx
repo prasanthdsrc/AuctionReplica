@@ -27,53 +27,39 @@ const jewelleryCategories = [
   { href: '/categories/brooches', label: 'Brooches' },
 ];
 
-// Jewellery Types (by gemstone/material)
+// Jewellery Types (by gemstone/material) - uses existing category slugs
 const jewelleryTypes = [
-  { href: '/categories/diamond-jewellery', label: 'Diamond Jewellery' },
-  { href: '/categories/pearl-jewellery', label: 'Pearl Jewellery' },
-  { href: '/categories/sapphire-jewellery', label: 'Sapphire Jewellery' },
-  { href: '/categories/ruby-jewellery', label: 'Ruby Jewellery' },
-  { href: '/categories/tanzanite-jewellery', label: 'Tanzanite Jewellery' },
-  { href: '/categories/emerald-jewellery', label: 'Emerald Jewellery' },
-  { href: '/categories/jade-jewellery', label: 'Jade Jewellery' },
-  { href: '/categories/amethyst-jewellery', label: 'Amethyst Jewellery' },
-  { href: '/categories/aquamarine-jewellery', label: 'Aquamarine Jewellery' },
-  { href: '/categories/opal-jewellery', label: 'Opal Jewellery' },
-  { href: '/categories/alexandrite-jewellery', label: 'Alexandrite Jewellery' },
-  { href: '/categories/topaz-jewellery', label: 'Topaz Jewellery' },
-  { href: '/categories/morganite-jewellery', label: 'Morganite Jewellery' },
+  { href: '/categories/diamond', label: 'Diamond' },
+  { href: '/categories/pearl', label: 'Pearl' },
+  { href: '/categories/sapphire', label: 'Sapphire' },
+  { href: '/categories/ruby', label: 'Ruby' },
+  { href: '/categories/tanzanite', label: 'Tanzanite' },
+  { href: '/categories/emerald', label: 'Emerald' },
+  { href: '/categories/jade', label: 'Jade' },
+  { href: '/categories/aquamarine', label: 'Aquamarine' },
+  { href: '/categories/opal', label: 'Opal' },
+  { href: '/categories/topaz', label: 'Topaz' },
+  { href: '/categories/tourmaline', label: 'Tourmaline' },
+  { href: '/categories/gold-jewellery', label: 'Gold Jewellery' },
 ];
 
-// Jewellery Collections (curated)
+// Jewellery Collections (curated) - linking to existing categories
 const jewelleryCollections = [
-  { href: '/categories/certified-diamonds', label: 'Certified Diamonds' },
-  { href: '/categories/designer-jewellery', label: 'Designer Jewellery' },
-  { href: '/categories/loose-diamonds', label: 'Loose Diamonds' },
-  { href: '/categories/engagement-rings', label: 'Engagement Rings' },
-  { href: '/categories/diamond-dress-rings', label: 'Diamond Dress Rings' },
-  { href: '/categories/fancy-colour-diamonds', label: 'Fancy Colour Diamonds' },
-  { href: '/categories/tennis-bracelets', label: 'Tennis Bracelets' },
-  { href: '/categories/diamond-studs', label: 'Diamond Studs' },
-  { href: '/categories/diamond-eternity-rings', label: 'Diamond Eternity Rings' },
-  { href: '/categories/diamond-earrings', label: 'Diamond Earrings' },
+  { href: '/categories/diamond', label: 'Certified Diamonds' },
+  { href: '/categories/loose-gems', label: 'Loose Gems' },
+  { href: '/categories/rings', label: 'Engagement Rings' },
+  { href: '/categories/bracelets', label: 'Tennis Bracelets' },
+  { href: '/categories/earrings', label: 'Diamond Earrings' },
 ];
 
 // All jewellery for checking active state
 const allJewelleryItems = [...jewelleryCategories, ...jewelleryTypes, ...jewelleryCollections];
 
-// Watch categories matching original site
+// Watch categories - uses existing category slugs
 const watchCategories = [
-  { href: '/categories/swiss-watches', label: 'Swiss Watches' },
-  { href: '/categories/rolex-watches', label: 'Rolex Watches' },
-  { href: '/categories/omega-watches', label: 'Omega Watches' },
-  { href: '/categories/cartier-watches', label: 'Cartier Watches' },
-  { href: '/categories/tag-heuer-watches', label: 'Tag Heuer Watches' },
-  { href: '/categories/iwc-watches', label: 'IWC Schaffhausen Watches' },
-  { href: '/categories/breitling-watches', label: 'Breitling Watches' },
-  { href: '/categories/raymond-weil-watches', label: 'Raymond Weil Watches' },
-  { href: '/categories/mens-watches', label: "Men's Watches" },
-  { href: '/categories/ladies-watches', label: "Ladies' Watches" },
-  { href: '/categories/midsize-watches', label: 'Mid-Size Watches' },
+  { href: '/categories/watches-mens', label: "Men's Watches" },
+  { href: '/categories/watches-ladies', label: "Ladies' Watches" },
+  { href: '/categories/watches-midsize', label: 'Mid-Size Watches' },
 ];
 
 const infoLinks = [
