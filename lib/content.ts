@@ -165,38 +165,80 @@ export function getFeaturedProducts(): Product[] {
   return getProducts().filter(p => p.featured);
 }
 
+// Helper function to check if product is jewellery (not a watch or bag)
+function isJewellery(p: Product): boolean {
+  const watchCategories = ['watches-mens', 'watches-ladies', 'watches-midsize'];
+  const bagCategories = ['designer-bags'];
+  return !watchCategories.includes(p.category) && !bagCategories.includes(p.category);
+}
+
+// Smart category mapping - matches server/routes.ts categoryMapping logic
+function getCategoryFilter(slug: string): ((p: Product) => boolean) | null {
+  const title = (p: Product) => p.title.toLowerCase();
+  
+  const categoryMapping: Record<string, (p: Product) => boolean> = {
+    // Jewellery Categories (by item type)
+    'rings': (p) => isJewellery(p) && (p.category === 'rings' || title(p).includes('ring')),
+    'earrings': (p) => isJewellery(p) && (p.category === 'earrings' || title(p).includes('earring')),
+    'pendants': (p) => isJewellery(p) && (p.category === 'pendants' || title(p).includes('pendant')),
+    'bracelets': (p) => isJewellery(p) && (p.category === 'bracelets' || title(p).includes('bracelet')),
+    'necklaces': (p) => isJewellery(p) && (p.category === 'necklaces' || title(p).includes('necklace')),
+    'bangles': (p) => isJewellery(p) && (p.category === 'bangles' || title(p).includes('bangle')),
+    'loose-gems': (p) => isJewellery(p) && (title(p).includes('loose') && !title(p).includes('diamond')),
+    'brooches': (p) => isJewellery(p) && (p.category === 'brooches' || title(p).includes('brooch')),
+    
+    // Jewellery Types (by gemstone/material) - using existing category slugs
+    'diamond': (p) => isJewellery(p) && (p.category === 'diamond' || title(p).includes('diamond')),
+    'pearl': (p) => isJewellery(p) && (p.category === 'pearl' || title(p).includes('pearl')),
+    'sapphire': (p) => isJewellery(p) && (p.category === 'sapphire' || title(p).includes('sapphire')),
+    'ruby': (p) => isJewellery(p) && (p.category === 'ruby' || title(p).includes('ruby')),
+    'tanzanite': (p) => isJewellery(p) && (p.category === 'tanzanite' || title(p).includes('tanzanite')),
+    'emerald': (p) => isJewellery(p) && (p.category === 'emerald' || title(p).includes('emerald')),
+    'jade': (p) => isJewellery(p) && (p.category === 'jade' || title(p).includes('jade')),
+    'aquamarine': (p) => isJewellery(p) && (p.category === 'aquamarine' || title(p).includes('aquamarine')),
+    'opal': (p) => isJewellery(p) && (p.category === 'opal' || title(p).includes('opal')),
+    'topaz': (p) => isJewellery(p) && (p.category === 'topaz' || title(p).includes('topaz')),
+    'tourmaline': (p) => isJewellery(p) && (p.category === 'tourmaline' || title(p).includes('tourmaline')),
+    'gold-jewellery': (p) => isJewellery(p) && (p.category === 'gold-jewellery' || title(p).includes('gold')),
+    
+    // Jewellery Collections
+    'certified-diamonds': (p) => p.category === 'diamond' && (title(p).includes('certified') || title(p).includes('gia') || title(p).includes('igi')),
+    'loose-diamonds': (p) => p.category === 'diamond' && title(p).includes('loose'),
+    'engagement-rings': (p) => isJewellery(p) && title(p).includes('engagement'),
+    'tennis-bracelets': (p) => isJewellery(p) && title(p).includes('tennis'),
+    'diamond-earrings': (p) => isJewellery(p) && title(p).includes('diamond') && (title(p).includes('earring') || title(p).includes('drop') || title(p).includes('hoop')),
+    
+    // Watch Categories
+    'swiss-watches': (p) => p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize',
+    'rolex-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && title(p).includes('rolex'),
+    'omega-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && title(p).includes('omega'),
+    'cartier-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && title(p).includes('cartier'),
+    'tag-heuer-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && (title(p).includes('tag heuer') || title(p).includes('tag-heuer')),
+    'iwc-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && title(p).includes('iwc'),
+    'breitling-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && title(p).includes('breitling'),
+    'raymond-weil-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && title(p).includes('raymond weil'),
+    'watches-mens': (p) => p.category === 'watches-mens',
+    'watches-ladies': (p) => p.category === 'watches-ladies',
+    'watches-midsize': (p) => p.category === 'watches-midsize',
+    
+    // Designer Bags
+    'designer-bags': (p) => p.category === 'designer-bags',
+  };
+  
+  return categoryMapping[slug] || null;
+}
+
 export function getProductsByCategory(categorySlug: string): Product[] {
   const products = getProducts();
-  const category = getCategory(categorySlug);
   
-  // Direct match first
-  const directMatches = products.filter(p => p.category === categorySlug);
-  if (directMatches.length > 0) {
-    return directMatches;
+  // Use smart category filtering (matches server/routes.ts behavior)
+  const filterFn = getCategoryFilter(categorySlug);
+  if (filterFn) {
+    return products.filter(filterFn);
   }
   
-  // If no direct matches and category has a parent, show products from sibling categories
-  if (category?.parentCategory) {
-    const parentCategory = category.parentCategory;
-    const categories = getCategories();
-    
-    // Find all categories with the same parent (siblings)
-    const siblingCategories = categories
-      .filter(c => c.parentCategory === parentCategory)
-      .map(c => c.slug);
-    
-    // Also include categories that start with the parent prefix
-    const relatedCategories = categories
-      .filter(c => c.slug.startsWith(parentCategory) || siblingCategories.includes(c.slug))
-      .map(c => c.slug);
-    
-    return products.filter(p => 
-      relatedCategories.includes(p.category) || 
-      p.category.startsWith(parentCategory)
-    );
-  }
-  
-  return directMatches;
+  // Fallback to direct category match
+  return products.filter(p => p.category === categorySlug);
 }
 
 export function getCategories(): Category[] {
@@ -212,22 +254,13 @@ export function getCategories(): Category[] {
     return { id, data };
   }).filter((c): c is { id: string; data: TinaCategory } => c !== null);
   
-  // Second pass: calculate product counts with hierarchy support
+  // Second pass: calculate product counts using smart filtering (matches server/routes.ts)
   return categoryData.map(({ id, data }) => {
-    let productCount = products.filter(p => p.category === data.slug).length;
-    
-    // If no direct products and has parent category, count from related categories
-    if (productCount === 0 && data.parentCategory) {
-      const parentCategory = data.parentCategory;
-      const siblingCategories = categoryData
-        .filter(c => c.data.parentCategory === parentCategory)
-        .map(c => c.data.slug);
-      
-      productCount = products.filter(p => 
-        siblingCategories.includes(p.category) || 
-        p.category.startsWith(parentCategory)
-      ).length;
-    }
+    // Use smart category filtering for product count
+    const filterFn = getCategoryFilter(data.slug);
+    let productCount = filterFn 
+      ? products.filter(filterFn).length 
+      : products.filter(p => p.category === data.slug).length;
     
     return {
       id: `cat-${id}`,

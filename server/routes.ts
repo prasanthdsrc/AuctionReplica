@@ -381,7 +381,8 @@ export async function registerRoutes(
   });
 
   app.get('/api/products', (req, res) => {
-    let result = [...products];
+    const allProducts = loadedProducts.length > 0 ? loadedProducts : products;
+    let result = [...allProducts];
     const { query, category, priceMin, priceMax, sortBy, featured } = req.query;
 
     if (featured === 'true') {
