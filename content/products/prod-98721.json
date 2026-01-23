@@ -1,0 +1,24 @@
+{
+  "title": "Tiffany & Co T Diamond Wire Bracelet",
+  "description": "Tiffany & Co. T Wire bracelet, medium size with round Natural Diamonds totalling 0.24ct. 18ct white gold. Inner circumference: approximately 15cm. Width: 2.5mm. Made in Italy. Weight: 8.5g. With Tiffany & Co Box, pouch and receipt dated: 23/05/2025. (Pre-owned)",
+  "auctionId": "auction-1",
+  "lotNumber": 42,
+  "category": "diamond",
+  "images": [
+    "/images/products/98721_0.jpg",
+    "/images/products/98721_1.jpg",
+    "/images/products/98721_2.jpg",
+    "/images/products/98721_3.jpg"
+  ],
+  "estimateLow": 3000,
+  "estimateHigh": 4000,
+  "currentBid": 2400,
+  "bidsCount": 17,
+  "featured": false,
+  "specifications": [
+    {
+      "key": "Brand",
+      "value": "Tiffany & Co"
+    }
+  ]
+}

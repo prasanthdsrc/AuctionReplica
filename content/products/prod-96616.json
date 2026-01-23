@@ -1,0 +1,24 @@
+{
+  "title": "Cartier Love Bracelet, 4 Diamonds",
+  "description": "Cartier Love bracelet, classic model with 4 round Natural brilliant cut Diamonds totalling 0.42ct (Estimated grading: F VS). 18ct white gold. Cartier stamped size 19. Width: 6mm. Weight: 35.2g. With unbranded screwdriver. With Certificate #2559334528893973. (Pre-owned)",
+  "auctionId": "auction-1",
+  "lotNumber": 5,
+  "category": "diamond",
+  "images": [
+    "/images/products/96616_0.jpg",
+    "/images/products/96616_1.jpg",
+    "/images/products/96616_2.jpg",
+    "/images/products/96616_3.jpg"
+  ],
+  "estimateLow": 10000,
+  "estimateHigh": 12000,
+  "currentBid": 8000,
+  "bidsCount": 4,
+  "featured": true,
+  "specifications": [
+    {
+      "key": "Brand",
+      "value": "Cartier"
+    }
+  ]
+}

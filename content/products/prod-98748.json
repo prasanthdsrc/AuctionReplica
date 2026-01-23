@@ -1,0 +1,24 @@
+{
+  "title": "Tiffany & Co Diamond Ring",
+  "description": "Tiffany & Co. Diamond halo ring with centre round cushion cut natural Diamond of 0.55ct (With Tiffany & Co. Diamond Certificate graded as F VS1 #28486316/M05310691) and remaining round Diamonds totalling approximately 0.15ct. Platinum-950. Ring size L. Weight: 4.8g. With Tiffany & Co. box & pouch. (Pre-owned)",
+  "auctionId": "auction-1",
+  "lotNumber": 73,
+  "category": "diamond",
+  "images": [
+    "/images/products/98748_0.jpg",
+    "/images/products/98748_1.jpg",
+    "/images/products/98748_2.jpg",
+    "/images/products/98748_3.jpg"
+  ],
+  "estimateLow": 1200,
+  "estimateHigh": 2000,
+  "currentBid": 960,
+  "bidsCount": 17,
+  "featured": false,
+  "specifications": [
+    {
+      "key": "Brand",
+      "value": "Tiffany & Co"
+    }
+  ]
+}
