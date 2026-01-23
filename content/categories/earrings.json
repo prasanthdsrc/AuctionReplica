@@ -1,6 +1,7 @@
 {
   "name": "Earrings",
   "slug": "earrings",
-  "imageUrl": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&q=80",
-  "description": "Diamond studs, drop earrings, and hoops"
+  "parentCategory": "jewellery",
+  "description": "Diamond, gemstone, and pearl earrings",
+  "imageUrl": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&q=80"
 }

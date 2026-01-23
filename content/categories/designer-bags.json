@@ -1,6 +1,7 @@
 {
   "name": "Designer Bags",
   "slug": "designer-bags",
-  "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400&q=80",
-  "description": "Authenticated luxury bags from top fashion houses"
+  "parentCategory": null,
+  "description": "Authenticated luxury bags from Hermes, Chanel, Louis Vuitton, and more",
+  "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400&q=80"
 }
