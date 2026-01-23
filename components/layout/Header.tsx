@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Search, Menu, X, User, Phone, Mail, ChevronDown } from 'lucide-react';
+import { Search, Menu, X, User, Phone, Mail, ChevronDown, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
@@ -18,6 +18,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
+// Jewellery Categories (by item type)
 const jewelleryCategories = [
   { href: '/categories/rings', label: 'Rings' },
   { href: '/categories/earrings', label: 'Earrings' },
@@ -25,29 +26,57 @@ const jewelleryCategories = [
   { href: '/categories/bracelets', label: 'Bracelets' },
   { href: '/categories/necklaces', label: 'Necklaces' },
   { href: '/categories/bangles', label: 'Bangles' },
-  { href: '/categories/brooches', label: 'Brooches' },
   { href: '/categories/loose-gems', label: 'Loose Gems' },
+  { href: '/categories/brooches', label: 'Brooches' },
 ];
 
+// Jewellery Types (by gemstone/material)
 const jewelleryTypes = [
-  { href: '/categories/diamond', label: 'Diamond' },
-  { href: '/categories/sapphire', label: 'Sapphire' },
-  { href: '/categories/ruby', label: 'Ruby' },
-  { href: '/categories/emerald', label: 'Emerald' },
-  { href: '/categories/pearl', label: 'Pearl' },
-  { href: '/categories/opal', label: 'Opal' },
-  { href: '/categories/tanzanite', label: 'Tanzanite' },
-  { href: '/categories/aquamarine', label: 'Aquamarine' },
-  { href: '/categories/topaz', label: 'Topaz' },
-  { href: '/categories/tourmaline', label: 'Tourmaline' },
-  { href: '/categories/jade', label: 'Jade' },
-  { href: '/categories/gold-jewellery', label: 'Gold Jewellery' },
+  { href: '/categories/diamond-jewellery', label: 'Diamond Jewellery' },
+  { href: '/categories/pearl-jewellery', label: 'Pearl Jewellery' },
+  { href: '/categories/sapphire-jewellery', label: 'Sapphire Jewellery' },
+  { href: '/categories/ruby-jewellery', label: 'Ruby Jewellery' },
+  { href: '/categories/tanzanite-jewellery', label: 'Tanzanite Jewellery' },
+  { href: '/categories/emerald-jewellery', label: 'Emerald Jewellery' },
+  { href: '/categories/jade-jewellery', label: 'Jade Jewellery' },
+  { href: '/categories/amethyst-jewellery', label: 'Amethyst Jewellery' },
+  { href: '/categories/aquamarine-jewellery', label: 'Aquamarine Jewellery' },
+  { href: '/categories/opal-jewellery', label: 'Opal Jewellery' },
+  { href: '/categories/alexandrite-jewellery', label: 'Alexandrite Jewellery' },
+  { href: '/categories/topaz-jewellery', label: 'Topaz Jewellery' },
+  { href: '/categories/morganite-jewellery', label: 'Morganite Jewellery' },
 ];
 
+// Jewellery Collections (curated)
+const jewelleryCollections = [
+  { href: '/categories/certified-diamonds', label: 'Certified Diamonds' },
+  { href: '/categories/designer-jewellery', label: 'Designer Jewellery' },
+  { href: '/categories/loose-diamonds', label: 'Loose Diamonds' },
+  { href: '/categories/engagement-rings', label: 'Engagement Rings' },
+  { href: '/categories/diamond-dress-rings', label: 'Diamond Dress Rings' },
+  { href: '/categories/fancy-colour-diamonds', label: 'Fancy Colour Diamonds' },
+  { href: '/categories/tennis-bracelets', label: 'Tennis Bracelets' },
+  { href: '/categories/diamond-studs', label: 'Diamond Studs' },
+  { href: '/categories/diamond-eternity-rings', label: 'Diamond Eternity Rings' },
+  { href: '/categories/diamond-earrings', label: 'Diamond Earrings' },
+];
+
+// All jewellery for checking active state
+const allJewelleryItems = [...jewelleryCategories, ...jewelleryTypes, ...jewelleryCollections];
+
+// Watch categories matching original site
 const watchCategories = [
-  { href: '/categories/watches-mens', label: 'Mens Watches' },
-  { href: '/categories/watches-ladies', label: 'Ladies Watches' },
-  { href: '/categories/watches-midsize', label: 'Midsize Watches' },
+  { href: '/categories/swiss-watches', label: 'Swiss Watches' },
+  { href: '/categories/rolex-watches', label: 'Rolex Watches' },
+  { href: '/categories/omega-watches', label: 'Omega Watches' },
+  { href: '/categories/cartier-watches', label: 'Cartier Watches' },
+  { href: '/categories/tag-heuer-watches', label: 'Tag Heuer Watches' },
+  { href: '/categories/iwc-watches', label: 'IWC Schaffhausen Watches' },
+  { href: '/categories/breitling-watches', label: 'Breitling Watches' },
+  { href: '/categories/raymond-weil-watches', label: 'Raymond Weil Watches' },
+  { href: '/categories/mens-watches', label: "Men's Watches" },
+  { href: '/categories/ladies-watches', label: "Ladies' Watches" },
+  { href: '/categories/midsize-watches', label: 'Mid-Size Watches' },
 ];
 
 const infoLinks = [
@@ -57,11 +86,14 @@ const infoLinks = [
   { href: '/contact', label: 'Contact Us' },
 ];
 
+type JewellerySubmenu = 'categories' | 'types' | 'collections' | null;
+
 export default function Header() {
   const pathname = usePathname();
   const router = useRouter();
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [jewellerySubmenu, setJewellerySubmenu] = useState<JewellerySubmenu>(null);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -73,11 +105,25 @@ export default function Header() {
   };
 
   const isJewelleryActive = pathname?.startsWith('/categories/') && 
-    (jewelleryCategories.some(c => pathname === c.href) || jewelleryTypes.some(c => pathname === c.href));
+    allJewelleryItems.some(c => pathname === c.href);
   
-  const isWatchActive = pathname?.startsWith('/categories/watches');
+  const isWatchActive = pathname?.startsWith('/categories/') && 
+    watchCategories.some(c => pathname === c.href);
   
   const isInfoActive = infoLinks.some(l => pathname === l.href);
+
+  const getSubmenuItems = () => {
+    switch (jewellerySubmenu) {
+      case 'categories':
+        return jewelleryCategories;
+      case 'types':
+        return jewelleryTypes;
+      case 'collections':
+        return jewelleryCollections;
+      default:
+        return [];
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full">
@@ -138,7 +184,8 @@ export default function Header() {
                 </Button>
               </Link>
 
-              <DropdownMenu>
+              {/* Jewellery with hierarchical flyout */}
+              <DropdownMenu onOpenChange={(open) => { if (!open) setJewellerySubmenu(null); }}>
                 <DropdownMenuTrigger asChild>
                   <Button
                     variant="ghost"
@@ -151,28 +198,64 @@ export default function Header() {
                     JEWELLERY <ChevronDown className="h-3.5 w-3.5 ml-0.5" />
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-80 p-4" align="start">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <p className="text-xs font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Categories</p>
-                      {jewelleryCategories.map((item) => (
-                        <DropdownMenuItem key={item.href} asChild className="cursor-pointer">
-                          <Link href={item.href} data-testid={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
-                            {item.label}
-                          </Link>
-                        </DropdownMenuItem>
-                      ))}
+                <DropdownMenuContent 
+                  align="start" 
+                  className="p-0 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-lg"
+                  sideOffset={5}
+                >
+                  <div className="flex">
+                    {/* Main menu items */}
+                    <div className="w-56 border-r border-gray-200 dark:border-gray-700 p-1">
+                      <div
+                        className={`flex items-center justify-between px-2 py-1.5 rounded-sm cursor-pointer transition-colors text-sm ${
+                          jewellerySubmenu === 'categories' 
+                            ? 'bg-primary/10 text-primary' 
+                            : 'hover:bg-primary/10 hover:text-primary'
+                        }`}
+                        onMouseEnter={() => setJewellerySubmenu('categories')}
+                        data-testid="submenu-jewellery-categories"
+                      >
+                        <span>Jewellery Categories</span>
+                        <ChevronRight className="h-4 w-4 ml-auto" />
+                      </div>
+                      <div
+                        className={`flex items-center justify-between px-2 py-1.5 rounded-sm cursor-pointer transition-colors text-sm ${
+                          jewellerySubmenu === 'types' 
+                            ? 'bg-primary/10 text-primary' 
+                            : 'hover:bg-primary/10 hover:text-primary'
+                        }`}
+                        onMouseEnter={() => setJewellerySubmenu('types')}
+                        data-testid="submenu-jewellery-types"
+                      >
+                        <span>Jewellery Types</span>
+                        <ChevronRight className="h-4 w-4 ml-auto" />
+                      </div>
+                      <div
+                        className={`flex items-center justify-between px-2 py-1.5 rounded-sm cursor-pointer transition-colors text-sm ${
+                          jewellerySubmenu === 'collections' 
+                            ? 'bg-primary/10 text-primary' 
+                            : 'hover:bg-primary/10 hover:text-primary'
+                        }`}
+                        onMouseEnter={() => setJewellerySubmenu('collections')}
+                        data-testid="submenu-jewellery-collections"
+                      >
+                        <span>Jewellery Collections</span>
+                        <ChevronRight className="h-4 w-4 ml-auto" />
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-xs font-semibold text-muted-foreground mb-2 uppercase tracking-wide">By Stone</p>
-                      {jewelleryTypes.map((item) => (
-                        <DropdownMenuItem key={item.href} asChild className="cursor-pointer">
-                          <Link href={item.href} data-testid={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
-                            {item.label}
-                          </Link>
-                        </DropdownMenuItem>
-                      ))}
-                    </div>
+                    
+                    {/* Submenu items */}
+                    {jewellerySubmenu && (
+                      <div className="w-52 max-h-80 overflow-y-auto">
+                        {getSubmenuItems().map((item) => (
+                          <DropdownMenuItem key={item.href} asChild className="cursor-pointer hover:bg-primary/10 hover:text-primary focus:bg-primary/10 focus:text-primary">
+                            <Link href={item.href} data-testid={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
+                              {item.label}
+                            </Link>
+                          </DropdownMenuItem>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </DropdownMenuContent>
               </DropdownMenu>
@@ -190,9 +273,9 @@ export default function Header() {
                     WATCHES <ChevronDown className="h-3.5 w-3.5 ml-0.5" />
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="start">
+                <DropdownMenuContent align="start" className="w-56 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-lg">
                   {watchCategories.map((item) => (
-                    <DropdownMenuItem key={item.href} asChild className="cursor-pointer">
+                    <DropdownMenuItem key={item.href} asChild className="cursor-pointer hover:bg-primary/10 hover:text-primary focus:bg-primary/10 focus:text-primary">
                       <Link href={item.href} data-testid={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
                         {item.label}
                       </Link>
@@ -240,9 +323,9 @@ export default function Header() {
                     INFORMATION <ChevronDown className="h-3.5 w-3.5 ml-0.5" />
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
+                <DropdownMenuContent align="end" className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-lg">
                   {infoLinks.map((item) => (
-                    <DropdownMenuItem key={item.href} asChild className="cursor-pointer">
+                    <DropdownMenuItem key={item.href} asChild className="cursor-pointer hover:bg-primary/10 hover:text-primary focus:bg-primary/10 focus:text-primary">
                       <Link href={item.href} data-testid={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
                         {item.label}
                       </Link>
@@ -297,57 +380,104 @@ export default function Header() {
                 <SheetContent side="right" className="w-80 overflow-y-auto">
                   <nav className="flex flex-col gap-1 mt-8">
                     <Link href="/auctions">
-                      <Button variant="ghost" className="w-full justify-start text-base font-medium" data-testid="mobile-nav-auctions">
+                      <Button
+                        variant="ghost"
+                        className={`w-full justify-start ${pathname === '/auctions' ? 'bg-primary/10 text-primary' : ''}`}
+                        data-testid="mobile-nav-auctions"
+                      >
                         Auctions
                       </Button>
                     </Link>
-                    
-                    <div className="py-2 border-t mt-2">
-                      <p className="px-4 text-xs font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Jewellery Categories</p>
+
+                    <div className="py-2">
+                      <p className="text-xs font-semibold text-muted-foreground mb-2 px-4 uppercase tracking-wide">Jewellery Categories</p>
                       {jewelleryCategories.map((item) => (
                         <Link key={item.href} href={item.href}>
-                          <Button variant="ghost" className="w-full justify-start text-sm pl-6" data-testid={`mobile-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
+                          <Button
+                            variant="ghost"
+                            className={`w-full justify-start text-sm ${pathname === item.href ? 'bg-primary/10 text-primary' : ''}`}
+                            data-testid={`mobile-nav-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
+                          >
                             {item.label}
                           </Button>
                         </Link>
                       ))}
                     </div>
-                    
-                    <div className="py-2 border-t">
-                      <p className="px-4 text-xs font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Jewellery By Stone</p>
+
+                    <div className="py-2">
+                      <p className="text-xs font-semibold text-muted-foreground mb-2 px-4 uppercase tracking-wide">Jewellery Types</p>
                       {jewelleryTypes.map((item) => (
                         <Link key={item.href} href={item.href}>
-                          <Button variant="ghost" className="w-full justify-start text-sm pl-6" data-testid={`mobile-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
+                          <Button
+                            variant="ghost"
+                            className={`w-full justify-start text-sm ${pathname === item.href ? 'bg-primary/10 text-primary' : ''}`}
+                            data-testid={`mobile-nav-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
+                          >
                             {item.label}
                           </Button>
                         </Link>
                       ))}
                     </div>
-                    
-                    <div className="py-2 border-t">
-                      <p className="px-4 text-xs font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Watches</p>
+
+                    <div className="py-2">
+                      <p className="text-xs font-semibold text-muted-foreground mb-2 px-4 uppercase tracking-wide">Jewellery Collections</p>
+                      {jewelleryCollections.map((item) => (
+                        <Link key={item.href} href={item.href}>
+                          <Button
+                            variant="ghost"
+                            className={`w-full justify-start text-sm ${pathname === item.href ? 'bg-primary/10 text-primary' : ''}`}
+                            data-testid={`mobile-nav-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
+                          >
+                            {item.label}
+                          </Button>
+                        </Link>
+                      ))}
+                    </div>
+
+                    <div className="py-2">
+                      <p className="text-xs font-semibold text-muted-foreground mb-2 px-4 uppercase tracking-wide">Watches</p>
                       {watchCategories.map((item) => (
                         <Link key={item.href} href={item.href}>
-                          <Button variant="ghost" className="w-full justify-start text-sm pl-6" data-testid={`mobile-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
+                          <Button
+                            variant="ghost"
+                            className={`w-full justify-start text-sm ${pathname === item.href ? 'bg-primary/10 text-primary' : ''}`}
+                            data-testid={`mobile-nav-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
+                          >
                             {item.label}
                           </Button>
                         </Link>
                       ))}
                     </div>
-                    
-                    <div className="border-t pt-2">
-                      <Link href="/categories/designer-bags">
-                        <Button variant="ghost" className="w-full justify-start text-base font-medium" data-testid="mobile-nav-designer-bags">
-                          Designer Bags
-                        </Button>
-                      </Link>
-                    </div>
-                    
-                    <div className="py-2 border-t">
-                      <p className="px-4 text-xs font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Information</p>
+
+                    <Link href="/categories/designer-bags">
+                      <Button
+                        variant="ghost"
+                        className={`w-full justify-start ${pathname === '/categories/designer-bags' ? 'bg-primary/10 text-primary' : ''}`}
+                        data-testid="mobile-nav-designer-bags"
+                      >
+                        Designer Bags
+                      </Button>
+                    </Link>
+
+                    <Link href="/selling">
+                      <Button
+                        variant="ghost"
+                        className={`w-full justify-start ${pathname === '/selling' ? 'bg-primary/10 text-primary' : ''}`}
+                        data-testid="mobile-nav-selling"
+                      >
+                        Selling
+                      </Button>
+                    </Link>
+
+                    <div className="py-2 border-t mt-2">
+                      <p className="text-xs font-semibold text-muted-foreground mb-2 px-4 uppercase tracking-wide">Information</p>
                       {infoLinks.map((item) => (
                         <Link key={item.href} href={item.href}>
-                          <Button variant="ghost" className="w-full justify-start text-sm pl-6" data-testid={`mobile-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
+                          <Button
+                            variant="ghost"
+                            className={`w-full justify-start text-sm ${pathname === item.href ? 'bg-primary/10 text-primary' : ''}`}
+                            data-testid={`mobile-nav-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
+                          >
                             {item.label}
                           </Button>
                         </Link>
