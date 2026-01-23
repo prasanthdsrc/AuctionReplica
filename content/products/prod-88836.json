@@ -5,10 +5,10 @@
   "lotNumber": 251,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/88836-1.00ct-diamond-heart-gold-pendant-6.6g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/88836_1-1.00ct-diamond-heart-gold-pendant-6.6g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/88836_2-1.00ct-diamond-heart-gold-pendant-6.6g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/88836_3-1.00ct-diamond-heart-gold-pendant-6.6g.jpg"
+    "/images/products/88836_0.jpg",
+    "/images/products/88836_1.jpg",
+    "/images/products/88836_2.jpg",
+    "/images/products/88836_3.jpg"
   ],
   "estimateLow": 1400,
   "estimateHigh": 1600,

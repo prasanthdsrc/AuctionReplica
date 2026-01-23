@@ -5,10 +5,10 @@
   "lotNumber": 412,
   "category": "watches-ladies",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/87855-harry-winston-avenue-c-mini-ladies-gold-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/87855_1-harry-winston-avenue-c-mini-ladies-gold-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/87855_2-harry-winston-avenue-c-mini-ladies-gold-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/87855_20-harry-winston-avenue-c-mini-ladies-gold-watch.jpg"
+    "/images/products/87855_0.jpg",
+    "/images/products/87855_1.jpg",
+    "/images/products/87855_2.jpg",
+    "/images/products/87855_3.jpg"
   ],
   "estimateLow": 5000,
   "estimateHigh": 5500,

@@ -5,10 +5,10 @@
   "lotNumber": 192,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/76328-0.30ct-diamond-gia-fancy-light-pink-gia.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/76328_1-0.30ct-diamond-gia-fancy-light-pink-gia.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/76328_2-0.30ct-diamond-gia-fancy-light-pink-gia.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/76328_20-0.30ct-diamond-gia-fancy-light-pink-gia.jpg"
+    "/images/products/76328_0.jpg",
+    "/images/products/76328_1.jpg",
+    "/images/products/76328_2.jpg",
+    "/images/products/76328_3.jpg"
   ],
   "estimateLow": 1800,
   "estimateHigh": 2200,

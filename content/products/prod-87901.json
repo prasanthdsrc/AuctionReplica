@@ -5,10 +5,10 @@
   "lotNumber": 189,
   "category": "watches-mens",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/87901-zenith-pilot-big-date-flyback-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/87901_1-zenith-pilot-big-date-flyback-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/87901_19-zenith-pilot-big-date-flyback-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/87901_2-zenith-pilot-big-date-flyback-mens-watch.jpg"
+    "/images/products/87901_0.jpg",
+    "/images/products/87901_1.jpg",
+    "/images/products/87901_2.jpg",
+    "/images/products/87901_3.jpg"
   ],
   "estimateLow": 9500,
   "estimateHigh": 10000,

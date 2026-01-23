@@ -38,6 +38,7 @@ export interface Category {
   imageUrl: string;
   description?: string;
   productCount: number;
+  parentCategory?: string | null;
 }
 
 export interface HeroSlide {

@@ -5,10 +5,10 @@
   "lotNumber": 333,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/91046-diamond-and-emerald-bird-brooch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91046_1-diamond-and-emerald-bird-brooch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91046_2-diamond-and-emerald-bird-brooch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91046_3-diamond-and-emerald-bird-brooch.jpg"
+    "/images/products/91046_0.jpg",
+    "/images/products/91046_1.jpg",
+    "/images/products/91046_2.jpg",
+    "/images/products/91046_3.jpg"
   ],
   "estimateLow": 2000,
   "estimateHigh": 2200,

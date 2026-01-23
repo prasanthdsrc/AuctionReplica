@@ -5,10 +5,10 @@
   "lotNumber": 308,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/91202-2.14ct-diamond-studs-gia-f-vvs1--f-vvs2.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91202_1-2.14ct-diamond-studs-gia-f-vvs1--f-vvs2.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91202_19-2.14ct-diamond-studs-gia-f-vvs1--f-vvs2.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91202_2-2.14ct-diamond-studs-gia-f-vvs1--f-vvs2.jpg"
+    "/images/products/91202_0.jpg",
+    "/images/products/91202_1.jpg",
+    "/images/products/91202_2.jpg",
+    "/images/products/91202_3.jpg"
   ],
   "estimateLow": 14000,
   "estimateHigh": 15000,

@@ -37,6 +37,7 @@ interface TinaCategory {
   slug: string;
   imageUrl: string;
   description?: string;
+  parentCategory?: string | null;
 }
 
 interface TinaSettings {
@@ -186,7 +187,8 @@ export function getCategories(): Category[] {
       slug: data.slug,
       imageUrl: data.imageUrl,
       description: data.description,
-      productCount
+      productCount,
+      parentCategory: data.parentCategory || null
     } as Category;
   }).filter((c): c is Category => c !== null);
 }

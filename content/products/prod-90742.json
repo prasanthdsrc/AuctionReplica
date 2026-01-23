@@ -5,10 +5,10 @@
   "lotNumber": 164,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/90742-0.65ct-diamond---ruby-flamingo-brooch-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/90742_1-0.65ct-diamond---ruby-flamingo-brooch-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/90742_2-0.65ct-diamond---ruby-flamingo-brooch-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/90742_3-0.65ct-diamond---ruby-flamingo-brooch-18ct-gold.jpg"
+    "/images/products/90742_0.jpg",
+    "/images/products/90742_1.jpg",
+    "/images/products/90742_2.jpg",
+    "/images/products/90742_3.jpg"
   ],
   "estimateLow": 1900,
   "estimateHigh": 2100,

@@ -5,10 +5,10 @@
   "lotNumber": 294,
   "category": "sapphire",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/90246-1.98ct-pink-sapphire---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/90246_1-1.98ct-pink-sapphire---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/90246_2-1.98ct-pink-sapphire---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/90246_3-1.98ct-pink-sapphire---diamond-ring.jpg"
+    "/images/products/90246_0.jpg",
+    "/images/products/90246_1.jpg",
+    "/images/products/90246_2.jpg",
+    "/images/products/90246_3.jpg"
   ],
   "estimateLow": 1500,
   "estimateHigh": 2000,

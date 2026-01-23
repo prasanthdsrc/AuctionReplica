@@ -5,10 +5,10 @@
   "lotNumber": 318,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/89949-set-of-3-diamond-stackable-rings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/89949_1-set-of-3-diamond-stackable-rings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/89949_2-set-of-3-diamond-stackable-rings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/89949_3-set-of-3-diamond-stackable-rings.jpg"
+    "/images/products/89949_0.jpg",
+    "/images/products/89949_1.jpg",
+    "/images/products/89949_2.jpg",
+    "/images/products/89949_3.jpg"
   ],
   "estimateLow": 1600,
   "estimateHigh": 2000,

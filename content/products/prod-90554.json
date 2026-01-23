@@ -5,10 +5,10 @@
   "lotNumber": 312,
   "category": "miscellaneous",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/90554-1.23ct-amethyst---diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/90554_1-1.23ct-amethyst---diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/90554_2-1.23ct-amethyst---diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/90554_3-1.23ct-amethyst---diamond-earrings.jpg"
+    "/images/products/90554_0.jpg",
+    "/images/products/90554_1.jpg",
+    "/images/products/90554_2.jpg",
+    "/images/products/90554_3.jpg"
   ],
   "estimateLow": 600,
   "estimateHigh": 800,

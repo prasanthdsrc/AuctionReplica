@@ -5,10 +5,10 @@
   "lotNumber": 350,
   "category": "sapphire",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/82209-5.29ct-sapphire---2.44ct-diamond-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/82209_1-5.29ct-sapphire---2.44ct-diamond-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/82209_2-5.29ct-sapphire---2.44ct-diamond-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/82209_20-5.29ct-sapphire---2.44ct-diamond-bracelet.jpg"
+    "/images/products/82209_0.jpg",
+    "/images/products/82209_1.jpg",
+    "/images/products/82209_2.jpg",
+    "/images/products/82209_3.jpg"
   ],
   "estimateLow": 4500,
   "estimateHigh": 5000,

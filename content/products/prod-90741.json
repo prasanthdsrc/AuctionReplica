@@ -5,10 +5,10 @@
   "lotNumber": 419,
   "category": "aquamarine",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/90741-1.00ct-aquamarine---1.02ct-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/90741_19-1.00ct-aquamarine---1.02ct-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/90741_4-1.00ct-aquamarine---1.02ct-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/90741_5-1.00ct-aquamarine---1.02ct-diamond-earrings.jpg"
+    "/images/products/90741_0.jpg",
+    "/images/products/90741_1.jpg",
+    "/images/products/90741_2.jpg",
+    "/images/products/90741_3.jpg"
   ],
   "estimateLow": 2300,
   "estimateHigh": 2500,

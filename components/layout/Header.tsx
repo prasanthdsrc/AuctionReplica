@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Search, Menu, X, User, Phone, Mail } from 'lucide-react';
+import { Search, Menu, X, User, Phone, Mail, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
@@ -11,14 +11,41 @@ import {
   SheetContent,
   SheetTrigger,
 } from '@/components/ui/sheet';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  DropdownMenuSeparator,
+} from '@/components/ui/dropdown-menu';
 
-const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/auctions', label: 'Current Auctions' },
-  { href: '/products', label: 'Browse Items' },
-  { href: '/past-sales', label: 'Past Sales' },
-  { href: '/about', label: 'About Us' },
-  { href: '/contact', label: 'Contact' },
+const jewelleryCategories = [
+  { href: '/categories/rings', label: 'Rings' },
+  { href: '/categories/earrings', label: 'Earrings' },
+  { href: '/categories/pendants', label: 'Pendants' },
+  { href: '/categories/bracelets', label: 'Bracelets' },
+  { href: '/categories/necklaces', label: 'Necklaces' },
+  { href: '/categories/bangles', label: 'Bangles' },
+  { href: '/categories/loose-gems', label: 'Loose Gems' },
+  { href: '/categories/brooches', label: 'Brooches' },
+];
+
+const jewelleryTypes = [
+  { href: '/categories/diamond', label: 'Diamond' },
+  { href: '/categories/sapphire', label: 'Sapphire' },
+  { href: '/categories/ruby', label: 'Ruby' },
+  { href: '/categories/emerald', label: 'Emerald' },
+  { href: '/categories/pearl', label: 'Pearl' },
+  { href: '/categories/aquamarine', label: 'Aquamarine' },
+  { href: '/categories/tanzanite', label: 'Tanzanite' },
+  { href: '/categories/opal', label: 'Opal' },
+  { href: '/categories/gold-jewellery', label: 'Gold Jewellery' },
+];
+
+const watchCategories = [
+  { href: '/categories/watches-mens', label: 'Mens Watches' },
+  { href: '/categories/watches-ladies', label: 'Ladies Watches' },
+  { href: '/categories/watches-midsize', label: 'Midsize Watches' },
 ];
 
 export default function Header() {
@@ -82,21 +109,115 @@ export default function Header() {
             </Link>
 
             <nav className="hidden lg:flex items-center gap-1">
-              {navLinks.map((link) => (
-                <Link key={link.href} href={link.href}>
+              <Link href="/auctions">
+                <Button
+                  variant="ghost"
+                  className={`text-sm font-medium ${
+                    pathname === '/auctions' ? 'text-primary bg-primary/5' : 'text-foreground'
+                  }`}
+                  data-testid="nav-auctions"
+                >
+                  AUCTIONS
+                </Button>
+              </Link>
+
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
                   <Button
                     variant="ghost"
                     className={`text-sm font-medium ${
-                      pathname === link.href
-                        ? 'text-primary bg-primary/5'
-                        : 'text-foreground'
+                      pathname?.startsWith('/categories/') && jewelleryCategories.some(c => pathname === c.href) 
+                        ? 'text-primary bg-primary/5' : 'text-foreground'
                     }`}
-                    data-testid={`nav-${link.label.toLowerCase().replace(/\s+/g, '-')}`}
+                    data-testid="nav-jewellery"
                   >
-                    {link.label}
+                    JEWELLERY <ChevronDown className="h-4 w-4 ml-1" />
                   </Button>
-                </Link>
-              ))}
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-64 p-4" align="start">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <p className="text-xs font-semibold text-muted-foreground mb-2">CATEGORIES</p>
+                      {jewelleryCategories.map((item) => (
+                        <DropdownMenuItem key={item.href} asChild>
+                          <Link href={item.href} className="cursor-pointer" data-testid={`dropdown-${item.label.toLowerCase()}`}>
+                            {item.label}
+                          </Link>
+                        </DropdownMenuItem>
+                      ))}
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-muted-foreground mb-2">BY TYPE</p>
+                      {jewelleryTypes.map((item) => (
+                        <DropdownMenuItem key={item.href} asChild>
+                          <Link href={item.href} className="cursor-pointer" data-testid={`dropdown-${item.label.toLowerCase()}`}>
+                            {item.label}
+                          </Link>
+                        </DropdownMenuItem>
+                      ))}
+                    </div>
+                  </div>
+                </DropdownMenuContent>
+              </DropdownMenu>
+
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    className={`text-sm font-medium ${
+                      pathname?.startsWith('/categories/watches') ? 'text-primary bg-primary/5' : 'text-foreground'
+                    }`}
+                    data-testid="nav-watches"
+                  >
+                    WATCHES <ChevronDown className="h-4 w-4 ml-1" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start">
+                  {watchCategories.map((item) => (
+                    <DropdownMenuItem key={item.href} asChild>
+                      <Link href={item.href} className="cursor-pointer" data-testid={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
+                        {item.label}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+
+              <Link href="/categories/designer-bags">
+                <Button
+                  variant="ghost"
+                  className={`text-sm font-medium ${
+                    pathname === '/categories/designer-bags' ? 'text-primary bg-primary/5' : 'text-foreground'
+                  }`}
+                  data-testid="nav-designer-bags"
+                >
+                  DESIGNER BAGS
+                </Button>
+              </Link>
+
+              <Link href="/selling">
+                <Button
+                  variant="ghost"
+                  className={`text-sm font-medium ${
+                    pathname === '/selling' ? 'text-primary bg-primary/5' : 'text-foreground'
+                  }`}
+                  data-testid="nav-selling"
+                >
+                  SELLING
+                </Button>
+              </Link>
+
+              <Link href="/about">
+                <Button
+                  variant="ghost"
+                  className={`text-sm font-medium ${
+                    pathname === '/about' ? 'text-primary bg-primary/5' : 'text-foreground'
+                  }`}
+                  data-testid="nav-about"
+                >
+                  INFORMATION
+                </Button>
+              </Link>
             </nav>
 
             <div className="flex items-center gap-2">
@@ -141,23 +262,70 @@ export default function Header() {
                     <Menu className="h-5 w-5" />
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="right" className="w-72">
+                <SheetContent side="right" className="w-80 overflow-y-auto">
                   <nav className="flex flex-col gap-1 mt-8">
-                    {navLinks.map((link) => (
-                      <Link key={link.href} href={link.href}>
-                        <Button
-                          variant="ghost"
-                          className={`w-full justify-start text-base font-medium ${
-                            pathname === link.href
-                              ? 'text-primary bg-primary/5'
-                              : 'text-foreground'
-                          }`}
-                          data-testid={`mobile-nav-${link.label.toLowerCase().replace(/\s+/g, '-')}`}
-                        >
-                          {link.label}
-                        </Button>
-                      </Link>
-                    ))}
+                    <Link href="/auctions">
+                      <Button variant="ghost" className="w-full justify-start text-base font-medium" data-testid="mobile-nav-auctions">
+                        Auctions
+                      </Button>
+                    </Link>
+                    
+                    <div className="py-2">
+                      <p className="px-4 text-sm font-semibold text-muted-foreground mb-2">Jewellery Categories</p>
+                      {jewelleryCategories.map((item) => (
+                        <Link key={item.href} href={item.href}>
+                          <Button variant="ghost" className="w-full justify-start text-sm pl-6" data-testid={`mobile-${item.label.toLowerCase()}`}>
+                            {item.label}
+                          </Button>
+                        </Link>
+                      ))}
+                    </div>
+                    
+                    <div className="py-2">
+                      <p className="px-4 text-sm font-semibold text-muted-foreground mb-2">Jewellery Types</p>
+                      {jewelleryTypes.map((item) => (
+                        <Link key={item.href} href={item.href}>
+                          <Button variant="ghost" className="w-full justify-start text-sm pl-6" data-testid={`mobile-${item.label.toLowerCase()}`}>
+                            {item.label}
+                          </Button>
+                        </Link>
+                      ))}
+                    </div>
+                    
+                    <div className="py-2">
+                      <p className="px-4 text-sm font-semibold text-muted-foreground mb-2">Watches</p>
+                      {watchCategories.map((item) => (
+                        <Link key={item.href} href={item.href}>
+                          <Button variant="ghost" className="w-full justify-start text-sm pl-6" data-testid={`mobile-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
+                            {item.label}
+                          </Button>
+                        </Link>
+                      ))}
+                    </div>
+                    
+                    <Link href="/categories/designer-bags">
+                      <Button variant="ghost" className="w-full justify-start text-base font-medium" data-testid="mobile-nav-designer-bags">
+                        Designer Bags
+                      </Button>
+                    </Link>
+                    
+                    <Link href="/selling">
+                      <Button variant="ghost" className="w-full justify-start text-base font-medium" data-testid="mobile-nav-selling">
+                        Selling
+                      </Button>
+                    </Link>
+                    
+                    <Link href="/about">
+                      <Button variant="ghost" className="w-full justify-start text-base font-medium" data-testid="mobile-nav-information">
+                        Information
+                      </Button>
+                    </Link>
+                    
+                    <Link href="/contact">
+                      <Button variant="ghost" className="w-full justify-start text-base font-medium" data-testid="mobile-nav-contact">
+                        Contact
+                      </Button>
+                    </Link>
                   </nav>
                 </SheetContent>
               </Sheet>

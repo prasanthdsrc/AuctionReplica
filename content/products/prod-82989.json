@@ -5,10 +5,10 @@
   "lotNumber": 252,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/82989-natural-fancy-purple-oval-diamond-ring-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/82989_1-natural-fancy-purple-oval-diamond-ring-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/82989_19-natural-fancy-purple-oval-diamond-ring-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/82989_2-natural-fancy-purple-oval-diamond-ring-gsl.jpg"
+    "/images/products/82989_0.jpg",
+    "/images/products/82989_1.jpg",
+    "/images/products/82989_2.jpg",
+    "/images/products/82989_3.jpg"
   ],
   "estimateLow": 4000,
   "estimateHigh": 5000,

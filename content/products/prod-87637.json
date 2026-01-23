@@ -5,10 +5,10 @@
   "lotNumber": 275,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/87637-9.96ct-3-row-round-diamond-tennis-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/87637_1-9.96ct-3-row-round-diamond-tennis-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/87637_2-9.96ct-3-row-round-diamond-tennis-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/87637_20-9.96ct-3-row-round-diamond-tennis-necklace.jpg"
+    "/images/products/87637_0.jpg",
+    "/images/products/87637_1.jpg",
+    "/images/products/87637_2.jpg",
+    "/images/products/87637_3.jpg"
   ],
   "estimateLow": 11000,
   "estimateHigh": 12000,

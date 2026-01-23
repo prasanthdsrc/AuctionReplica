@@ -5,10 +5,10 @@
   "lotNumber": 397,
   "category": "emerald",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/89579-4.56ct-colombian-emerald---diamond-ring-gia.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/89579_19-4.56ct-colombian-emerald---diamond-ring-gia.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/89579_2-4.56ct-colombian-emerald---diamond-ring-gia.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/89579_3-4.56ct-colombian-emerald---diamond-ring-gia.jpg"
+    "/images/products/89579_0.jpg",
+    "/images/products/89579_1.jpg",
+    "/images/products/89579_2.jpg",
+    "/images/products/89579_3.jpg"
   ],
   "estimateLow": 6800,
   "estimateHigh": 7400,

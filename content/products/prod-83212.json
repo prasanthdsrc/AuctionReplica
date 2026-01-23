@@ -5,10 +5,10 @@
   "lotNumber": 170,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/83212-0.30ct-diamond-brownish-purplish-pink-si2.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/83212_1-0.30ct-diamond-brownish-purplish-pink-si2.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/83212_2-0.30ct-diamond-brownish-purplish-pink-si2.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/83212_20-0.30ct-diamond-brownish-purplish-pink-si2.jpg"
+    "/images/products/83212_0.jpg",
+    "/images/products/83212_1.jpg",
+    "/images/products/83212_2.jpg",
+    "/images/products/83212_3.jpg"
   ],
   "estimateLow": 1500,
   "estimateHigh": 2000,
