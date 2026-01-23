@@ -202,42 +202,42 @@ export function Header() {
                 >
                   <div className="flex">
                     {/* Main menu items */}
-                    <div className="w-60 border-r border-gray-200 dark:border-gray-700 py-4">
+                    <div className="w-56 border-r border-gray-200 dark:border-gray-700 p-1">
                       <div
-                        className={`flex items-center justify-between px-6 py-5 cursor-pointer transition-colors ${
+                        className={`flex items-center justify-between px-2 py-1.5 rounded-sm cursor-pointer transition-colors text-sm ${
                           jewellerySubmenu === 'categories' 
-                            ? 'bg-gray-100 dark:bg-gray-800 text-primary' 
-                            : 'hover:bg-gray-50 dark:hover:bg-gray-800'
+                            ? 'bg-primary/10 text-primary' 
+                            : 'hover:bg-primary/10 hover:text-primary'
                         }`}
                         onMouseEnter={() => setJewellerySubmenu('categories')}
                         data-testid="submenu-jewellery-categories"
                       >
-                        <span className="text-base">Jewellery Categories</span>
-                        <ChevronRight className="h-4 w-4 ml-4" />
+                        <span>Jewellery Categories</span>
+                        <ChevronRight className="h-4 w-4 ml-auto" />
                       </div>
                       <div
-                        className={`flex items-center justify-between px-6 py-5 cursor-pointer transition-colors ${
+                        className={`flex items-center justify-between px-2 py-1.5 rounded-sm cursor-pointer transition-colors text-sm ${
                           jewellerySubmenu === 'types' 
-                            ? 'bg-gray-100 dark:bg-gray-800 text-primary' 
-                            : 'hover:bg-gray-50 dark:hover:bg-gray-800'
+                            ? 'bg-primary/10 text-primary' 
+                            : 'hover:bg-primary/10 hover:text-primary'
                         }`}
                         onMouseEnter={() => setJewellerySubmenu('types')}
                         data-testid="submenu-jewellery-types"
                       >
-                        <span className="text-base">Jewellery Types</span>
-                        <ChevronRight className="h-4 w-4 ml-4" />
+                        <span>Jewellery Types</span>
+                        <ChevronRight className="h-4 w-4 ml-auto" />
                       </div>
                       <div
-                        className={`flex items-center justify-between px-6 py-5 cursor-pointer transition-colors ${
+                        className={`flex items-center justify-between px-2 py-1.5 rounded-sm cursor-pointer transition-colors text-sm ${
                           jewellerySubmenu === 'collections' 
-                            ? 'bg-gray-100 dark:bg-gray-800 text-primary' 
-                            : 'hover:bg-gray-50 dark:hover:bg-gray-800'
+                            ? 'bg-primary/10 text-primary' 
+                            : 'hover:bg-primary/10 hover:text-primary'
                         }`}
                         onMouseEnter={() => setJewellerySubmenu('collections')}
                         data-testid="submenu-jewellery-collections"
                       >
-                        <span className="text-base">Jewellery Collections</span>
-                        <ChevronRight className="h-4 w-4 ml-4" />
+                        <span>Jewellery Collections</span>
+                        <ChevronRight className="h-4 w-4 ml-auto" />
                       </div>
                     </div>
                     
