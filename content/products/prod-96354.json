@@ -5,10 +5,7 @@
   "lotNumber": 334,
   "category": "pearl",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/96354-14.2mm-south-sea-pearl--sapphire---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96354_1-14.2mm-south-sea-pearl--sapphire---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96354_2-14.2mm-south-sea-pearl--sapphire---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96354_20-14.2mm-south-sea-pearl--sapphire---diamond-ring.jpg"
+    "/images/products/96354_0.jpg"
   ],
   "estimateLow": 4000,
   "estimateHigh": 4500,

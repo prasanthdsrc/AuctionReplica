@@ -5,10 +5,7 @@
   "lotNumber": 199,
   "category": "designer-bags",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98467-saint-laurent-small-le-5-a-7-supple-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98467_1-saint-laurent-small-le-5-a-7-supple-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98467_10-saint-laurent-small-le-5-a-7-supple-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98467_11-saint-laurent-small-le-5-a-7-supple-bag.jpg"
+    "/images/products/98467_0.jpg"
   ],
   "estimateLow": 2300,
   "estimateHigh": 2500,

@@ -5,10 +5,10 @@
   "lotNumber": 356,
   "category": "tourmaline",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94248-paraiba-tourmaline---diamond-platinum-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94248_1-paraiba-tourmaline---diamond-platinum-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94248_2-paraiba-tourmaline---diamond-platinum-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94248_3-paraiba-tourmaline---diamond-platinum-earrings.jpg"
+    "/images/products/94248_0.jpg",
+    "/images/products/94248_1.jpg",
+    "/images/products/94248_2.jpg",
+    "/images/products/94248_3.jpg"
   ],
   "estimateLow": 2400,
   "estimateHigh": 2800,

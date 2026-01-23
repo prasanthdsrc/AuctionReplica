@@ -5,10 +5,7 @@
   "lotNumber": 402,
   "category": "aquamarine",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/99013-13.16ct-aquamarine---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99013_1-13.16ct-aquamarine---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99013_2-13.16ct-aquamarine---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99013_20-13.16ct-aquamarine---diamond-ring.jpg"
+    "/images/products/99013_0.jpg"
   ],
   "estimateLow": 2400,
   "estimateHigh": 2800,

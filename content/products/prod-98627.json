@@ -5,10 +5,7 @@
   "lotNumber": 381,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98627-bvlgari-snowflake-diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98627_1-bvlgari-snowflake-diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98627_2-bvlgari-snowflake-diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98627_3-bvlgari-snowflake-diamond-necklace.jpg"
+    "/images/products/98627_0.jpg"
   ],
   "estimateLow": 2100,
   "estimateHigh": 2400,

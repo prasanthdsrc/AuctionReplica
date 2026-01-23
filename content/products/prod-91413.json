@@ -5,10 +5,10 @@
   "lotNumber": 301,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/91413-3.00ct-diamond-studs-gia-i-j-vs1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91413_18-3.00ct-diamond-studs-gia-i-j-vs1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91413_19-3.00ct-diamond-studs-gia-i-j-vs1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91413_20-3.00ct-diamond-studs-gia-i-j-vs1.jpg"
+    "/images/products/91413_0.jpg",
+    "/images/products/91413_1.jpg",
+    "/images/products/91413_2.jpg",
+    "/images/products/91413_3.jpg"
   ],
   "estimateLow": 12000,
   "estimateHigh": 14000,

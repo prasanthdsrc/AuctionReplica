@@ -5,10 +5,10 @@
   "lotNumber": 217,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/91430-1.50ct-diamond-solitaire-ring-gia-i-vvs2.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91430_1-1.50ct-diamond-solitaire-ring-gia-i-vvs2.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91430_2-1.50ct-diamond-solitaire-ring-gia-i-vvs2.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91430_20-1.50ct-diamond-solitaire-ring-gia-i-vvs2.jpg"
+    "/images/products/91430_0.jpg",
+    "/images/products/91430_1.jpg",
+    "/images/products/91430_2.jpg",
+    "/images/products/91430_3.jpg"
   ],
   "estimateLow": 8000,
   "estimateHigh": 8500,

@@ -5,10 +5,7 @@
   "lotNumber": 299,
   "category": "pearl",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97830-13.5-10.3mm-south-sea-pearl-strand-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97830_1-13.5-10.3mm-south-sea-pearl-strand-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97830_2-13.5-10.3mm-south-sea-pearl-strand-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97830_3-13.5-10.3mm-south-sea-pearl-strand-necklace.jpg"
+    "/images/products/97830_0.jpg"
   ],
   "estimateLow": 2600,
   "estimateHigh": 3000,

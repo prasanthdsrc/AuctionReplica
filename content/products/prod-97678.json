@@ -5,10 +5,7 @@
   "lotNumber": 328,
   "category": "miscellaneous",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97678-cartier-amulette-de-cartier-mother-of-pearl-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97678_1-cartier-amulette-de-cartier-mother-of-pearl-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97678_2-cartier-amulette-de-cartier-mother-of-pearl-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97678_20-cartier-amulette-de-cartier-mother-of-pearl-necklace.jpg"
+    "/images/products/97678_0.jpg"
   ],
   "estimateLow": 4000,
   "estimateHigh": 4500,

@@ -5,10 +5,7 @@
   "lotNumber": 278,
   "category": "gold-jewellery",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98638-cartier-secret-love-ring-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98638_1-cartier-secret-love-ring-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98638_2-cartier-secret-love-ring-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98638_3-cartier-secret-love-ring-pendant.jpg"
+    "/images/products/98638_0.jpg"
   ],
   "estimateLow": 2200,
   "estimateHigh": 2500,

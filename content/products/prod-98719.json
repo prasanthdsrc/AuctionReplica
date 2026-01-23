@@ -5,10 +5,7 @@
   "lotNumber": 340,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98719-0.86ct-diamond-solitaire-ring-with-ring-band.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98719_1-0.86ct-diamond-solitaire-ring-with-ring-band.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98719_2-0.86ct-diamond-solitaire-ring-with-ring-band.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98719_20-0.86ct-diamond-solitaire-ring-with-ring-band.jpg"
+    "/images/products/98719_0.jpg"
   ],
   "estimateLow": 1400,
   "estimateHigh": 2200,

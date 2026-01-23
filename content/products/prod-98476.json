@@ -5,10 +5,7 @@
   "lotNumber": 246,
   "category": "designer-bags",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98476-louis-vuitton-alma-damier-pm.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98476_1-louis-vuitton-alma-damier-pm.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98476_11-louis-vuitton-alma-damier-pm.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98476_12-louis-vuitton-alma-damier-pm.jpg"
+    "/images/products/98476_0.jpg"
   ],
   "estimateLow": 1000,
   "estimateHigh": 1500,

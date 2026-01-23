@@ -5,10 +5,7 @@
   "lotNumber": 158,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98830-0.90ct-baguette-cut-diamond-eternity-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98830_1-0.90ct-baguette-cut-diamond-eternity-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98830_2-0.90ct-baguette-cut-diamond-eternity-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98830_3-0.90ct-baguette-cut-diamond-eternity-ring.jpg"
+    "/images/products/98830_0.jpg"
   ],
   "estimateLow": 700,
   "estimateHigh": 1200,

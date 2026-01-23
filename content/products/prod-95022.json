@@ -5,10 +5,10 @@
   "lotNumber": 156,
   "category": "ruby",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/95022-ruby--sapphire---diamond-flip-over-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95022_1-ruby--sapphire---diamond-flip-over-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95022_2-ruby--sapphire---diamond-flip-over-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95022_3-ruby--sapphire---diamond-flip-over-ring.jpg"
+    "/images/products/95022_0.jpg",
+    "/images/products/95022_1.jpg",
+    "/images/products/95022_2.jpg",
+    "/images/products/95022_3.jpg"
   ],
   "estimateLow": 1200,
   "estimateHigh": 1400,

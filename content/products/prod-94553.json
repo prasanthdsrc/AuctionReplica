@@ -5,10 +5,10 @@
   "lotNumber": 234,
   "category": "pearl",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94553-tinker-bell-pearl---diamond-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94553_1-tinker-bell-pearl---diamond-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94553_2-tinker-bell-pearl---diamond-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94553_3-tinker-bell-pearl---diamond-pendant.jpg"
+    "/images/products/94553_0.jpg",
+    "/images/products/94553_1.jpg",
+    "/images/products/94553_2.jpg",
+    "/images/products/94553_3.jpg"
   ],
   "estimateLow": 2400,
   "estimateHigh": 2800,

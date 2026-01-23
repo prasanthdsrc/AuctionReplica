@@ -5,10 +5,7 @@
   "lotNumber": 239,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/96366-elephant-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96366_1-elephant-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96366_2-elephant-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96366_3-elephant-diamond-ring.jpg"
+    "/images/products/96366_0.jpg"
   ],
   "estimateLow": 1600,
   "estimateHigh": 1800,

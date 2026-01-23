@@ -5,10 +5,7 @@
   "lotNumber": 185,
   "category": "designer-bags",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98772-fendi-first-small-shoulder-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98772_10-fendi-first-small-shoulder-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98772_14-fendi-first-small-shoulder-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98772_15-fendi-first-small-shoulder-bag.jpg"
+    "/images/products/98772_0.jpg"
   ],
   "estimateLow": 2000,
   "estimateHigh": 2200,

@@ -5,10 +5,7 @@
   "lotNumber": 201,
   "category": "jade",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/95848-2.59ct-green-jade---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95848_1-2.59ct-green-jade---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95848_2-2.59ct-green-jade---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95848_3-2.59ct-green-jade---diamond-ring.jpg"
+    "/images/products/95848_0.jpg"
   ],
   "estimateLow": 1600,
   "estimateHigh": 1800,

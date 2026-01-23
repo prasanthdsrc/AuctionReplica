@@ -5,10 +5,10 @@
   "lotNumber": 240,
   "category": "sapphire",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94525-1.94ct-sapphire---diamond-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94525_1-1.94ct-sapphire---diamond-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94525_2-1.94ct-sapphire---diamond-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94525_3-1.94ct-sapphire---diamond-pendant.jpg"
+    "/images/products/94525_0.jpg",
+    "/images/products/94525_1.jpg",
+    "/images/products/94525_2.jpg",
+    "/images/products/94525_3.jpg"
   ],
   "estimateLow": 2800,
   "estimateHigh": 3200,

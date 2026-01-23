@@ -5,10 +5,7 @@
   "lotNumber": 435,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97030-1.31ct-diamond-cluster-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97030_1-1.31ct-diamond-cluster-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97030_2-1.31ct-diamond-cluster-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97030_3-1.31ct-diamond-cluster-pendant.jpg"
+    "/images/products/97030_0.jpg"
   ],
   "estimateLow": 2000,
   "estimateHigh": 2200,

@@ -5,10 +5,10 @@
   "lotNumber": 426,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/92080-2.43ct-fancy-yellow---white-diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/92080_1-2.43ct-fancy-yellow---white-diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/92080_2-2.43ct-fancy-yellow---white-diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/92080_20-2.43ct-fancy-yellow---white-diamond-necklace.jpg"
+    "/images/products/92080_0.jpg",
+    "/images/products/92080_1.jpg",
+    "/images/products/92080_2.jpg",
+    "/images/products/92080_3.jpg"
   ],
   "estimateLow": 5500,
   "estimateHigh": 6000,

@@ -5,10 +5,7 @@
   "lotNumber": 343,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97332-hermes-kelly-clochette-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97332_1-hermes-kelly-clochette-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97332_2-hermes-kelly-clochette-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97332_20-hermes-kelly-clochette-diamond-earrings.jpg"
+    "/images/products/97332_0.jpg"
   ],
   "estimateLow": 5000,
   "estimateHigh": 5500,

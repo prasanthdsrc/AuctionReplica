@@ -5,10 +5,10 @@
   "lotNumber": 281,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94917-14.73ct-diamond-tennis-18ct-gold-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94917_1-14.73ct-diamond-tennis-18ct-gold-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94917_2-14.73ct-diamond-tennis-18ct-gold-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94917_20-14.73ct-diamond-tennis-18ct-gold-bracelet.jpg"
+    "/images/products/94917_0.jpg",
+    "/images/products/94917_1.jpg",
+    "/images/products/94917_2.jpg",
+    "/images/products/94917_3.jpg"
   ],
   "estimateLow": 25000,
   "estimateHigh": 27000,

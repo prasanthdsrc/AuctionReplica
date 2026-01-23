@@ -5,10 +5,7 @@
   "lotNumber": 401,
   "category": "sapphire",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98645-cartier-d-amour-bracelet-pink-sapphire.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98645_1-cartier-d-amour-bracelet-pink-sapphire.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98645_2-cartier-d-amour-bracelet-pink-sapphire.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98645_3-cartier-d-amour-bracelet-pink-sapphire.jpg"
+    "/images/products/98645_0.jpg"
   ],
   "estimateLow": 1000,
   "estimateHigh": 1200,

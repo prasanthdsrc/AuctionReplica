@@ -5,10 +5,7 @@
   "lotNumber": 368,
   "category": "sapphire",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97067-0.78ct-blue-sapphire---diamond-bracelet-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97067_1-0.78ct-blue-sapphire---diamond-bracelet-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97067_2-0.78ct-blue-sapphire---diamond-bracelet-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97067_3-0.78ct-blue-sapphire---diamond-bracelet-18ct-gold.jpg"
+    "/images/products/97067_0.jpg"
   ],
   "estimateLow": 1700,
   "estimateHigh": 2500,

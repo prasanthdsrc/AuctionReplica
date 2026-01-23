@@ -5,10 +5,7 @@
   "lotNumber": 306,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98225-argyle-origin-vivid-purplish-pink-diamond-gia-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98225_1-argyle-origin-vivid-purplish-pink-diamond-gia-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98225_19-argyle-origin-vivid-purplish-pink-diamond-gia-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98225_2-argyle-origin-vivid-purplish-pink-diamond-gia-gsl.jpg"
+    "/images/products/98225_0.jpg"
   ],
   "estimateLow": 11000,
   "estimateHigh": 13000,

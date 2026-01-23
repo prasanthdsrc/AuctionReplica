@@ -5,10 +5,7 @@
   "lotNumber": 414,
   "category": "gold-jewellery",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/96916-christian-dior-bois-de-rose-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96916_1-christian-dior-bois-de-rose-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96916_2-christian-dior-bois-de-rose-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96916_20-christian-dior-bois-de-rose-bracelet.jpg"
+    "/images/products/96916_0.jpg"
   ],
   "estimateLow": 5500,
   "estimateHigh": 6000,

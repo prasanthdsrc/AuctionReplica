@@ -5,10 +5,7 @@
   "lotNumber": 389,
   "category": "miscellaneous",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98135-citrine---0.07ct-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98135_1-citrine---0.07ct-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98135_2-citrine---0.07ct-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98135_3-citrine---0.07ct-diamond-ring.jpg"
+    "/images/products/98135_0.jpg"
   ],
   "estimateLow": 2500,
   "estimateHigh": 2700,

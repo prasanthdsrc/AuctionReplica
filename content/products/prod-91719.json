@@ -5,10 +5,10 @@
   "lotNumber": 144,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/91719-fancy-yellow---white-diamond-halo-ring-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91719_1-fancy-yellow---white-diamond-halo-ring-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91719_2-fancy-yellow---white-diamond-halo-ring-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91719_20-fancy-yellow---white-diamond-halo-ring-18ct-gold.jpg"
+    "/images/products/91719_0.jpg",
+    "/images/products/91719_1.jpg",
+    "/images/products/91719_2.jpg",
+    "/images/products/91719_3.jpg"
   ],
   "estimateLow": 2500,
   "estimateHigh": 3000,

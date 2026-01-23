@@ -5,10 +5,10 @@
   "lotNumber": 291,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/93735-0.99ct-diamond-18ct-gold-bracelet-19.3g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93735_1-0.99ct-diamond-18ct-gold-bracelet-19.3g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93735_2-0.99ct-diamond-18ct-gold-bracelet-19.3g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93735_20-0.99ct-diamond-18ct-gold-bracelet-19.3g.jpg"
+    "/images/products/93735_0.jpg",
+    "/images/products/93735_1.jpg",
+    "/images/products/93735_2.jpg",
+    "/images/products/93735_3.jpg"
   ],
   "estimateLow": 3800,
   "estimateHigh": 4200,

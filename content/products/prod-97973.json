@@ -5,10 +5,7 @@
   "lotNumber": 284,
   "category": "watches-mens",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97973-omega-speedmaster-broad-arrow-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97973_1-omega-speedmaster-broad-arrow-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97973_2-omega-speedmaster-broad-arrow-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97973_20-omega-speedmaster-broad-arrow-mens-watch.jpg"
+    "/images/products/97973_0.jpg"
   ],
   "estimateLow": 3700,
   "estimateHigh": 4000,

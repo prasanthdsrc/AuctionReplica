@@ -5,10 +5,7 @@
   "lotNumber": 145,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/96205-parcel-of-5-argyle-origin-pink-diamonds-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96205_1-parcel-of-5-argyle-origin-pink-diamonds-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96205_20-parcel-of-5-argyle-origin-pink-diamonds-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96205_3-parcel-of-5-argyle-origin-pink-diamonds-gsl.jpg"
+    "/images/products/96205_0.jpg"
   ],
   "estimateLow": 1200,
   "estimateHigh": 1600,

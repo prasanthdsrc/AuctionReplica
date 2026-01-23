@@ -5,10 +5,7 @@
   "lotNumber": 353,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98826-1.20ct-diamond-eternity-ring-21ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98826_1-1.20ct-diamond-eternity-ring-21ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98826_2-1.20ct-diamond-eternity-ring-21ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98826_3-1.20ct-diamond-eternity-ring-21ct-gold.jpg"
+    "/images/products/98826_0.jpg"
   ],
   "estimateLow": 1200,
   "estimateHigh": 1800,

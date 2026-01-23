@@ -5,10 +5,10 @@
   "lotNumber": 370,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94517-0.52ct-diamond-18ct-gold-bangle-16.9g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94517_1-0.52ct-diamond-18ct-gold-bangle-16.9g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94517_2-0.52ct-diamond-18ct-gold-bangle-16.9g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94517_20-0.52ct-diamond-18ct-gold-bangle-16.9g.jpg"
+    "/images/products/94517_0.jpg",
+    "/images/products/94517_1.jpg",
+    "/images/products/94517_2.jpg",
+    "/images/products/94517_3.jpg"
   ],
   "estimateLow": 3800,
   "estimateHigh": 4300,

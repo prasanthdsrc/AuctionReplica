@@ -5,10 +5,7 @@
   "lotNumber": 168,
   "category": "designer-bags",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98463-bottega-veneta-mini-loop-camera-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98463_1-bottega-veneta-mini-loop-camera-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98463_10-bottega-veneta-mini-loop-camera-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98463_11-bottega-veneta-mini-loop-camera-bag.jpg"
+    "/images/products/98463_0.jpg"
   ],
   "estimateLow": 1200,
   "estimateHigh": 1400,

@@ -5,10 +5,7 @@
   "lotNumber": 195,
   "category": "gold-jewellery",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98356-tiffany---co-elsa-peretti-bean-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98356_1-tiffany---co-elsa-peretti-bean-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98356_2-tiffany---co-elsa-peretti-bean-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98356_3-tiffany---co-elsa-peretti-bean-earrings.jpg"
+    "/images/products/98356_0.jpg"
   ],
   "estimateLow": 2000,
   "estimateHigh": 2200,

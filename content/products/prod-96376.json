@@ -5,10 +5,7 @@
   "lotNumber": 290,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/96376-0.04ct-argyle-origin-intense-purplish-pink-diamond-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96376_1-0.04ct-argyle-origin-intense-purplish-pink-diamond-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96376_2-0.04ct-argyle-origin-intense-purplish-pink-diamond-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96376_20-0.04ct-argyle-origin-intense-purplish-pink-diamond-gsl.jpg"
+    "/images/products/96376_0.jpg"
   ],
   "estimateLow": 3000,
   "estimateHigh": 3500,

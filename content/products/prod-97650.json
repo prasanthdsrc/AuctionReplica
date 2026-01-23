@@ -5,10 +5,7 @@
   "lotNumber": 424,
   "category": "ruby",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97650-0.02ct-ruby---0.90ct-diamond-bird-brooch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97650_1-0.02ct-ruby---0.90ct-diamond-bird-brooch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97650_2-0.02ct-ruby---0.90ct-diamond-bird-brooch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97650_3-0.02ct-ruby---0.90ct-diamond-bird-brooch.jpg"
+    "/images/products/97650_0.jpg"
   ],
   "estimateLow": 2400,
   "estimateHigh": 2700,

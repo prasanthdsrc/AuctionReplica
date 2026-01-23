@@ -5,10 +5,10 @@
   "lotNumber": 148,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/91444-2.00ct-diamond-solitaire-ring-gia-e-vs2.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91444_1-2.00ct-diamond-solitaire-ring-gia-e-vs2.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91444_2-2.00ct-diamond-solitaire-ring-gia-e-vs2.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91444_20-2.00ct-diamond-solitaire-ring-gia-e-vs2.jpg"
+    "/images/products/91444_0.jpg",
+    "/images/products/91444_1.jpg",
+    "/images/products/91444_2.jpg",
+    "/images/products/91444_3.jpg"
   ],
   "estimateLow": 25000,
   "estimateHigh": 27000,

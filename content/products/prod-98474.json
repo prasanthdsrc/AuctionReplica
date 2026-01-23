@@ -5,10 +5,7 @@
   "lotNumber": 242,
   "category": "tanzanite",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98474-1.47ct-tanzanite---diamond-ring-14ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98474_1-1.47ct-tanzanite---diamond-ring-14ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98474_2-1.47ct-tanzanite---diamond-ring-14ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98474_20-1.47ct-tanzanite---diamond-ring-14ct-gold.jpg"
+    "/images/products/98474_0.jpg"
   ],
   "estimateLow": 1000,
   "estimateHigh": 1200,

@@ -5,10 +5,7 @@
   "lotNumber": 355,
   "category": "emerald",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98776-5.02ct-zambian-emerald---diamond-ring-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98776_2-5.02ct-zambian-emerald---diamond-ring-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98776_20-5.02ct-zambian-emerald---diamond-ring-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98776_4-5.02ct-zambian-emerald---diamond-ring-gsl.jpg"
+    "/images/products/98776_0.jpg"
   ],
   "estimateLow": 2000,
   "estimateHigh": 3000,

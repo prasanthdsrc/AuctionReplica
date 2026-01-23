@@ -5,10 +5,7 @@
   "lotNumber": 228,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97997-0.58ct-diamond-solitaire-pendant-gia-d-vs1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97997_1-0.58ct-diamond-solitaire-pendant-gia-d-vs1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97997_19-0.58ct-diamond-solitaire-pendant-gia-d-vs1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97997_2-0.58ct-diamond-solitaire-pendant-gia-d-vs1.jpg"
+    "/images/products/97997_0.jpg"
   ],
   "estimateLow": 1900,
   "estimateHigh": 2100,

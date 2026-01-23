@@ -5,10 +5,7 @@
   "lotNumber": 152,
   "category": "gold-jewellery",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98366-bvlgari-b.zero1-four-band-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98366_1-bvlgari-b.zero1-four-band-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98366_2-bvlgari-b.zero1-four-band-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98366_3-bvlgari-b.zero1-four-band-ring.jpg"
+    "/images/products/98366_0.jpg"
   ],
   "estimateLow": 1300,
   "estimateHigh": 1500,

@@ -5,10 +5,7 @@
   "lotNumber": 190,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97969-1.61ct-loose-parcel-multicolour-diamond.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97969_1-1.61ct-loose-parcel-multicolour-diamond.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97969_2-1.61ct-loose-parcel-multicolour-diamond.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97969_3-1.61ct-loose-parcel-multicolour-diamond.jpg"
+    "/images/products/97969_0.jpg"
   ],
   "estimateLow": 1200,
   "estimateHigh": 1400,

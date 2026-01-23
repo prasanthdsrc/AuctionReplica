@@ -5,10 +5,7 @@
   "lotNumber": 237,
   "category": "watches-mens",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98697-cartier-pasha-seatimer-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98697_1-cartier-pasha-seatimer-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98697_2-cartier-pasha-seatimer-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98697_20-cartier-pasha-seatimer-mens-watch.jpg"
+    "/images/products/98697_0.jpg"
   ],
   "estimateLow": 3400,
   "estimateHigh": 3800,

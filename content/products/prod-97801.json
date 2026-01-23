@@ -5,10 +5,7 @@
   "lotNumber": 260,
   "category": "designer-bags",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97801-christian-dior-medium-toujours-all-black.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97801_1-christian-dior-medium-toujours-all-black.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97801_2-christian-dior-medium-toujours-all-black.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97801_20-christian-dior-medium-toujours-all-black.jpg"
+    "/images/products/97801_0.jpg"
   ],
   "estimateLow": 3500,
   "estimateHigh": 4000,

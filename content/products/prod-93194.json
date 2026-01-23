@@ -5,10 +5,10 @@
   "lotNumber": 342,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/93194-1.04ct-diamond-dress-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93194_1-1.04ct-diamond-dress-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93194_2-1.04ct-diamond-dress-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93194_3-1.04ct-diamond-dress-ring.jpg"
+    "/images/products/93194_0.jpg",
+    "/images/products/93194_1.jpg",
+    "/images/products/93194_2.jpg",
+    "/images/products/93194_3.jpg"
   ],
   "estimateLow": 1600,
   "estimateHigh": 1800,

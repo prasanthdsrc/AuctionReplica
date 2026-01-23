@@ -5,10 +5,7 @@
   "lotNumber": 208,
   "category": "gold-jewellery",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97685-bvlgari-b.zero1-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97685_1-bvlgari-b.zero1-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97685_2-bvlgari-b.zero1-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97685_3-bvlgari-b.zero1-necklace.jpg"
+    "/images/products/97685_0.jpg"
   ],
   "estimateLow": 2600,
   "estimateHigh": 2800,

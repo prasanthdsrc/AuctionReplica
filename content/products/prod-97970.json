@@ -5,10 +5,7 @@
   "lotNumber": 363,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97970-two-pinkish-purple-diamonds-totalling-0.46ct.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97970_1-two-pinkish-purple-diamonds-totalling-0.46ct.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97970_2-two-pinkish-purple-diamonds-totalling-0.46ct.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97970_20-two-pinkish-purple-diamonds-totalling-0.46ct.jpg"
+    "/images/products/97970_0.jpg"
   ],
   "estimateLow": 1000,
   "estimateHigh": 2000,

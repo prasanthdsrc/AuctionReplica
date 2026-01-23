@@ -5,10 +5,7 @@
   "lotNumber": 215,
   "category": "watches-midsize",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/95410-cartier-pasha-c-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95410_1-cartier-pasha-c-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95410_2-cartier-pasha-c-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95410_20-cartier-pasha-c-watch.jpg"
+    "/images/products/95410_0.jpg"
   ],
   "estimateLow": 2500,
   "estimateHigh": 3000,

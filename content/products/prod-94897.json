@@ -5,10 +5,10 @@
   "lotNumber": 227,
   "category": "watches-ladies",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94897-piaget-protocole-18ct-gold-diamond-watch-82.2g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94897_1-piaget-protocole-18ct-gold-diamond-watch-82.2g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94897_2-piaget-protocole-18ct-gold-diamond-watch-82.2g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94897_20-piaget-protocole-18ct-gold-diamond-watch-82.2g.jpg"
+    "/images/products/94897_0.jpg",
+    "/images/products/94897_1.jpg",
+    "/images/products/94897_2.jpg",
+    "/images/products/94897_3.jpg"
   ],
   "estimateLow": 28000,
   "estimateHigh": 32000,

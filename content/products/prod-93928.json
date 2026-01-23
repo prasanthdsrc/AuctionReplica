@@ -5,10 +5,10 @@
   "lotNumber": 420,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/93928-8.28ct-round-diamond-gold-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93928_1-8.28ct-round-diamond-gold-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93928_2-8.28ct-round-diamond-gold-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93928_20-8.28ct-round-diamond-gold-bracelet.jpg"
+    "/images/products/93928_0.jpg",
+    "/images/products/93928_1.jpg",
+    "/images/products/93928_2.jpg",
+    "/images/products/93928_3.jpg"
   ],
   "estimateLow": 9300,
   "estimateHigh": 10000,

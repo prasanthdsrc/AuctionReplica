@@ -5,10 +5,7 @@
   "lotNumber": 365,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98681-0.90ct-diamond-eternity-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98681_1-0.90ct-diamond-eternity-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98681_2-0.90ct-diamond-eternity-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98681_3-0.90ct-diamond-eternity-ring.jpg"
+    "/images/products/98681_0.jpg"
   ],
   "estimateLow": 1000,
   "estimateHigh": 1500,

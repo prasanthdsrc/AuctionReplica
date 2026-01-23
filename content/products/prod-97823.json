@@ -5,10 +5,7 @@
   "lotNumber": 345,
   "category": "designer-bags",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97823-hermes-click-16.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97823_1-hermes-click-16.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97823_10-hermes-click-16.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97823_11-hermes-click-16.jpg"
+    "/images/products/97823_0.jpg"
   ],
   "estimateLow": 2200,
   "estimateHigh": 2500,

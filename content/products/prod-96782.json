@@ -5,10 +5,7 @@
   "lotNumber": 380,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/96782-0.75ct-diamond-dress-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96782_1-0.75ct-diamond-dress-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96782_2-0.75ct-diamond-dress-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96782_3-0.75ct-diamond-dress-pendant.jpg"
+    "/images/products/96782_0.jpg"
   ],
   "estimateLow": 1200,
   "estimateHigh": 1400,

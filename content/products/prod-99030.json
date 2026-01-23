@@ -5,10 +5,7 @@
   "lotNumber": 410,
   "category": "opal",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/99030-9.12ct-boulder-opal---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99030_1-9.12ct-boulder-opal---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99030_2-9.12ct-boulder-opal---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99030_3-9.12ct-boulder-opal---diamond-ring.jpg"
+    "/images/products/99030_0.jpg"
   ],
   "estimateLow": 2700,
   "estimateHigh": 3000,

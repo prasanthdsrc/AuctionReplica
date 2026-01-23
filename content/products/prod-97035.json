@@ -5,10 +5,7 @@
   "lotNumber": 393,
   "category": "rings",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97035-0.93ct-ruby---diamond-mens-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97035_1-0.93ct-ruby---diamond-mens-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97035_2-0.93ct-ruby---diamond-mens-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97035_3-0.93ct-ruby---diamond-mens-ring.jpg"
+    "/images/products/97035_0.jpg"
   ],
   "estimateLow": 1400,
   "estimateHigh": 1600,

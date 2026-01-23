@@ -5,10 +5,7 @@
   "lotNumber": 377,
   "category": "watches-midsize",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/95962-chopard-classic-18ct-yellow-gold-watch-84g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95962_1-chopard-classic-18ct-yellow-gold-watch-84g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95962_2-chopard-classic-18ct-yellow-gold-watch-84g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95962_20-chopard-classic-18ct-yellow-gold-watch-84g.jpg"
+    "/images/products/95962_0.jpg"
   ],
   "estimateLow": 14000,
   "estimateHigh": 16000,

@@ -5,10 +5,7 @@
   "lotNumber": 379,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/95939-0.81ct-diamond---onyx-pendant-18ct-white-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95939_1-0.81ct-diamond---onyx-pendant-18ct-white-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95939_2-0.81ct-diamond---onyx-pendant-18ct-white-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95939_3-0.81ct-diamond---onyx-pendant-18ct-white-gold.jpg"
+    "/images/products/95939_0.jpg"
   ],
   "estimateLow": 2800,
   "estimateHigh": 3000,

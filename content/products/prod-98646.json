@@ -5,10 +5,7 @@
   "lotNumber": 262,
   "category": "gold-jewellery",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98646-le-must-de-cartier-trinity-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98646_1-le-must-de-cartier-trinity-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98646_2-le-must-de-cartier-trinity-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98646_3-le-must-de-cartier-trinity-ring.jpg"
+    "/images/products/98646_0.jpg"
   ],
   "estimateLow": 1600,
   "estimateHigh": 1800,

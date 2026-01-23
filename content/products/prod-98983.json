@@ -5,10 +5,7 @@
   "lotNumber": 403,
   "category": "ruby",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98983-3.08ct-ruby---1.07ct-diamond-bangle.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98983_1-3.08ct-ruby---1.07ct-diamond-bangle.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98983_2-3.08ct-ruby---1.07ct-diamond-bangle.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98983_20-3.08ct-ruby---1.07ct-diamond-bangle.jpg"
+    "/images/products/98983_0.jpg"
   ],
   "estimateLow": 5000,
   "estimateHigh": 5500,

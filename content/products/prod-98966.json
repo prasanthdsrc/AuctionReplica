@@ -5,10 +5,7 @@
   "lotNumber": 220,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98966-bvlgari-b.zero1-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98966_1-bvlgari-b.zero1-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98966_2-bvlgari-b.zero1-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98966_3-bvlgari-b.zero1-diamond-ring.jpg"
+    "/images/products/98966_0.jpg"
   ],
   "estimateLow": 2200,
   "estimateHigh": 2500,

@@ -5,10 +5,7 @@
   "lotNumber": 432,
   "category": "tanzanite",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/99445-4.51ct-loose-oval-tanzanite.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99445_1-4.51ct-loose-oval-tanzanite.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99445_2-4.51ct-loose-oval-tanzanite.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99445_3-4.51ct-loose-oval-tanzanite.jpg"
+    "/images/products/99445_0.jpg"
   ],
   "estimateLow": 1000,
   "estimateHigh": 1200,

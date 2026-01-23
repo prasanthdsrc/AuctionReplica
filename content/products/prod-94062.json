@@ -5,10 +5,10 @@
   "lotNumber": 187,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94062-0.81ct-emerald-cut-diamond-platinum-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94062_10-0.81ct-emerald-cut-diamond-platinum-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94062_11-0.81ct-emerald-cut-diamond-platinum-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94062_6-0.81ct-emerald-cut-diamond-platinum-pendant.jpg"
+    "/images/products/94062_0.jpg",
+    "/images/products/94062_1.jpg",
+    "/images/products/94062_2.jpg",
+    "/images/products/94062_3.jpg"
   ],
   "estimateLow": 2400,
   "estimateHigh": 2600,

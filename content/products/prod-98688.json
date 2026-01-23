@@ -5,10 +5,7 @@
   "lotNumber": 366,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98688-ring-semi-mount-with-diamond-set-shoulders.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98688_1-ring-semi-mount-with-diamond-set-shoulders.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98688_2-ring-semi-mount-with-diamond-set-shoulders.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98688_3-ring-semi-mount-with-diamond-set-shoulders.jpg"
+    "/images/products/98688_0.jpg"
   ],
   "estimateLow": 1800,
   "estimateHigh": 2500,

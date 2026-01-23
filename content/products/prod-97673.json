@@ -5,10 +5,7 @@
   "lotNumber": 369,
   "category": "gold-jewellery",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97673-cartier-le-baiser-du-dragon-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97673_1-cartier-le-baiser-du-dragon-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97673_2-cartier-le-baiser-du-dragon-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97673_20-cartier-le-baiser-du-dragon-ring.jpg"
+    "/images/products/97673_0.jpg"
   ],
   "estimateLow": 4000,
   "estimateHigh": 4500,

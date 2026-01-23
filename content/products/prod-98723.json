@@ -5,10 +5,7 @@
   "lotNumber": 300,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98723-rose-design-diamond-ring-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98723_1-rose-design-diamond-ring-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98723_2-rose-design-diamond-ring-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98723_3-rose-design-diamond-ring-18ct-gold.jpg"
+    "/images/products/98723_0.jpg"
   ],
   "estimateLow": 1200,
   "estimateHigh": 1800,

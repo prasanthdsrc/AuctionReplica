@@ -5,10 +5,7 @@
   "lotNumber": 233,
   "category": "designer-bags",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98438-christian-dior-small-abcdior.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98438_17-christian-dior-small-abcdior.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98438_18-christian-dior-small-abcdior.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98438_19-christian-dior-small-abcdior.jpg"
+    "/images/products/98438_0.jpg"
   ],
   "estimateLow": 3200,
   "estimateHigh": 3500,

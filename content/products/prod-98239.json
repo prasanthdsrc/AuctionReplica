@@ -5,10 +5,7 @@
   "lotNumber": 384,
   "category": "topaz",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98239-topaz---diamond-pendant-18ct-white-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98239_1-topaz---diamond-pendant-18ct-white-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98239_2-topaz---diamond-pendant-18ct-white-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98239_3-topaz---diamond-pendant-18ct-white-gold.jpg"
+    "/images/products/98239_0.jpg"
   ],
   "estimateLow": 2700,
   "estimateHigh": 3700,

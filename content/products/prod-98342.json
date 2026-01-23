@@ -5,10 +5,7 @@
   "lotNumber": 386,
   "category": "sapphire",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98342-loose-4.28ct-ceylon-sapphire-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98342_1-loose-4.28ct-ceylon-sapphire-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98342_2-loose-4.28ct-ceylon-sapphire-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98342_20-loose-4.28ct-ceylon-sapphire-gsl.jpg"
+    "/images/products/98342_0.jpg"
   ],
   "estimateLow": 3800,
   "estimateHigh": 4000,

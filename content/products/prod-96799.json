@@ -5,10 +5,7 @@
   "lotNumber": 140,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/96799-0.17ct-argyle-origin-pink-diamond-ring-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96799_1-0.17ct-argyle-origin-pink-diamond-ring-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96799_2-0.17ct-argyle-origin-pink-diamond-ring-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96799_20-0.17ct-argyle-origin-pink-diamond-ring-gsl.jpg"
+    "/images/products/96799_0.jpg"
   ],
   "estimateLow": 5000,
   "estimateHigh": 5500,

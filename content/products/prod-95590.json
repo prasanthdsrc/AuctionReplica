@@ -5,10 +5,7 @@
   "lotNumber": 230,
   "category": "miscellaneous",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/95590-2.55ct-morganite---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95590_1-2.55ct-morganite---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95590_2-2.55ct-morganite---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95590_3-2.55ct-morganite---diamond-ring.jpg"
+    "/images/products/95590_0.jpg"
   ],
   "estimateLow": 1200,
   "estimateHigh": 1400,

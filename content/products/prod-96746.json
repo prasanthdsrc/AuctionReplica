@@ -5,10 +5,7 @@
   "lotNumber": 292,
   "category": "designer-bags",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/96746-saint-laurent-nano-sac-de-jour.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96746_1-saint-laurent-nano-sac-de-jour.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96746_10-saint-laurent-nano-sac-de-jour.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96746_15-saint-laurent-nano-sac-de-jour.jpg"
+    "/images/products/96746_0.jpg"
   ],
   "estimateLow": 2000,
   "estimateHigh": 2200,

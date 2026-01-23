@@ -5,10 +5,10 @@
   "lotNumber": 226,
   "category": "miscellaneous",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94226-0.44ct-brazilian-alexandrite---diamond-pendant-gia.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94226_1-0.44ct-brazilian-alexandrite---diamond-pendant-gia.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94226_2-0.44ct-brazilian-alexandrite---diamond-pendant-gia.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94226_20-0.44ct-brazilian-alexandrite---diamond-pendant-gia.jpg"
+    "/images/products/94226_0.jpg",
+    "/images/products/94226_1.jpg",
+    "/images/products/94226_2.jpg",
+    "/images/products/94226_3.jpg"
   ],
   "estimateLow": 2400,
   "estimateHigh": 2600,

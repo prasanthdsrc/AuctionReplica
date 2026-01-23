@@ -5,10 +5,7 @@
   "lotNumber": 406,
   "category": "ruby",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98388-ruby--emerald---diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98388_1-ruby--emerald---diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98388_2-ruby--emerald---diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98388_20-ruby--emerald---diamond-necklace.jpg"
+    "/images/products/98388_0.jpg"
   ],
   "estimateLow": 7000,
   "estimateHigh": 7500,

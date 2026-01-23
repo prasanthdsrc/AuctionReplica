@@ -5,10 +5,7 @@
   "lotNumber": 213,
   "category": "ruby",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97656-3.25ct-ruby---1.05ct-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97656_1-3.25ct-ruby---1.05ct-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97656_2-3.25ct-ruby---1.05ct-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97656_3-3.25ct-ruby---1.05ct-diamond-earrings.jpg"
+    "/images/products/97656_0.jpg"
   ],
   "estimateLow": 2500,
   "estimateHigh": 2700,

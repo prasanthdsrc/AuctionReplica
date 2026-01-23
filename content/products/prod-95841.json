@@ -5,10 +5,7 @@
   "lotNumber": 321,
   "category": "jade",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/95841-7.00ct-green-jade---diamond-platinum-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95841_1-7.00ct-green-jade---diamond-platinum-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95841_2-7.00ct-green-jade---diamond-platinum-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95841_3-7.00ct-green-jade---diamond-platinum-ring.jpg"
+    "/images/products/95841_0.jpg"
   ],
   "estimateLow": 3000,
   "estimateHigh": 3500,

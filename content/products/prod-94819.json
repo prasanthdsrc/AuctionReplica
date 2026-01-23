@@ -5,10 +5,10 @@
   "lotNumber": 372,
   "category": "opal",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94819-7.65ct-black-opal---diamond-ring-gia.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94819_1-7.65ct-black-opal---diamond-ring-gia.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94819_2-7.65ct-black-opal---diamond-ring-gia.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94819_20-7.65ct-black-opal---diamond-ring-gia.jpg"
+    "/images/products/94819_0.jpg",
+    "/images/products/94819_1.jpg",
+    "/images/products/94819_2.jpg",
+    "/images/products/94819_3.jpg"
   ],
   "estimateLow": 8000,
   "estimateHigh": 9000,

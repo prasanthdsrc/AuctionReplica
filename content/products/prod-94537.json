@@ -5,10 +5,10 @@
   "lotNumber": 337,
   "category": "rings",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94537-1.01ct-diamond-mens-ring--18ct-13-grams.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94537_1-1.01ct-diamond-mens-ring--18ct-13-grams.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94537_2-1.01ct-diamond-mens-ring--18ct-13-grams.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94537_3-1.01ct-diamond-mens-ring--18ct-13-grams.jpg"
+    "/images/products/94537_0.jpg",
+    "/images/products/94537_1.jpg",
+    "/images/products/94537_2.jpg",
+    "/images/products/94537_3.jpg"
   ],
   "estimateLow": 2800,
   "estimateHigh": 3200,

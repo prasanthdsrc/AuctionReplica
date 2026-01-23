@@ -5,10 +5,10 @@
   "lotNumber": 416,
   "category": "miscellaneous",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94259-centre-27.14ct-amethyst-pendant-18ct-white-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94259_1-centre-27.14ct-amethyst-pendant-18ct-white-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94259_2-centre-27.14ct-amethyst-pendant-18ct-white-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94259_3-centre-27.14ct-amethyst-pendant-18ct-white-gold.jpg"
+    "/images/products/94259_0.jpg",
+    "/images/products/94259_1.jpg",
+    "/images/products/94259_2.jpg",
+    "/images/products/94259_3.jpg"
   ],
   "estimateLow": 3000,
   "estimateHigh": 3300,

@@ -5,10 +5,7 @@
   "lotNumber": 181,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98317-bvlgari-b.zero-1-diamond-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98317_1-bvlgari-b.zero-1-diamond-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98317_2-bvlgari-b.zero-1-diamond-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98317_20-bvlgari-b.zero-1-diamond-pendant.jpg"
+    "/images/products/98317_0.jpg"
   ],
   "estimateLow": 4000,
   "estimateHigh": 4500,

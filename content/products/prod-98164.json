@@ -5,10 +5,7 @@
   "lotNumber": 352,
   "category": "pearl",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98164-baroque-pearl--sapphire---diamond-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98164_1-baroque-pearl--sapphire---diamond-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98164_2-baroque-pearl--sapphire---diamond-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98164_3-baroque-pearl--sapphire---diamond-pendant.jpg"
+    "/images/products/98164_0.jpg"
   ],
   "estimateLow": 2500,
   "estimateHigh": 2800,

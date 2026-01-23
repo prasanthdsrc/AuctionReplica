@@ -5,10 +5,10 @@
   "lotNumber": 405,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94780-5.00ct-diamond-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94780_1-5.00ct-diamond-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94780_2-5.00ct-diamond-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94780_20-5.00ct-diamond-bracelet.jpg"
+    "/images/products/94780_0.jpg",
+    "/images/products/94780_1.jpg",
+    "/images/products/94780_2.jpg",
+    "/images/products/94780_3.jpg"
   ],
   "estimateLow": 4500,
   "estimateHigh": 5500,

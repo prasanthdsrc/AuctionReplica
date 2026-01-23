@@ -5,10 +5,7 @@
   "lotNumber": 255,
   "category": "watches-mens",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97837-rolex-explorer-ii-mens-watch-226570.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97837_1-rolex-explorer-ii-mens-watch-226570.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97837_2-rolex-explorer-ii-mens-watch-226570.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97837_20-rolex-explorer-ii-mens-watch-226570.jpg"
+    "/images/products/97837_0.jpg"
   ],
   "estimateLow": 15000,
   "estimateHigh": 16000,

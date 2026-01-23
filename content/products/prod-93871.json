@@ -5,10 +5,10 @@
   "lotNumber": 422,
   "category": "watches-mens",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/93871-raymond-weil-freelancer-gmt-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93871_1-raymond-weil-freelancer-gmt-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93871_2-raymond-weil-freelancer-gmt-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93871_3-raymond-weil-freelancer-gmt-mens-watch.jpg"
+    "/images/products/93871_0.jpg",
+    "/images/products/93871_1.jpg",
+    "/images/products/93871_2.jpg",
+    "/images/products/93871_3.jpg"
   ],
   "estimateLow": 2300,
   "estimateHigh": 2500,

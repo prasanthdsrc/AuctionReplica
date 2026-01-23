@@ -5,10 +5,7 @@
   "lotNumber": 250,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/96637-0.43ct-diamond-studs.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96637_1-0.43ct-diamond-studs.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96637_2-0.43ct-diamond-studs.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96637_3-0.43ct-diamond-studs.jpg"
+    "/images/products/96637_0.jpg"
   ],
   "estimateLow": 850,
   "estimateHigh": 950,

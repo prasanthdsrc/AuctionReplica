@@ -5,10 +5,10 @@
   "lotNumber": 203,
   "category": "miscellaneous",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94837-0.65ct-alexandrite---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94837_1-0.65ct-alexandrite---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94837_2-0.65ct-alexandrite---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94837_20-0.65ct-alexandrite---diamond-ring.jpg"
+    "/images/products/94837_0.jpg",
+    "/images/products/94837_1.jpg",
+    "/images/products/94837_2.jpg",
+    "/images/products/94837_3.jpg"
   ],
   "estimateLow": 3300,
   "estimateHigh": 3800,

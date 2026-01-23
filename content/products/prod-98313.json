@@ -5,10 +5,7 @@
   "lotNumber": 179,
   "category": "gold-jewellery",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98313-cartier-love-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98313_1-cartier-love-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98313_2-cartier-love-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98313_3-cartier-love-ring.jpg"
+    "/images/products/98313_0.jpg"
   ],
   "estimateLow": 1500,
   "estimateHigh": 1700,

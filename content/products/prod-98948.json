@@ -5,10 +5,7 @@
   "lotNumber": 137,
   "category": "watches-midsize",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98948-longines-master-collection-with-diamond-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98948_1-longines-master-collection-with-diamond-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98948_10-longines-master-collection-with-diamond-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98948_11-longines-master-collection-with-diamond-watch.jpg"
+    "/images/products/98948_0.jpg"
   ],
   "estimateLow": 1800,
   "estimateHigh": 2000,

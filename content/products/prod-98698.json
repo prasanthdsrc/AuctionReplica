@@ -5,10 +5,7 @@
   "lotNumber": 206,
   "category": "watches-mens",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98698-panerai-luminor-base-logo-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98698_1-panerai-luminor-base-logo-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98698_2-panerai-luminor-base-logo-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98698_20-panerai-luminor-base-logo-mens-watch.jpg"
+    "/images/products/98698_0.jpg"
   ],
   "estimateLow": 4500,
   "estimateHigh": 5000,

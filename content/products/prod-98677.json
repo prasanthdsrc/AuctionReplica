@@ -5,10 +5,7 @@
   "lotNumber": 160,
   "category": "miscellaneous",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98677-quartz--topaz---diamond-cat-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98677_1-quartz--topaz---diamond-cat-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98677_2-quartz--topaz---diamond-cat-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98677_3-quartz--topaz---diamond-cat-necklace.jpg"
+    "/images/products/98677_0.jpg"
   ],
   "estimateLow": 3000,
   "estimateHigh": 4000,

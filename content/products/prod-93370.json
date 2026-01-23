@@ -5,10 +5,10 @@
   "lotNumber": 415,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/93370-3.00ct-diamond-tennis-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93370_1-3.00ct-diamond-tennis-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93370_2-3.00ct-diamond-tennis-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93370_20-3.00ct-diamond-tennis-necklace.jpg"
+    "/images/products/93370_0.jpg",
+    "/images/products/93370_1.jpg",
+    "/images/products/93370_2.jpg",
+    "/images/products/93370_3.jpg"
   ],
   "estimateLow": 6000,
   "estimateHigh": 6500,

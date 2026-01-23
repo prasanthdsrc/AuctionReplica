@@ -5,10 +5,7 @@
   "lotNumber": 360,
   "category": "pearl",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/95469-tiffany---co.-sprinkle-by-the-yard-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95469_1-tiffany---co.-sprinkle-by-the-yard-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95469_2-tiffany---co.-sprinkle-by-the-yard-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95469_20-tiffany---co.-sprinkle-by-the-yard-necklace.jpg"
+    "/images/products/95469_0.jpg"
   ],
   "estimateLow": 4100,
   "estimateHigh": 4500,

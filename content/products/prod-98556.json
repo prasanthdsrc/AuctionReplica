@@ -5,10 +5,7 @@
   "lotNumber": 219,
   "category": "topaz",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98556-topaz---0.96ct-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98556_4-topaz---0.96ct-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98556_5-topaz---0.96ct-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98556_6-topaz---0.96ct-diamond-earrings.jpg"
+    "/images/products/98556_0.jpg"
   ],
   "estimateLow": 2000,
   "estimateHigh": 3000,

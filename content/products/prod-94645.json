@@ -5,10 +5,10 @@
   "lotNumber": 180,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94645-1.37ct-diamond-solitaire-ring-gsl-j-si1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94645_1-1.37ct-diamond-solitaire-ring-gsl-j-si1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94645_2-1.37ct-diamond-solitaire-ring-gsl-j-si1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94645_20-1.37ct-diamond-solitaire-ring-gsl-j-si1.jpg"
+    "/images/products/94645_0.jpg",
+    "/images/products/94645_1.jpg",
+    "/images/products/94645_2.jpg",
+    "/images/products/94645_3.jpg"
   ],
   "estimateLow": 4300,
   "estimateHigh": 4800,

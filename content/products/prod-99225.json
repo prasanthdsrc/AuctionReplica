@@ -5,10 +5,7 @@
   "lotNumber": 418,
   "category": "gold-jewellery",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/99225-louis-vuitton-empreinte-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99225_1-louis-vuitton-empreinte-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99225_2-louis-vuitton-empreinte-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99225_3-louis-vuitton-empreinte-pendant.jpg"
+    "/images/products/99225_0.jpg"
   ],
   "estimateLow": 1700,
   "estimateHigh": 1900,

@@ -5,10 +5,7 @@
   "lotNumber": 331,
   "category": "designer-bags",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98460-fendi-selleria-baguette-shoulder-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98460_1-fendi-selleria-baguette-shoulder-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98460_2-fendi-selleria-baguette-shoulder-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98460_20-fendi-selleria-baguette-shoulder-bag.jpg"
+    "/images/products/98460_0.jpg"
   ],
   "estimateLow": 1700,
   "estimateHigh": 2000,

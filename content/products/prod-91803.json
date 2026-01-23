@@ -5,10 +5,10 @@
   "lotNumber": 269,
   "category": "ruby",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/91803-2.31ct-gia-certified-ruby---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91803_1-2.31ct-gia-certified-ruby---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91803_2-2.31ct-gia-certified-ruby---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91803_20-2.31ct-gia-certified-ruby---diamond-ring.jpg"
+    "/images/products/91803_0.jpg",
+    "/images/products/91803_1.jpg",
+    "/images/products/91803_2.jpg",
+    "/images/products/91803_3.jpg"
   ],
   "estimateLow": 9000,
   "estimateHigh": 10000,

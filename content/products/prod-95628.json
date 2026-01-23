@@ -5,10 +5,7 @@
   "lotNumber": 204,
   "category": "tanzanite",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/95628-35.65ct-tanzanite---1.77ct-diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95628_1-35.65ct-tanzanite---1.77ct-diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95628_2-35.65ct-tanzanite---1.77ct-diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95628_20-35.65ct-tanzanite---1.77ct-diamond-necklace.jpg"
+    "/images/products/95628_0.jpg"
   ],
   "estimateLow": 10000,
   "estimateHigh": 11000,

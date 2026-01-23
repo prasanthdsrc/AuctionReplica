@@ -5,10 +5,7 @@
   "lotNumber": 315,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98304-0.93ct-loose-diamond.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98304_10-0.93ct-loose-diamond.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98304_11-0.93ct-loose-diamond.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98304_2-0.93ct-loose-diamond.jpg"
+    "/images/products/98304_0.jpg"
   ],
   "estimateLow": 1000,
   "estimateHigh": 1400,

@@ -5,10 +5,7 @@
   "lotNumber": 205,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98604-1.04ct-diamond-studs-gia-d-e-si1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98604_1-1.04ct-diamond-studs-gia-d-e-si1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98604_19-1.04ct-diamond-studs-gia-d-e-si1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98604_2-1.04ct-diamond-studs-gia-d-e-si1.jpg"
+    "/images/products/98604_0.jpg"
   ],
   "estimateLow": 2200,
   "estimateHigh": 2500,

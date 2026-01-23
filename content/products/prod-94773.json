@@ -5,10 +5,10 @@
   "lotNumber": 376,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94773-4.91ct-diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94773_1-4.91ct-diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94773_2-4.91ct-diamond-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94773_20-4.91ct-diamond-necklace.jpg"
+    "/images/products/94773_0.jpg",
+    "/images/products/94773_1.jpg",
+    "/images/products/94773_2.jpg",
+    "/images/products/94773_3.jpg"
   ],
   "estimateLow": 5600,
   "estimateHigh": 6300,

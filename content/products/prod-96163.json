@@ -5,10 +5,7 @@
   "lotNumber": 302,
   "category": "sapphire",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/96163-0.72ct-sapphire---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96163_1-0.72ct-sapphire---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96163_2-0.72ct-sapphire---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96163_3-0.72ct-sapphire---diamond-ring.jpg"
+    "/images/products/96163_0.jpg"
   ],
   "estimateLow": 1600,
   "estimateHigh": 1800,

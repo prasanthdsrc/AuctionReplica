@@ -5,10 +5,7 @@
   "lotNumber": 163,
   "category": "gold-jewellery",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98321-gucci-icon-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98321_3-gucci-icon-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98321_4-gucci-icon-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98321_5-gucci-icon-necklace.jpg"
+    "/images/products/98321_0.jpg"
   ],
   "estimateLow": 1500,
   "estimateHigh": 1700,

@@ -5,10 +5,7 @@
   "lotNumber": 341,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/96838-1.16ct-diamond-dress-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96838_1-1.16ct-diamond-dress-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96838_2-1.16ct-diamond-dress-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96838_3-1.16ct-diamond-dress-earrings.jpg"
+    "/images/products/96838_0.jpg"
   ],
   "estimateLow": 1600,
   "estimateHigh": 1800,

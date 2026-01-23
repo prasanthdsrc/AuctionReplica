@@ -5,10 +5,7 @@
   "lotNumber": 183,
   "category": "ruby",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/95878-1.00ct-ruby---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95878_1-1.00ct-ruby---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95878_2-1.00ct-ruby---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95878_3-1.00ct-ruby---diamond-ring.jpg"
+    "/images/products/95878_0.jpg"
   ],
   "estimateLow": 2800,
   "estimateHigh": 3000,

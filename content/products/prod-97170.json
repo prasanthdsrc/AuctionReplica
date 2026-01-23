@@ -5,10 +5,7 @@
   "lotNumber": 325,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97170-0.50ct-diamond-dress-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97170_1-0.50ct-diamond-dress-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97170_2-0.50ct-diamond-dress-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97170_3-0.50ct-diamond-dress-earrings.jpg"
+    "/images/products/97170_0.jpg"
   ],
   "estimateLow": 2200,
   "estimateHigh": 2400,

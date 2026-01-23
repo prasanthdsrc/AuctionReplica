@@ -5,10 +5,7 @@
   "lotNumber": 211,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98962-tiffany---co.-victoria-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98962_1-tiffany---co.-victoria-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98962_2-tiffany---co.-victoria-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98962_3-tiffany---co.-victoria-diamond-ring.jpg"
+    "/images/products/98962_0.jpg"
   ],
   "estimateLow": 1200,
   "estimateHigh": 1400,

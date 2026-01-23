@@ -5,10 +5,7 @@
   "lotNumber": 336,
   "category": "designer-bags",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97819-hermes-cabasellier-31-tote.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97819_1-hermes-cabasellier-31-tote.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97819_2-hermes-cabasellier-31-tote.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97819_20-hermes-cabasellier-31-tote.jpg"
+    "/images/products/97819_0.jpg"
   ],
   "estimateLow": 3100,
   "estimateHigh": 3300,

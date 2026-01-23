@@ -5,10 +5,10 @@
   "lotNumber": 277,
   "category": "ruby",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94813-7.40ct-ruby---diamond-bracelet-18ct-gold-17g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94813_1-7.40ct-ruby---diamond-bracelet-18ct-gold-17g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94813_2-7.40ct-ruby---diamond-bracelet-18ct-gold-17g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94813_20-7.40ct-ruby---diamond-bracelet-18ct-gold-17g.jpg"
+    "/images/products/94813_0.jpg",
+    "/images/products/94813_1.jpg",
+    "/images/products/94813_2.jpg",
+    "/images/products/94813_3.jpg"
   ],
   "estimateLow": 4200,
   "estimateHigh": 4600,

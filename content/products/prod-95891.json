@@ -5,10 +5,7 @@
   "lotNumber": 221,
   "category": "pearl",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/95891-16.3mm-tahitian-pearl---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95891_1-16.3mm-tahitian-pearl---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95891_2-16.3mm-tahitian-pearl---diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95891_3-16.3mm-tahitian-pearl---diamond-ring.jpg"
+    "/images/products/95891_0.jpg"
   ],
   "estimateLow": 2600,
   "estimateHigh": 3000,

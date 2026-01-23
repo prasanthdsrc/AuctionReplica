@@ -5,10 +5,7 @@
   "lotNumber": 165,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98717-1.30ct-cerrone-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98717_1-1.30ct-cerrone-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98717_2-1.30ct-cerrone-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98717_20-1.30ct-cerrone-diamond-ring.jpg"
+    "/images/products/98717_0.jpg"
   ],
   "estimateLow": 1800,
   "estimateHigh": 2400,

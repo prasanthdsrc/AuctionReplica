@@ -5,10 +5,7 @@
   "lotNumber": 175,
   "category": "designer-bags",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98777-saint-laurent-paris-baby-downtown-cabas.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98777_15-saint-laurent-paris-baby-downtown-cabas.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98777_16-saint-laurent-paris-baby-downtown-cabas.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98777_17-saint-laurent-paris-baby-downtown-cabas.jpg"
+    "/images/products/98777_0.jpg"
   ],
   "estimateLow": 1500,
   "estimateHigh": 1700,

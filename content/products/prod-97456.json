@@ -5,10 +5,7 @@
   "lotNumber": 323,
   "category": "gold-jewellery",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97456-tiffany---co-cuff-bangle-55.8g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97456_1-tiffany---co-cuff-bangle-55.8g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97456_2-tiffany---co-cuff-bangle-55.8g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97456_20-tiffany---co-cuff-bangle-55.8g.jpg"
+    "/images/products/97456_0.jpg"
   ],
   "estimateLow": 12000,
   "estimateHigh": 13000,

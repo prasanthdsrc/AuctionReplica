@@ -5,10 +5,7 @@
   "lotNumber": 263,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98673-1.24ct-diamond-eternity-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98673_1-1.24ct-diamond-eternity-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98673_2-1.24ct-diamond-eternity-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98673_3-1.24ct-diamond-eternity-ring.jpg"
+    "/images/products/98673_0.jpg"
   ],
   "estimateLow": 1300,
   "estimateHigh": 1800,

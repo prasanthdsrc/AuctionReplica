@@ -5,10 +5,10 @@
   "lotNumber": 383,
   "category": "ruby",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94854-1.50ct-ruby---3.50ct-diamond-18ct-gold-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94854_1-1.50ct-ruby---3.50ct-diamond-18ct-gold-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94854_2-1.50ct-ruby---3.50ct-diamond-18ct-gold-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94854_20-1.50ct-ruby---3.50ct-diamond-18ct-gold-necklace.jpg"
+    "/images/products/94854_0.jpg",
+    "/images/products/94854_1.jpg",
+    "/images/products/94854_2.jpg",
+    "/images/products/94854_3.jpg"
   ],
   "estimateLow": 9000,
   "estimateHigh": 10000,

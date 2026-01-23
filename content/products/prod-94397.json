@@ -5,10 +5,10 @@
   "lotNumber": 388,
   "category": "designer-bags",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/94397-louis-vuitton-vernis-alma-bb.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94397_1-louis-vuitton-vernis-alma-bb.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94397_15-louis-vuitton-vernis-alma-bb.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/94397_17-louis-vuitton-vernis-alma-bb.jpg"
+    "/images/products/94397_0.jpg",
+    "/images/products/94397_1.jpg",
+    "/images/products/94397_2.jpg",
+    "/images/products/94397_3.jpg"
   ],
   "estimateLow": 1500,
   "estimateHigh": 1800,

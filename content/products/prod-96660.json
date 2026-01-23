@@ -5,10 +5,7 @@
   "lotNumber": 317,
   "category": "gold-jewellery",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/96660-louis-vuitton-idylle-blossom-monogram-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96660_1-louis-vuitton-idylle-blossom-monogram-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96660_2-louis-vuitton-idylle-blossom-monogram-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96660_3-louis-vuitton-idylle-blossom-monogram-bracelet.jpg"
+    "/images/products/96660_0.jpg"
   ],
   "estimateLow": 3200,
   "estimateHigh": 3500,

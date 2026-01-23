@@ -5,10 +5,7 @@
   "lotNumber": 272,
   "category": "gold-jewellery",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98687-18ct-gold-curb-link-chain-11.6g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98687_1-18ct-gold-curb-link-chain-11.6g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98687_2-18ct-gold-curb-link-chain-11.6g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98687_3-18ct-gold-curb-link-chain-11.6g.jpg"
+    "/images/products/98687_0.jpg"
   ],
   "estimateLow": 1600,
   "estimateHigh": 2100,

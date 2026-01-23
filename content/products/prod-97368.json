@@ -5,10 +5,7 @@
   "lotNumber": 346,
   "category": "watches-ladies",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97368-franck-muller-tonneau-curvex-ladies-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97368_1-franck-muller-tonneau-curvex-ladies-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97368_2-franck-muller-tonneau-curvex-ladies-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97368_20-franck-muller-tonneau-curvex-ladies-watch.jpg"
+    "/images/products/97368_0.jpg"
   ],
   "estimateLow": 2300,
   "estimateHigh": 2500,

@@ -5,10 +5,7 @@
   "lotNumber": 223,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/96620-3.51ct-diamond-trilogy-ring-gia-h-i-si.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96620_1-3.51ct-diamond-trilogy-ring-gia-h-i-si.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96620_18-3.51ct-diamond-trilogy-ring-gia-h-i-si.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/96620_19-3.51ct-diamond-trilogy-ring-gia-h-i-si.jpg"
+    "/images/products/96620_0.jpg"
   ],
   "estimateLow": 12500,
   "estimateHigh": 13500,

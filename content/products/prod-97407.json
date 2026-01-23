@@ -5,10 +5,7 @@
   "lotNumber": 212,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97407-3.96ct-diamond-tennis-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97407_1-3.96ct-diamond-tennis-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97407_2-3.96ct-diamond-tennis-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97407_20-3.96ct-diamond-tennis-bracelet.jpg"
+    "/images/products/97407_0.jpg"
   ],
   "estimateLow": 6000,
   "estimateHigh": 6500,

@@ -5,10 +5,10 @@
   "lotNumber": 184,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/93900-2.66ct-diamond-butterfly-bracelet-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93900_10-2.66ct-diamond-butterfly-bracelet-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93900_11-2.66ct-diamond-butterfly-bracelet-18ct-gold.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93900_12-2.66ct-diamond-butterfly-bracelet-18ct-gold.jpg"
+    "/images/products/93900_0.jpg",
+    "/images/products/93900_1.jpg",
+    "/images/products/93900_2.jpg",
+    "/images/products/93900_3.jpg"
   ],
   "estimateLow": 3800,
   "estimateHigh": 4000,

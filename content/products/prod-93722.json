@@ -5,10 +5,10 @@
   "lotNumber": 425,
   "category": "emerald",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/93722-emerald---diamond-necklace-18ct-gold-34.5g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93722_1-emerald---diamond-necklace-18ct-gold-34.5g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93722_2-emerald---diamond-necklace-18ct-gold-34.5g.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/93722_20-emerald---diamond-necklace-18ct-gold-34.5g.jpg"
+    "/images/products/93722_0.jpg",
+    "/images/products/93722_1.jpg",
+    "/images/products/93722_2.jpg",
+    "/images/products/93722_3.jpg"
   ],
   "estimateLow": 6300,
   "estimateHigh": 7000,

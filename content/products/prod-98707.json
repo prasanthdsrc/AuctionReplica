@@ -5,10 +5,7 @@
   "lotNumber": 313,
   "category": "watches-ladies",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98707-hermes-cape-cod-small-model-ladies-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98707_1-hermes-cape-cod-small-model-ladies-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98707_2-hermes-cape-cod-small-model-ladies-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98707_20-hermes-cape-cod-small-model-ladies-watch.jpg"
+    "/images/products/98707_0.jpg"
   ],
   "estimateLow": 1900,
   "estimateHigh": 2400,

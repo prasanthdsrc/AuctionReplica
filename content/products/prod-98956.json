@@ -5,10 +5,7 @@
   "lotNumber": 162,
   "category": "watches-mens",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98956-tag-heuer-aquaracer-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98956_1-tag-heuer-aquaracer-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98956_2-tag-heuer-aquaracer-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98956_20-tag-heuer-aquaracer-mens-watch.jpg"
+    "/images/products/98956_0.jpg"
   ],
   "estimateLow": 1600,
   "estimateHigh": 1800,

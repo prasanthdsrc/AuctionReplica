@@ -5,10 +5,10 @@
   "lotNumber": 400,
   "category": "designer-bags",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/92294-goyard-plumet-pocket-wallet-crossbody-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/92294_10-goyard-plumet-pocket-wallet-crossbody-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/92294_11-goyard-plumet-pocket-wallet-crossbody-bag.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/92294_12-goyard-plumet-pocket-wallet-crossbody-bag.jpg"
+    "/images/products/92294_0.jpg",
+    "/images/products/92294_1.jpg",
+    "/images/products/92294_2.jpg",
+    "/images/products/92294_3.jpg"
   ],
   "estimateLow": 1350,
   "estimateHigh": 1650,

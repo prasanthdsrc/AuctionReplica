@@ -5,10 +5,7 @@
   "lotNumber": 338,
   "category": "watches-ladies",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97942-omega-constellation-ladies-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97942_1-omega-constellation-ladies-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97942_2-omega-constellation-ladies-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97942_20-omega-constellation-ladies-watch.jpg"
+    "/images/products/97942_0.jpg"
   ],
   "estimateLow": 1200,
   "estimateHigh": 1500,

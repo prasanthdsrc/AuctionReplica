@@ -5,10 +5,7 @@
   "lotNumber": 285,
   "category": "miscellaneous",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98975-christian-dior-rose-des-vents-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98975_1-christian-dior-rose-des-vents-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98975_2-christian-dior-rose-des-vents-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98975_3-christian-dior-rose-des-vents-necklace.jpg"
+    "/images/products/98975_0.jpg"
   ],
   "estimateLow": 1800,
   "estimateHigh": 2000,

@@ -5,10 +5,7 @@
   "lotNumber": 202,
   "category": "sapphire",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/95706-48.64ct-yellow---blue-sapphire-gold-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95706_1-48.64ct-yellow---blue-sapphire-gold-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95706_2-48.64ct-yellow---blue-sapphire-gold-bracelet.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95706_20-48.64ct-yellow---blue-sapphire-gold-bracelet.jpg"
+    "/images/products/95706_0.jpg"
   ],
   "estimateLow": 14000,
   "estimateHigh": 15000,

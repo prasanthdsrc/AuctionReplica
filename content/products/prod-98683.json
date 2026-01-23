@@ -5,10 +5,7 @@
   "lotNumber": 214,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98683-black---white-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98683_1-black---white-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98683_2-black---white-diamond-earrings.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98683_3-black---white-diamond-earrings.jpg"
+    "/images/products/98683_0.jpg"
   ],
   "estimateLow": 2500,
   "estimateHigh": 3500,

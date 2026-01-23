@@ -5,10 +5,7 @@
   "lotNumber": 307,
   "category": "gold-jewellery",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/99229-bvlgari-bvlgari-agate-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99229_1-bvlgari-bvlgari-agate-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99229_2-bvlgari-bvlgari-agate-pendant.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99229_3-bvlgari-bvlgari-agate-pendant.jpg"
+    "/images/products/99229_0.jpg"
   ],
   "estimateLow": 1700,
   "estimateHigh": 1900,

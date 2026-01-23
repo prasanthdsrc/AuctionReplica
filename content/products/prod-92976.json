@@ -5,10 +5,10 @@
   "lotNumber": 344,
   "category": "miscellaneous",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/92976-rose-quartz--green-quartz-and-amethyst-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/92976_1-rose-quartz--green-quartz-and-amethyst-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/92976_2-rose-quartz--green-quartz-and-amethyst-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/92976_3-rose-quartz--green-quartz-and-amethyst-ring.jpg"
+    "/images/products/92976_0.jpg",
+    "/images/products/92976_1.jpg",
+    "/images/products/92976_2.jpg",
+    "/images/products/92976_3.jpg"
   ],
   "estimateLow": 2400,
   "estimateHigh": 2700,

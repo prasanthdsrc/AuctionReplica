@@ -5,10 +5,7 @@
   "lotNumber": 434,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/97179-0.24ct-pinkish-purple---yellow-diamond-ring-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97179_1-0.24ct-pinkish-purple---yellow-diamond-ring-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97179_2-0.24ct-pinkish-purple---yellow-diamond-ring-gsl.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/97179_20-0.24ct-pinkish-purple---yellow-diamond-ring-gsl.jpg"
+    "/images/products/97179_0.jpg"
   ],
   "estimateLow": 4500,
   "estimateHigh": 5000,

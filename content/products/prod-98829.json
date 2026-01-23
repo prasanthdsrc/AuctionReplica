@@ -5,10 +5,7 @@
   "lotNumber": 169,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98829-0.83ct-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98829_1-0.83ct-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98829_2-0.83ct-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98829_3-0.83ct-diamond-ring.jpg"
+    "/images/products/98829_0.jpg"
   ],
   "estimateLow": 1000,
   "estimateHigh": 1500,

@@ -5,10 +5,10 @@
   "lotNumber": 326,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/91432-1.50ct-diamond-solitaire-ring-gia-g-p1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91432_1-1.50ct-diamond-solitaire-ring-gia-g-p1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91432_2-1.50ct-diamond-solitaire-ring-gia-g-p1.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/91432_20-1.50ct-diamond-solitaire-ring-gia-g-p1.jpg"
+    "/images/products/91432_0.jpg",
+    "/images/products/91432_1.jpg",
+    "/images/products/91432_2.jpg",
+    "/images/products/91432_3.jpg"
   ],
   "estimateLow": 6800,
   "estimateHigh": 7200,

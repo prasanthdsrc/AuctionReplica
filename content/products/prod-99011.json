@@ -5,10 +5,7 @@
   "lotNumber": 256,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/99011-4.17ct-diamond-flora-design-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99011_1-4.17ct-diamond-flora-design-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99011_2-4.17ct-diamond-flora-design-necklace.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/99011_20-4.17ct-diamond-flora-design-necklace.jpg"
+    "/images/products/99011_0.jpg"
   ],
   "estimateLow": 7000,
   "estimateHigh": 8000,

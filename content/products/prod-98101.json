@@ -5,10 +5,7 @@
   "lotNumber": 200,
   "category": "watches-mens",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98101-breitling-superocean-44-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98101_1-breitling-superocean-44-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98101_2-breitling-superocean-44-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98101_20-breitling-superocean-44-mens-watch.jpg"
+    "/images/products/98101_0.jpg"
   ],
   "estimateLow": 3000,
   "estimateHigh": 3500,

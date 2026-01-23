@@ -5,10 +5,7 @@
   "lotNumber": 146,
   "category": "watches-mens",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/98952-tudor-black-bay-gmt-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98952_1-tudor-black-bay-gmt-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98952_2-tudor-black-bay-gmt-mens-watch.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/98952_20-tudor-black-bay-gmt-mens-watch.jpg"
+    "/images/products/98952_0.jpg"
   ],
   "estimateLow": 4000,
   "estimateHigh": 4500,

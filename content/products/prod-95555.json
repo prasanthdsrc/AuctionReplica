@@ -5,10 +5,7 @@
   "lotNumber": 390,
   "category": "diamond",
   "images": [
-    "https://www.solditonline.com.au/catalogue/images/2021/95555-cartier-juste-un-clou-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95555_1-cartier-juste-un-clou-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95555_2-cartier-juste-un-clou-diamond-ring.jpg",
-    "https://www.solditonline.com.au/catalogue/images/2021/95555_3-cartier-juste-un-clou-diamond-ring.jpg"
+    "/images/products/95555_0.jpg"
   ],
   "estimateLow": 5800,
   "estimateHigh": 6300,
