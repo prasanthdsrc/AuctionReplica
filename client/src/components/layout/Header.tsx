@@ -55,8 +55,16 @@ const jewelleryCollections = [
 // All jewellery for checking active state
 const allJewelleryItems = [...jewelleryCategories, ...jewelleryTypes, ...jewelleryCollections];
 
-// Watch categories - uses existing category slugs
+// Watch categories - all watch brands and types
 const watchCategories = [
+  { href: '/categories/swiss-watches', label: 'Swiss Watches' },
+  { href: '/categories/rolex-watches', label: 'Rolex Watches' },
+  { href: '/categories/omega-watches', label: 'Omega Watches' },
+  { href: '/categories/cartier-watches', label: 'Cartier Watches' },
+  { href: '/categories/tag-heuer-watches', label: 'Tag Heuer Watches' },
+  { href: '/categories/iwc-watches', label: 'IWC Schaffhausen Watches' },
+  { href: '/categories/breitling-watches', label: 'Breitling Watches' },
+  { href: '/categories/raymond-weil-watches', label: 'Raymond Weil Watches' },
   { href: '/categories/watches-mens', label: "Men's Watches" },
   { href: '/categories/watches-ladies', label: "Ladies' Watches" },
   { href: '/categories/watches-midsize', label: 'Mid-Size Watches' },
