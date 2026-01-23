@@ -1,5 +1,37 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
+import * as fs from "fs";
+import * as path from "path";
+
+// Load products from content/products directory
+function loadProductsFromContent(): any[] {
+  const productsDir = path.join(process.cwd(), 'content', 'products');
+  const products: any[] = [];
+  
+  try {
+    if (fs.existsSync(productsDir)) {
+      const files = fs.readdirSync(productsDir).filter(f => f.endsWith('.json'));
+      for (const file of files) {
+        const filePath = path.join(productsDir, file);
+        const content = fs.readFileSync(filePath, 'utf-8');
+        const product = JSON.parse(content);
+        // Extract ID from filename (e.g., prod-76328.json -> prod-76328)
+        if (!product.id) {
+          product.id = file.replace('.json', '');
+        }
+        products.push(product);
+      }
+    }
+  } catch (error) {
+    console.error('Error loading products from content:', error);
+  }
+  
+  return products;
+}
+
+// Load products at startup
+const loadedProducts = loadProductsFromContent();
+console.log(`Loaded ${loadedProducts.length} products from content directory`);
 
 const heroSlides = [
   {
@@ -343,7 +375,8 @@ export async function registerRoutes(
   });
 
   app.get('/api/auctions/:id/products', (req, res) => {
-    const auctionProducts = products.filter((p) => p.auctionId === req.params.id);
+    const allProducts = loadedProducts.length > 0 ? loadedProducts : products;
+    const auctionProducts = allProducts.filter((p: any) => p.auctionId === req.params.id);
     res.json(auctionProducts);
   });
 
@@ -397,7 +430,8 @@ export async function registerRoutes(
 
   app.get('/api/products/search', (req, res) => {
     const query = (req.query.q as string || '').toLowerCase();
-    const result = products.filter(
+    const allProducts = loadedProducts.length > 0 ? loadedProducts : products;
+    const result = allProducts.filter(
       (p) =>
         p.title.toLowerCase().includes(query) ||
         p.description.toLowerCase().includes(query) ||
@@ -407,7 +441,8 @@ export async function registerRoutes(
   });
 
   app.get('/api/products/:id', (req, res) => {
-    const product = products.find((p) => p.id === req.params.id);
+    const allProducts = loadedProducts.length > 0 ? loadedProducts : products;
+    const product = allProducts.find((p: any) => p.id === req.params.id);
     if (!product) {
       return res.status(404).json({ error: 'Product not found' });
     }
@@ -437,8 +472,51 @@ export async function registerRoutes(
     res.json(category);
   });
 
+  // Category slug to product filter mapping
+  // Maps new navigation slugs to product filtering logic
+  const categoryMapping: Record<string, (p: any) => boolean> = {
+    // Jewellery Collections - map to diamond category and filter by title/description
+    'certified-diamonds': (p) => p.category === 'diamond' && (p.title.toLowerCase().includes('certified') || p.title.toLowerCase().includes('gia') || p.title.toLowerCase().includes('igi')),
+    'designer-jewellery': (p) => p.title.toLowerCase().includes('cartier') || p.title.toLowerCase().includes('tiffany') || p.title.toLowerCase().includes('van cleef') || p.title.toLowerCase().includes('bulgari'),
+    'loose-diamonds': (p) => p.category === 'diamond' && p.title.toLowerCase().includes('loose'),
+    'engagement-rings': (p) => (p.category === 'diamond' || p.category === 'rings') && p.title.toLowerCase().includes('engagement'),
+    'diamond-dress-rings': (p) => (p.category === 'diamond' || p.category === 'rings') && (p.title.toLowerCase().includes('dress ring') || p.title.toLowerCase().includes('cocktail')),
+    'fancy-colour-diamonds': (p) => p.category === 'diamond' && (p.title.toLowerCase().includes('fancy') || p.title.toLowerCase().includes('pink') || p.title.toLowerCase().includes('yellow') || p.title.toLowerCase().includes('blue diamond')),
+    'tennis-bracelets': (p) => p.title.toLowerCase().includes('tennis bracelet'),
+    'diamond-studs': (p) => p.category === 'diamond' && p.title.toLowerCase().includes('stud'),
+    'diamond-eternity-rings': (p) => p.category === 'diamond' && p.title.toLowerCase().includes('eternity'),
+    'diamond-earrings': (p) => p.category === 'diamond' && (p.title.toLowerCase().includes('earring') || p.title.toLowerCase().includes('drop') || p.title.toLowerCase().includes('hoop')),
+    // Watch brand categories
+    'swiss-watches': (p) => p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize',
+    'rolex-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && p.title.toLowerCase().includes('rolex'),
+    'omega-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && p.title.toLowerCase().includes('omega'),
+    'cartier-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && p.title.toLowerCase().includes('cartier'),
+    'tag-heuer-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && (p.title.toLowerCase().includes('tag heuer') || p.title.toLowerCase().includes('tag-heuer')),
+    'iwc-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && p.title.toLowerCase().includes('iwc'),
+    'breitling-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && p.title.toLowerCase().includes('breitling'),
+    'raymond-weil-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && p.title.toLowerCase().includes('raymond weil'),
+    'mens-watches': (p) => p.category === 'watches-mens',
+    'ladies-watches': (p) => p.category === 'watches-ladies',
+    'midsize-watches': (p) => p.category === 'watches-midsize',
+    // Other categories - direct match
+    'designer-bags': (p) => p.category === 'designer-bags',
+  };
+
   app.get('/api/categories/:slug/products', (req, res) => {
-    const categoryProducts = products.filter((p) => p.category === req.params.slug);
+    const slug = req.params.slug;
+    const filterFn = categoryMapping[slug];
+    
+    // Use loaded products from content directory
+    const allProducts = loadedProducts.length > 0 ? loadedProducts : products;
+    
+    let categoryProducts;
+    if (filterFn) {
+      categoryProducts = allProducts.filter(filterFn);
+    } else {
+      // Fallback to direct category match for any unmapped categories
+      categoryProducts = allProducts.filter((p: any) => p.category === slug);
+    }
+    
     res.json(categoryProducts);
   });
 
