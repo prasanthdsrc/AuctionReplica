@@ -287,31 +287,31 @@ const products = [
 ];
 
 const categories = [
-  { id: 'cat-rings', name: 'Rings', slug: 'rings', imageUrl: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&q=80', description: 'Engagement rings, dress rings, and eternity bands', productCount: 89 },
-  { id: 'cat-earrings', name: 'Earrings', slug: 'earrings', imageUrl: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&q=80', description: 'Diamond, gemstone, and pearl earrings', productCount: 56 },
-  { id: 'cat-pendants', name: 'Pendants', slug: 'pendants', imageUrl: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=80', description: 'Beautiful pendant necklaces', productCount: 34 },
-  { id: 'cat-bracelets', name: 'Bracelets', slug: 'bracelets', imageUrl: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=400&q=80', description: 'Tennis bracelets and charm bracelets', productCount: 41 },
-  { id: 'cat-necklaces', name: 'Necklaces', slug: 'necklaces', imageUrl: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&q=80', description: 'Elegant necklaces and chains', productCount: 28 },
-  { id: 'cat-bangles', name: 'Bangles', slug: 'bangles', imageUrl: 'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=400&q=80', description: 'Gold and diamond bangles', productCount: 22 },
-  { id: 'cat-brooches', name: 'Brooches', slug: 'brooches', imageUrl: 'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=400&q=80', description: 'Vintage and modern brooches', productCount: 15 },
-  { id: 'cat-loose-gems', name: 'Loose Gems', slug: 'loose-gems', imageUrl: 'https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=400&q=80', description: 'Certified loose gemstones', productCount: 67 },
-  { id: 'cat-diamond', name: 'Diamond', slug: 'diamond', imageUrl: 'https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=400&q=80', description: 'Natural diamond jewellery', productCount: 120 },
-  { id: 'cat-sapphire', name: 'Sapphire', slug: 'sapphire', imageUrl: 'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=400&q=80', description: 'Blue and fancy sapphire pieces', productCount: 45 },
-  { id: 'cat-ruby', name: 'Ruby', slug: 'ruby', imageUrl: 'https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=400&q=80', description: 'Natural ruby jewellery', productCount: 38 },
-  { id: 'cat-emerald', name: 'Emerald', slug: 'emerald', imageUrl: 'https://images.unsplash.com/photo-1574948495680-f67bea6a0c03?w=400&q=80', description: 'Colombian and Zambian emeralds', productCount: 32 },
-  { id: 'cat-pearl', name: 'Pearl', slug: 'pearl', imageUrl: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&q=80', description: 'South Sea and Tahitian pearls', productCount: 28 },
-  { id: 'cat-opal', name: 'Opal', slug: 'opal', imageUrl: 'https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=400&q=80', description: 'Australian black and white opals', productCount: 24 },
-  { id: 'cat-tanzanite', name: 'Tanzanite', slug: 'tanzanite', imageUrl: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&q=80', description: 'Rare tanzanite gemstones', productCount: 18 },
-  { id: 'cat-aquamarine', name: 'Aquamarine', slug: 'aquamarine', imageUrl: 'https://images.unsplash.com/photo-1574948495680-f67bea6a0c03?w=400&q=80', description: 'Natural aquamarine jewellery', productCount: 15 },
-  { id: 'cat-topaz', name: 'Topaz', slug: 'topaz', imageUrl: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&q=80', description: 'Blue topaz and imperial topaz', productCount: 12 },
-  { id: 'cat-tourmaline', name: 'Tourmaline', slug: 'tourmaline', imageUrl: 'https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=400&q=80', description: 'Colorful tourmaline gemstones', productCount: 14 },
-  { id: 'cat-jade', name: 'Jade', slug: 'jade', imageUrl: 'https://images.unsplash.com/photo-1574948495680-f67bea6a0c03?w=400&q=80', description: 'Natural jade jewellery', productCount: 20 },
-  { id: 'cat-gold-jewellery', name: 'Gold Jewellery', slug: 'gold-jewellery', imageUrl: 'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=400&q=80', description: '18k and 22k gold pieces', productCount: 85 },
-  { id: 'cat-watches-mens', name: 'Mens Watches', slug: 'watches-mens', imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80', description: 'Luxury mens watches from Swiss brands', productCount: 45 },
-  { id: 'cat-watches-ladies', name: 'Ladies Watches', slug: 'watches-ladies', imageUrl: 'https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=400&q=80', description: 'Elegant ladies timepieces', productCount: 32 },
-  { id: 'cat-watches-midsize', name: 'Midsize Watches', slug: 'watches-midsize', imageUrl: 'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=400&q=80', description: 'Versatile midsize watches', productCount: 18 },
-  { id: 'cat-designer-bags', name: 'Designer Bags', slug: 'designer-bags', imageUrl: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400&q=80', description: 'Authenticated luxury bags', productCount: 28 },
-  { id: 'cat-miscellaneous', name: 'Miscellaneous', slug: 'miscellaneous', imageUrl: 'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=400&q=80', description: 'Other collectible items', productCount: 15 }
+  // Jewellery Collections
+  { id: 'cat-certified-diamonds', name: 'Certified Diamonds', slug: 'certified-diamonds', imageUrl: 'https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=400&q=80', description: 'GIA and IGI certified loose diamonds', productCount: 45 },
+  { id: 'cat-designer-jewellery', name: 'Designer Jewellery', slug: 'designer-jewellery', imageUrl: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=80', description: 'Cartier, Tiffany, Van Cleef & Arpels', productCount: 38 },
+  { id: 'cat-loose-diamonds', name: 'Loose Diamonds', slug: 'loose-diamonds', imageUrl: 'https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=400&q=80', description: 'Natural loose diamonds for custom settings', productCount: 32 },
+  { id: 'cat-engagement-rings', name: 'Engagement Rings', slug: 'engagement-rings', imageUrl: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&q=80', description: 'Beautiful engagement ring collection', productCount: 56 },
+  { id: 'cat-diamond-dress-rings', name: 'Diamond Dress Rings', slug: 'diamond-dress-rings', imageUrl: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&q=80', description: 'Diamond cocktail and dress rings', productCount: 42 },
+  { id: 'cat-fancy-colour-diamonds', name: 'Fancy Colour Diamonds', slug: 'fancy-colour-diamonds', imageUrl: 'https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=400&q=80', description: 'Pink, yellow, blue and other fancy diamonds', productCount: 18 },
+  { id: 'cat-tennis-bracelets', name: 'Tennis Bracelets', slug: 'tennis-bracelets', imageUrl: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=400&q=80', description: 'Classic diamond tennis bracelets', productCount: 24 },
+  { id: 'cat-diamond-studs', name: 'Diamond Studs', slug: 'diamond-studs', imageUrl: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&q=80', description: 'Diamond stud earrings', productCount: 35 },
+  { id: 'cat-diamond-eternity-rings', name: 'Diamond Eternity Rings', slug: 'diamond-eternity-rings', imageUrl: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&q=80', description: 'Full and half eternity bands', productCount: 28 },
+  { id: 'cat-diamond-earrings', name: 'Diamond Earrings', slug: 'diamond-earrings', imageUrl: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&q=80', description: 'Diamond drop and hoop earrings', productCount: 48 },
+  // Watch Categories
+  { id: 'cat-swiss-watches', name: 'Swiss Watches', slug: 'swiss-watches', imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80', description: 'Luxury Swiss timepieces', productCount: 65 },
+  { id: 'cat-rolex-watches', name: 'Rolex Watches', slug: 'rolex-watches', imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80', description: 'Pre-owned Rolex watches', productCount: 28 },
+  { id: 'cat-omega-watches', name: 'Omega Watches', slug: 'omega-watches', imageUrl: 'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=400&q=80', description: 'Omega Seamaster and Speedmaster', productCount: 22 },
+  { id: 'cat-cartier-watches', name: 'Cartier Watches', slug: 'cartier-watches', imageUrl: 'https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=400&q=80', description: 'Cartier Tank and Santos', productCount: 15 },
+  { id: 'cat-tag-heuer-watches', name: 'Tag Heuer Watches', slug: 'tag-heuer-watches', imageUrl: 'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=400&q=80', description: 'Tag Heuer Carrera and Monaco', productCount: 18 },
+  { id: 'cat-iwc-watches', name: 'IWC Schaffhausen Watches', slug: 'iwc-watches', imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80', description: 'IWC Portugieser and Pilot watches', productCount: 12 },
+  { id: 'cat-breitling-watches', name: 'Breitling Watches', slug: 'breitling-watches', imageUrl: 'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=400&q=80', description: 'Breitling Navitimer and Superocean', productCount: 14 },
+  { id: 'cat-raymond-weil-watches', name: 'Raymond Weil Watches', slug: 'raymond-weil-watches', imageUrl: 'https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=400&q=80', description: 'Raymond Weil luxury timepieces', productCount: 10 },
+  { id: 'cat-mens-watches', name: "Men's Watches", slug: 'mens-watches', imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80', description: 'Luxury mens watches', productCount: 45 },
+  { id: 'cat-ladies-watches', name: "Ladies' Watches", slug: 'ladies-watches', imageUrl: 'https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=400&q=80', description: 'Elegant ladies timepieces', productCount: 32 },
+  { id: 'cat-midsize-watches', name: 'Mid-Size Watches', slug: 'midsize-watches', imageUrl: 'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=400&q=80', description: 'Versatile midsize watches', productCount: 18 },
+  // Other Categories
+  { id: 'cat-designer-bags', name: 'Designer Bags', slug: 'designer-bags', imageUrl: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400&q=80', description: 'Authenticated luxury bags', productCount: 28 }
 ];
 
 export async function registerRoutes(
