@@ -166,7 +166,37 @@ export function getFeaturedProducts(): Product[] {
 }
 
 export function getProductsByCategory(categorySlug: string): Product[] {
-  return getProducts().filter(p => p.category === categorySlug);
+  const products = getProducts();
+  const category = getCategory(categorySlug);
+  
+  // Direct match first
+  const directMatches = products.filter(p => p.category === categorySlug);
+  if (directMatches.length > 0) {
+    return directMatches;
+  }
+  
+  // If no direct matches and category has a parent, show products from sibling categories
+  if (category?.parentCategory) {
+    const parentCategory = category.parentCategory;
+    const categories = getCategories();
+    
+    // Find all categories with the same parent (siblings)
+    const siblingCategories = categories
+      .filter(c => c.parentCategory === parentCategory)
+      .map(c => c.slug);
+    
+    // Also include categories that start with the parent prefix
+    const relatedCategories = categories
+      .filter(c => c.slug.startsWith(parentCategory) || siblingCategories.includes(c.slug))
+      .map(c => c.slug);
+    
+    return products.filter(p => 
+      relatedCategories.includes(p.category) || 
+      p.category.startsWith(parentCategory)
+    );
+  }
+  
+  return directMatches;
 }
 
 export function getCategories(): Category[] {
@@ -174,12 +204,30 @@ export function getCategories(): Category[] {
   const files = getFilesInDirectory(categoriesDir);
   const products = getProducts();
   
-  return files.map(file => {
+  // First pass: get all category data
+  const categoryData = files.map(file => {
     const id = file.replace('.json', '');
     const data = readJsonFile<TinaCategory>(path.join(categoriesDir, file));
     if (!data) return null;
+    return { id, data };
+  }).filter((c): c is { id: string; data: TinaCategory } => c !== null);
+  
+  // Second pass: calculate product counts with hierarchy support
+  return categoryData.map(({ id, data }) => {
+    let productCount = products.filter(p => p.category === data.slug).length;
     
-    const productCount = products.filter(p => p.category === data.slug).length;
+    // If no direct products and has parent category, count from related categories
+    if (productCount === 0 && data.parentCategory) {
+      const parentCategory = data.parentCategory;
+      const siblingCategories = categoryData
+        .filter(c => c.data.parentCategory === parentCategory)
+        .map(c => c.data.slug);
+      
+      productCount = products.filter(p => 
+        siblingCategories.includes(p.category) || 
+        p.category.startsWith(parentCategory)
+      ).length;
+    }
     
     return {
       id: `cat-${id}`,
@@ -190,7 +238,7 @@ export function getCategories(): Category[] {
       productCount,
       parentCategory: data.parentCategory || null
     } as Category;
-  }).filter((c): c is Category => c !== null);
+  });
 }
 
 export function getCategory(slug: string): Category | undefined {
