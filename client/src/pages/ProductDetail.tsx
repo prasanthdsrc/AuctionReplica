@@ -268,14 +268,14 @@ export default function ProductDetail() {
                     {product.description}
                   </p>
                   
-                  {product.specifications && Object.keys(product.specifications).length > 0 && (
+                  {product.specifications && Array.isArray(product.specifications) && product.specifications.length > 0 && (
                     <div className="mt-6">
                       <h3 className="font-semibold text-foreground mb-3">Specifications</h3>
                       <div className="grid grid-cols-2 gap-3">
-                        {Object.entries(product.specifications).map(([key, value]) => (
-                          <div key={key} className="bg-muted rounded-md p-3">
-                            <p className="text-xs text-muted-foreground">{key}</p>
-                            <p className="text-sm font-medium">{value}</p>
+                        {product.specifications.map((spec: { key: string; value: string }, index: number) => (
+                          <div key={index} className="bg-muted rounded-md p-3">
+                            <p className="text-xs text-muted-foreground">{spec.key}</p>
+                            <p className="text-sm font-medium">{spec.value}</p>
                           </div>
                         ))}
                       </div>
