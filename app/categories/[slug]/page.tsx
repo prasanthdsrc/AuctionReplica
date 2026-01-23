@@ -50,17 +50,17 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           Back to All Items
         </Link>
 
-        <div className="relative aspect-[21/9] rounded-lg overflow-hidden mb-8">
+        <div className="relative h-32 md:h-40 rounded-lg overflow-hidden mb-8">
           <img
             src={category.imageUrl}
             alt={category.name}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 p-8">
-            <h1 className="text-4xl font-serif font-bold text-white mb-2">{category.name}</h1>
+          <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
+            <h1 className="text-2xl md:text-3xl font-serif font-bold text-white mb-1">{category.name}</h1>
             {category.description && (
-              <p className="text-white/80 text-lg">{category.description}</p>
+              <p className="text-white/80 text-sm md:text-base line-clamp-1">{category.description}</p>
             )}
           </div>
         </div>

@@ -42,7 +42,7 @@ export default function CategoryListing() {
 
   return (
     <div className="min-h-screen" data-testid="category-listing-page">
-      <div className="relative h-48 md:h-64 overflow-hidden">
+      <div className="relative h-32 md:h-40 overflow-hidden">
         <img
           src={category.imageUrl}
           alt={category.name}
