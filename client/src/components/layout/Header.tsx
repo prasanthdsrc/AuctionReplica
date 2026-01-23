@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
-import { Search, Menu, X, User, Phone, Mail, ChevronDown } from 'lucide-react';
+import { Search, Menu, X, User, Phone, Mail, ChevronDown, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
@@ -15,7 +15,36 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
-// Jewellery Collections (main dropdown items)
+// Jewellery Categories (by item type)
+const jewelleryCategories = [
+  { href: '/categories/rings', label: 'Rings' },
+  { href: '/categories/earrings', label: 'Earrings' },
+  { href: '/categories/pendants', label: 'Pendants' },
+  { href: '/categories/bracelets', label: 'Bracelets' },
+  { href: '/categories/necklaces', label: 'Necklaces' },
+  { href: '/categories/bangles', label: 'Bangles' },
+  { href: '/categories/loose-gems', label: 'Loose Gems' },
+  { href: '/categories/brooches', label: 'Brooches' },
+];
+
+// Jewellery Types (by gemstone/material)
+const jewelleryTypes = [
+  { href: '/categories/diamond-jewellery', label: 'Diamond Jewellery' },
+  { href: '/categories/pearl-jewellery', label: 'Pearl Jewellery' },
+  { href: '/categories/sapphire-jewellery', label: 'Sapphire Jewellery' },
+  { href: '/categories/ruby-jewellery', label: 'Ruby Jewellery' },
+  { href: '/categories/tanzanite-jewellery', label: 'Tanzanite Jewellery' },
+  { href: '/categories/emerald-jewellery', label: 'Emerald Jewellery' },
+  { href: '/categories/jade-jewellery', label: 'Jade Jewellery' },
+  { href: '/categories/amethyst-jewellery', label: 'Amethyst Jewellery' },
+  { href: '/categories/aquamarine-jewellery', label: 'Aquamarine Jewellery' },
+  { href: '/categories/opal-jewellery', label: 'Opal Jewellery' },
+  { href: '/categories/alexandrite-jewellery', label: 'Alexandrite Jewellery' },
+  { href: '/categories/topaz-jewellery', label: 'Topaz Jewellery' },
+  { href: '/categories/morganite-jewellery', label: 'Morganite Jewellery' },
+];
+
+// Jewellery Collections (curated)
 const jewelleryCollections = [
   { href: '/categories/certified-diamonds', label: 'Certified Diamonds' },
   { href: '/categories/designer-jewellery', label: 'Designer Jewellery' },
@@ -28,6 +57,9 @@ const jewelleryCollections = [
   { href: '/categories/diamond-eternity-rings', label: 'Diamond Eternity Rings' },
   { href: '/categories/diamond-earrings', label: 'Diamond Earrings' },
 ];
+
+// All jewellery for checking active state
+const allJewelleryItems = [...jewelleryCategories, ...jewelleryTypes, ...jewelleryCollections];
 
 // Watch categories matching original site
 const watchCategories = [
@@ -51,11 +83,14 @@ const infoLinks = [
   { href: '/contact', label: 'Contact Us' },
 ];
 
+type JewellerySubmenu = 'categories' | 'types' | 'collections' | null;
+
 export function Header() {
   const [location] = useLocation();
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [, navigate] = useLocation();
+  const [jewellerySubmenu, setJewellerySubmenu] = useState<JewellerySubmenu>(null);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -67,12 +102,25 @@ export function Header() {
   };
 
   const isJewelleryActive = location?.startsWith('/categories/') && 
-    jewelleryCollections.some(c => location === c.href);
+    allJewelleryItems.some(c => location === c.href);
   
   const isWatchActive = location?.startsWith('/categories/') && 
     watchCategories.some(c => location === c.href);
   
   const isInfoActive = infoLinks.some(l => location === l.href);
+
+  const getSubmenuItems = () => {
+    switch (jewellerySubmenu) {
+      case 'categories':
+        return jewelleryCategories;
+      case 'types':
+        return jewelleryTypes;
+      case 'collections':
+        return jewelleryCollections;
+      default:
+        return [];
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full">
@@ -133,7 +181,8 @@ export function Header() {
                 </Button>
               </Link>
 
-              <DropdownMenu>
+              {/* Jewellery Mega Menu */}
+              <DropdownMenu onOpenChange={(open) => !open && setJewellerySubmenu(null)}>
                 <DropdownMenuTrigger asChild>
                   <Button
                     variant="ghost"
@@ -146,14 +195,69 @@ export function Header() {
                     JEWELLERY <ChevronDown className="h-3.5 w-3.5 ml-0.5" />
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="start" className="w-56 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-lg">
-                  {jewelleryCollections.map((item) => (
-                    <DropdownMenuItem key={item.href} asChild className="cursor-pointer hover:bg-primary/10 hover:text-primary focus:bg-primary/10 focus:text-primary">
-                      <Link href={item.href} data-testid={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
-                        {item.label}
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
+                <DropdownMenuContent 
+                  align="start" 
+                  className="p-0 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-lg"
+                  sideOffset={5}
+                >
+                  <div className="flex">
+                    {/* Main menu items */}
+                    <div className="w-48 border-r border-gray-200 dark:border-gray-700">
+                      <div
+                        className={`flex items-center justify-between px-4 py-3 cursor-pointer transition-colors ${
+                          jewellerySubmenu === 'categories' 
+                            ? 'bg-gray-100 dark:bg-gray-800 text-primary' 
+                            : 'hover:bg-gray-50 dark:hover:bg-gray-800'
+                        }`}
+                        onMouseEnter={() => setJewellerySubmenu('categories')}
+                        data-testid="submenu-jewellery-categories"
+                      >
+                        <span className="text-sm">Jewellery Categories</span>
+                        <ChevronRight className="h-4 w-4" />
+                      </div>
+                      <div
+                        className={`flex items-center justify-between px-4 py-3 cursor-pointer transition-colors ${
+                          jewellerySubmenu === 'types' 
+                            ? 'bg-gray-100 dark:bg-gray-800 text-primary' 
+                            : 'hover:bg-gray-50 dark:hover:bg-gray-800'
+                        }`}
+                        onMouseEnter={() => setJewellerySubmenu('types')}
+                        data-testid="submenu-jewellery-types"
+                      >
+                        <span className="text-sm">Jewellery Types</span>
+                        <ChevronRight className="h-4 w-4" />
+                      </div>
+                      <div
+                        className={`flex items-center justify-between px-4 py-3 cursor-pointer transition-colors ${
+                          jewellerySubmenu === 'collections' 
+                            ? 'bg-gray-100 dark:bg-gray-800 text-primary' 
+                            : 'hover:bg-gray-50 dark:hover:bg-gray-800'
+                        }`}
+                        onMouseEnter={() => setJewellerySubmenu('collections')}
+                        data-testid="submenu-jewellery-collections"
+                      >
+                        <span className="text-sm">Jewellery Collections</span>
+                        <ChevronRight className="h-4 w-4" />
+                      </div>
+                    </div>
+                    
+                    {/* Submenu items */}
+                    {jewellerySubmenu && (
+                      <div className="w-52 max-h-80 overflow-y-auto">
+                        {getSubmenuItems().map((item) => (
+                          <DropdownMenuItem 
+                            key={item.href} 
+                            asChild 
+                            className="cursor-pointer hover:bg-primary/10 hover:text-primary focus:bg-primary/10 focus:text-primary px-4 py-2"
+                          >
+                            <Link href={item.href} data-testid={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
+                              {item.label}
+                            </Link>
+                          </DropdownMenuItem>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </DropdownMenuContent>
               </DropdownMenu>
 
@@ -282,7 +386,32 @@ export function Header() {
                       </Button>
                     </Link>
                     
+                    {/* Jewellery Categories */}
                     <div className="py-2 border-t mt-2">
+                      <p className="px-4 text-xs font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Jewellery Categories</p>
+                      {jewelleryCategories.map((item) => (
+                        <Link key={item.href} href={item.href}>
+                          <Button variant="ghost" className="w-full justify-start text-sm pl-6" data-testid={`mobile-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
+                            {item.label}
+                          </Button>
+                        </Link>
+                      ))}
+                    </div>
+                    
+                    {/* Jewellery Types */}
+                    <div className="py-2 border-t">
+                      <p className="px-4 text-xs font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Jewellery Types</p>
+                      {jewelleryTypes.map((item) => (
+                        <Link key={item.href} href={item.href}>
+                          <Button variant="ghost" className="w-full justify-start text-sm pl-6" data-testid={`mobile-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
+                            {item.label}
+                          </Button>
+                        </Link>
+                      ))}
+                    </div>
+                    
+                    {/* Jewellery Collections */}
+                    <div className="py-2 border-t">
                       <p className="px-4 text-xs font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Jewellery Collections</p>
                       {jewelleryCollections.map((item) => (
                         <Link key={item.href} href={item.href}>

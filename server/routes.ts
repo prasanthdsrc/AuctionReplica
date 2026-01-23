@@ -464,29 +464,130 @@ export async function registerRoutes(
     res.json(result);
   });
 
+  // Dynamic category metadata for navigation categories
+  const dynamicCategoryMeta: Record<string, { name: string; description: string; imageUrl: string }> = {
+    // Jewellery Categories
+    'rings': { name: 'Rings', description: 'Exquisite rings including engagement, dress, and eternity rings', imageUrl: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80' },
+    'earrings': { name: 'Earrings', description: 'Stunning earrings from diamond studs to elegant drops', imageUrl: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80' },
+    'pendants': { name: 'Pendants', description: 'Beautiful pendants featuring diamonds and precious gemstones', imageUrl: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80' },
+    'bracelets': { name: 'Bracelets', description: 'Elegant bracelets including tennis bracelets and bangles', imageUrl: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=800&q=80' },
+    'necklaces': { name: 'Necklaces', description: 'Luxurious necklaces from delicate chains to statement pieces', imageUrl: 'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=800&q=80' },
+    'bangles': { name: 'Bangles', description: 'Classic bangles in gold, silver, and platinum', imageUrl: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80' },
+    'loose-gems': { name: 'Loose Gems', description: 'Certified loose gemstones for custom jewellery', imageUrl: 'https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=800&q=80' },
+    'brooches': { name: 'Brooches', description: 'Vintage and contemporary brooches and pins', imageUrl: 'https://images.unsplash.com/photo-1601821765780-754fa98637c1?w=800&q=80' },
+    // Jewellery Types
+    'diamond-jewellery': { name: 'Diamond Jewellery', description: 'Exquisite diamond pieces with certified stones', imageUrl: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80' },
+    'pearl-jewellery': { name: 'Pearl Jewellery', description: 'Classic pearl jewellery including Akoya and South Sea pearls', imageUrl: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80' },
+    'sapphire-jewellery': { name: 'Sapphire Jewellery', description: 'Stunning sapphire pieces in various cuts and settings', imageUrl: 'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=800&q=80' },
+    'ruby-jewellery': { name: 'Ruby Jewellery', description: 'Vibrant ruby jewellery with natural and treated stones', imageUrl: 'https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=800&q=80' },
+    'tanzanite-jewellery': { name: 'Tanzanite Jewellery', description: 'Rare tanzanite pieces from Tanzania', imageUrl: 'https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80' },
+    'emerald-jewellery': { name: 'Emerald Jewellery', description: 'Elegant emerald pieces with natural green gems', imageUrl: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80' },
+    'jade-jewellery': { name: 'Jade Jewellery', description: 'Traditional jade pieces including nephrite and jadeite', imageUrl: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80' },
+    'amethyst-jewellery': { name: 'Amethyst Jewellery', description: 'Beautiful purple amethyst pieces', imageUrl: 'https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=800&q=80' },
+    'aquamarine-jewellery': { name: 'Aquamarine Jewellery', description: 'Serene aquamarine pieces in light blue hues', imageUrl: 'https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80' },
+    'opal-jewellery': { name: 'Opal Jewellery', description: 'Australian opal pieces with play-of-color', imageUrl: 'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=800&q=80' },
+    'alexandrite-jewellery': { name: 'Alexandrite Jewellery', description: 'Rare colour-changing alexandrite pieces', imageUrl: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80' },
+    'topaz-jewellery': { name: 'Topaz Jewellery', description: 'Brilliant topaz pieces in various colours', imageUrl: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=800&q=80' },
+    'morganite-jewellery': { name: 'Morganite Jewellery', description: 'Romantic pink morganite pieces', imageUrl: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80' },
+    // Jewellery Collections
+    'certified-diamonds': { name: 'Certified Diamonds', description: 'GIA and IGI certified diamond pieces', imageUrl: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80' },
+    'designer-jewellery': { name: 'Designer Jewellery', description: 'Pieces from Cartier, Tiffany, Van Cleef & Arpels', imageUrl: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80' },
+    'loose-diamonds': { name: 'Loose Diamonds', description: 'Certified loose diamonds for custom settings', imageUrl: 'https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=800&q=80' },
+    'engagement-rings': { name: 'Engagement Rings', description: 'Stunning engagement rings for your special moment', imageUrl: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80' },
+    'diamond-dress-rings': { name: 'Diamond Dress Rings', description: 'Elegant diamond dress and cocktail rings', imageUrl: 'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=800&q=80' },
+    'fancy-colour-diamonds': { name: 'Fancy Colour Diamonds', description: 'Rare pink, yellow, and blue diamonds', imageUrl: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80' },
+    'tennis-bracelets': { name: 'Tennis Bracelets', description: 'Classic diamond tennis bracelets', imageUrl: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=800&q=80' },
+    'diamond-studs': { name: 'Diamond Studs', description: 'Timeless diamond stud earrings', imageUrl: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80' },
+    'diamond-eternity-rings': { name: 'Diamond Eternity Rings', description: 'Beautiful eternity rings for lasting love', imageUrl: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80' },
+    'diamond-earrings': { name: 'Diamond Earrings', description: 'Exquisite diamond earrings in various styles', imageUrl: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80' },
+    // Watch Categories
+    'swiss-watches': { name: 'Swiss Watches', description: 'Authentic Swiss timepieces from renowned brands', imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80' },
+    'rolex-watches': { name: 'Rolex Watches', description: 'Iconic Rolex timepieces', imageUrl: 'https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800&q=80' },
+    'omega-watches': { name: 'Omega Watches', description: 'Precision Omega timepieces', imageUrl: 'https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&q=80' },
+    'cartier-watches': { name: 'Cartier Watches', description: 'Elegant Cartier timepieces', imageUrl: 'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&q=80' },
+    'tag-heuer-watches': { name: 'Tag Heuer Watches', description: 'Sporty Tag Heuer chronographs', imageUrl: 'https://images.unsplash.com/photo-1526045431048-f857369baa09?w=800&q=80' },
+    'iwc-watches': { name: 'IWC Schaffhausen Watches', description: 'Refined IWC timepieces', imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80' },
+    'breitling-watches': { name: 'Breitling Watches', description: 'Aviation-inspired Breitling watches', imageUrl: 'https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&q=80' },
+    'raymond-weil-watches': { name: 'Raymond Weil Watches', description: 'Swiss Raymond Weil timepieces', imageUrl: 'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&q=80' },
+    'mens-watches': { name: "Men's Watches", description: 'Luxury watches for men', imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80' },
+    'ladies-watches': { name: "Ladies' Watches", description: 'Elegant watches for women', imageUrl: 'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&q=80' },
+    'midsize-watches': { name: 'Mid-Size Watches', description: 'Versatile mid-size timepieces', imageUrl: 'https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&q=80' },
+    // Other
+    'designer-bags': { name: 'Designer Bags', description: 'Authenticated luxury bags from Hermès, Chanel, Louis Vuitton', imageUrl: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&q=80' },
+  };
+
   app.get('/api/categories/:slug', (req, res) => {
-    const category = categories.find((c) => c.slug === req.params.slug);
-    if (!category) {
-      return res.status(404).json({ error: 'Category not found' });
+    const slug = req.params.slug;
+    
+    // First check static categories
+    const staticCategory = categories.find((c) => c.slug === slug);
+    if (staticCategory) {
+      return res.json(staticCategory);
     }
-    res.json(category);
+    
+    // Then check dynamic category metadata
+    const dynamicMeta = dynamicCategoryMeta[slug];
+    if (dynamicMeta) {
+      return res.json({
+        id: slug,
+        slug: slug,
+        name: dynamicMeta.name,
+        description: dynamicMeta.description,
+        imageUrl: dynamicMeta.imageUrl,
+        productCount: 0 // Will be calculated on the client side
+      });
+    }
+    
+    return res.status(404).json({ error: 'Category not found' });
   });
 
   // Category slug to product filter mapping
   // Maps new navigation slugs to product filtering logic
+  // Helper to check if product is jewellery (excludes watches and bags)
+  const isJewellery = (p: any) => {
+    const nonJewelleryCategories = ['watches-mens', 'watches-ladies', 'watches-midsize', 'designer-bags'];
+    return !nonJewelleryCategories.includes(p.category);
+  };
+
   const categoryMapping: Record<string, (p: any) => boolean> = {
-    // Jewellery Collections - map to diamond category and filter by title/description
+    // =============== JEWELLERY CATEGORIES (by item type) ===============
+    'rings': (p) => isJewellery(p) && (p.category === 'rings' || p.title.toLowerCase().includes('ring')),
+    'earrings': (p) => isJewellery(p) && (p.category === 'earrings' || p.title.toLowerCase().includes('earring')),
+    'pendants': (p) => isJewellery(p) && (p.category === 'pendants' || p.title.toLowerCase().includes('pendant')),
+    'bracelets': (p) => isJewellery(p) && (p.category === 'bracelets' || p.title.toLowerCase().includes('bracelet')),
+    'necklaces': (p) => isJewellery(p) && (p.category === 'necklaces' || p.title.toLowerCase().includes('necklace')),
+    'bangles': (p) => isJewellery(p) && (p.category === 'bangles' || p.title.toLowerCase().includes('bangle')),
+    'loose-gems': (p) => isJewellery(p) && (p.title.toLowerCase().includes('loose') && !p.title.toLowerCase().includes('diamond')),
+    'brooches': (p) => isJewellery(p) && (p.category === 'brooches' || p.title.toLowerCase().includes('brooch')),
+    
+    // =============== JEWELLERY TYPES (by gemstone/material) ===============
+    'diamond-jewellery': (p) => isJewellery(p) && (p.category === 'diamond' || p.title.toLowerCase().includes('diamond')),
+    'pearl-jewellery': (p) => isJewellery(p) && p.title.toLowerCase().includes('pearl'),
+    'sapphire-jewellery': (p) => isJewellery(p) && p.title.toLowerCase().includes('sapphire'),
+    'ruby-jewellery': (p) => isJewellery(p) && p.title.toLowerCase().includes('ruby'),
+    'tanzanite-jewellery': (p) => isJewellery(p) && p.title.toLowerCase().includes('tanzanite'),
+    'emerald-jewellery': (p) => isJewellery(p) && p.title.toLowerCase().includes('emerald'),
+    'jade-jewellery': (p) => isJewellery(p) && p.title.toLowerCase().includes('jade'),
+    'amethyst-jewellery': (p) => isJewellery(p) && p.title.toLowerCase().includes('amethyst'),
+    'aquamarine-jewellery': (p) => isJewellery(p) && p.title.toLowerCase().includes('aquamarine'),
+    'opal-jewellery': (p) => isJewellery(p) && p.title.toLowerCase().includes('opal'),
+    'alexandrite-jewellery': (p) => isJewellery(p) && p.title.toLowerCase().includes('alexandrite'),
+    'topaz-jewellery': (p) => isJewellery(p) && p.title.toLowerCase().includes('topaz'),
+    'morganite-jewellery': (p) => isJewellery(p) && p.title.toLowerCase().includes('morganite'),
+    
+    // =============== JEWELLERY COLLECTIONS (curated) ===============
     'certified-diamonds': (p) => p.category === 'diamond' && (p.title.toLowerCase().includes('certified') || p.title.toLowerCase().includes('gia') || p.title.toLowerCase().includes('igi')),
-    'designer-jewellery': (p) => p.title.toLowerCase().includes('cartier') || p.title.toLowerCase().includes('tiffany') || p.title.toLowerCase().includes('van cleef') || p.title.toLowerCase().includes('bulgari'),
+    'designer-jewellery': (p) => isJewellery(p) && (p.title.toLowerCase().includes('cartier') || p.title.toLowerCase().includes('tiffany') || p.title.toLowerCase().includes('van cleef') || p.title.toLowerCase().includes('bulgari')),
     'loose-diamonds': (p) => p.category === 'diamond' && p.title.toLowerCase().includes('loose'),
-    'engagement-rings': (p) => (p.category === 'diamond' || p.category === 'rings') && p.title.toLowerCase().includes('engagement'),
-    'diamond-dress-rings': (p) => (p.category === 'diamond' || p.category === 'rings') && (p.title.toLowerCase().includes('dress ring') || p.title.toLowerCase().includes('cocktail')),
-    'fancy-colour-diamonds': (p) => p.category === 'diamond' && (p.title.toLowerCase().includes('fancy') || p.title.toLowerCase().includes('pink') || p.title.toLowerCase().includes('yellow') || p.title.toLowerCase().includes('blue diamond')),
-    'tennis-bracelets': (p) => p.title.toLowerCase().includes('tennis bracelet'),
-    'diamond-studs': (p) => p.category === 'diamond' && p.title.toLowerCase().includes('stud'),
-    'diamond-eternity-rings': (p) => p.category === 'diamond' && p.title.toLowerCase().includes('eternity'),
-    'diamond-earrings': (p) => p.category === 'diamond' && (p.title.toLowerCase().includes('earring') || p.title.toLowerCase().includes('drop') || p.title.toLowerCase().includes('hoop')),
-    // Watch brand categories
+    'engagement-rings': (p) => isJewellery(p) && p.title.toLowerCase().includes('engagement'),
+    'diamond-dress-rings': (p) => isJewellery(p) && (p.title.toLowerCase().includes('dress ring') || p.title.toLowerCase().includes('cocktail')),
+    'fancy-colour-diamonds': (p) => p.category === 'diamond' && (p.title.toLowerCase().includes('fancy') || p.title.toLowerCase().includes('pink diamond') || p.title.toLowerCase().includes('yellow diamond') || p.title.toLowerCase().includes('blue diamond')),
+    'tennis-bracelets': (p) => isJewellery(p) && p.title.toLowerCase().includes('tennis'),
+    'diamond-studs': (p) => isJewellery(p) && p.title.toLowerCase().includes('stud'),
+    'diamond-eternity-rings': (p) => isJewellery(p) && p.title.toLowerCase().includes('eternity'),
+    'diamond-earrings': (p) => isJewellery(p) && p.title.toLowerCase().includes('diamond') && (p.title.toLowerCase().includes('earring') || p.title.toLowerCase().includes('drop') || p.title.toLowerCase().includes('hoop')),
+    
+    // =============== WATCH CATEGORIES ===============
     'swiss-watches': (p) => p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize',
     'rolex-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && p.title.toLowerCase().includes('rolex'),
     'omega-watches': (p) => (p.category === 'watches-mens' || p.category === 'watches-ladies' || p.category === 'watches-midsize') && p.title.toLowerCase().includes('omega'),
@@ -498,7 +599,8 @@ export async function registerRoutes(
     'mens-watches': (p) => p.category === 'watches-mens',
     'ladies-watches': (p) => p.category === 'watches-ladies',
     'midsize-watches': (p) => p.category === 'watches-midsize',
-    // Other categories - direct match
+    
+    // =============== OTHER CATEGORIES ===============
     'designer-bags': (p) => p.category === 'designer-bags',
   };
 
