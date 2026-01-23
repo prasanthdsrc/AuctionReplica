@@ -202,9 +202,9 @@ export function Header() {
                 >
                   <div className="flex">
                     {/* Main menu items */}
-                    <div className="w-48 border-r border-gray-200 dark:border-gray-700">
+                    <div className="w-52 border-r border-gray-200 dark:border-gray-700 py-2">
                       <div
-                        className={`flex items-center justify-between px-4 py-3 cursor-pointer transition-colors ${
+                        className={`flex items-center justify-between px-5 py-4 cursor-pointer transition-colors ${
                           jewellerySubmenu === 'categories' 
                             ? 'bg-gray-100 dark:bg-gray-800 text-primary' 
                             : 'hover:bg-gray-50 dark:hover:bg-gray-800'
@@ -216,7 +216,7 @@ export function Header() {
                         <ChevronRight className="h-4 w-4" />
                       </div>
                       <div
-                        className={`flex items-center justify-between px-4 py-3 cursor-pointer transition-colors ${
+                        className={`flex items-center justify-between px-5 py-4 cursor-pointer transition-colors ${
                           jewellerySubmenu === 'types' 
                             ? 'bg-gray-100 dark:bg-gray-800 text-primary' 
                             : 'hover:bg-gray-50 dark:hover:bg-gray-800'
@@ -228,7 +228,7 @@ export function Header() {
                         <ChevronRight className="h-4 w-4" />
                       </div>
                       <div
-                        className={`flex items-center justify-between px-4 py-3 cursor-pointer transition-colors ${
+                        className={`flex items-center justify-between px-5 py-4 cursor-pointer transition-colors ${
                           jewellerySubmenu === 'collections' 
                             ? 'bg-gray-100 dark:bg-gray-800 text-primary' 
                             : 'hover:bg-gray-50 dark:hover:bg-gray-800'
